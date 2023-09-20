@@ -4,7 +4,6 @@ export const metadata: Metadata = {
     title: 'Home',
     description: 'Home',
 };
-
 export default function RootLayout({
     children,
 }: {

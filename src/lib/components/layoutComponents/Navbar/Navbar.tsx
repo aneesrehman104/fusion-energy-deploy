@@ -1,13 +1,12 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-
 import { Row, Col, Grid, Drawer, MenuProps } from 'antd';
-
-import styles from './Navbar.module.css';
+import { FusionEnergyButton } from '../../commonComponents';
 import { Images } from '@/assets/image';
 import { MenuOutlined } from '@ant-design/icons';
 import NavbarItem from '../NavbarItem/NavbarItem';
+import styles from './Navbar.module.css';
 
 const { useBreakpoint } = Grid;
 
@@ -54,41 +53,37 @@ export default function Navbar() {
                 <header className={styles.navbarMobileContainer}>
                     <Row align="middle" justify="space-between">
                         <Col>
-                            <div className={styles.navItemCenter}>
-                                <Image
-                                    src={Images.AppLogo}
-                                    alt="fusion-energy-logo"
-                                />
-                            </div>
+                            <Image
+                                src={Images.AppLogo}
+                                alt="fusion-energy-logo"
+                            />
                         </Col>
                         <Col>
-                            <div className={styles.navItemCenter}>
-                                <MenuOutlined
-                                    className={styles.navMenu}
-                                    onClick={drawerHandle}
-                                />
-                            </div>
+                            <MenuOutlined
+                                className={styles.navMenu}
+                                onClick={drawerHandle}
+                            />
                         </Col>
                     </Row>
                 </header>
             ) : (
                 <header className={styles.navbarContainer}>
                     <Row align="middle" justify="space-between">
-                        <Col md={4}>
-                            <div className={styles.navItemCenter}>
-                                <Image
-                                    src={Images.AppLogo}
-                                    alt="fusion-energy-logo"
-                                />
-                            </div>
+                        <Col md={5}>
+                            <Image
+                                src={Images.AppLogo}
+                                alt="fusion-energy-logo"
+                            />
                         </Col>
-                        <Col>
+                        <Col md={14}>
                             <NavbarItem items={items} mode="horizontal" />
                         </Col>
-                        <Col md={4}>
-                            <div className={styles.navItemCenter}>
-                                <button>hally</button>
-                            </div>
+                        <Col md={5}>
+                            <FusionEnergyButton
+                                label="Get Estimates"
+                                color="#171A20"
+                                backgroundColor="#FFFFFF"
+                            />
                         </Col>
                     </Row>
                 </header>

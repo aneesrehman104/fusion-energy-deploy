@@ -1,8 +1,6 @@
 import React from 'react';
-
 import { Button, ConfigProvider, Dropdown, Menu } from 'antd';
 import type { MenuProps } from 'antd';
-import { DownOutlined } from '@ant-design/icons';
 import DropdownBtn from '../Dropdown/Dropdown';
 
 type Props = {
