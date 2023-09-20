@@ -1,0 +1,12 @@
+.navbarContainer {
+    padding: 2rem 4rem;
+}
+
+.navbarMobileContainer {
+    padding: 1rem;
+}
+
+.navMenu {
+    font-size: 30px;
+    cursor: pointer;
+}

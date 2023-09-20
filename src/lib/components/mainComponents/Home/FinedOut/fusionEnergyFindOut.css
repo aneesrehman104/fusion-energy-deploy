@@ -1,0 +1,43 @@
+.fusionEnergyWhiteTitle {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 48px;
+    font-style: normal;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.fusionEnergyWhiteDescription {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    font-style: normal;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    text-transform: capitalize;
+}
+.fusionEnergyFindOutCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.fusionEnergyFindOutBackgroundImage {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.fusionEnergSpaceBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+}

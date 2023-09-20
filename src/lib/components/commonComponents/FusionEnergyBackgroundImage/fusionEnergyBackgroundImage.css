@@ -1,0 +1,53 @@
+
+.fusionEnergyBackgroundImage{
+  background-size: cover;
+  background-position:center ;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+.fusionEnergyBackgroundMainTitle {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 48px;
+  font-style: normal;
+  color:  #1D3376;
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.fusionEnergyBackgroundDescription {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  font-style: normal;
+  color:  #606771;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  text-transform: capitalize;
+}
+
+.fusionEnergyBackgroundImageButton{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 570px;
+}
+
+@media only screen and (max-width: 768px)  {
+  .fusionEnergyBackgroundImageButton{
+   flex-direction: column;
+   align-items: center;
+   height: 100px;
+  }
+}
+
