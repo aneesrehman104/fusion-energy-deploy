@@ -21,4 +21,7 @@ export interface FusionEnergyButtonProps {
   width?:string;
   backgroundColor?: string;
   label: ReactNode;
+  marginRight?:string;
+  marginLeft?:string;
+
 }

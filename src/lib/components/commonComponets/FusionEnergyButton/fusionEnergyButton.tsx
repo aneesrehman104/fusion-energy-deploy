@@ -15,6 +15,8 @@ const FusionEnergyButton: FC<FusionEnergyButtonProps> = ({
   label,
   height,
   width,
+  marginRight,
+  marginLeft,
 }) => {
   return (
     <Button
@@ -25,7 +27,7 @@ const FusionEnergyButton: FC<FusionEnergyButtonProps> = ({
       disabled={disabled}
       className={className ? className : "fusionEnergyButtonStyle"}
       htmlType={htmlType}
-      style={{ color, backgroundColor, height, width }}
+      style={{ color, backgroundColor, height, width, marginRight, marginLeft }}
     >
       {label}
     </Button>

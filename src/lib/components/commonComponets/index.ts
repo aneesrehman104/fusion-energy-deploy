@@ -1,2 +1,3 @@
 import FusionEnergyButton from "./FusionEnergyButton";
-export { FusionEnergyButton };
+import FusionEnergyBackgroundImage from "./FusionEnergyBackgroundImage";
+export { FusionEnergyButton, FusionEnergyBackgroundImage };
