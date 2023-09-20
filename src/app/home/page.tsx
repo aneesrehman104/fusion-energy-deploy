@@ -1,5 +1,5 @@
 import React from "react";
-import RootLayout from "./layout"; // Import your layout component
+import RootLayout from "./layout";
 const HomePage = () => {
   return (
     <RootLayout>
