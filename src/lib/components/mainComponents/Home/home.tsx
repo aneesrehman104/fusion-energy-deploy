@@ -1,7 +1,7 @@
 import React from "react";
 
 interface PROPS {}
-import { FusionEnergyBackgroundImage } from "@/lib/components/commonComponets";
+import { FusionEnergyBackgroundImage } from "@/lib/components/commonComponents";
 const homeArray = [
   {
     title: "Solar Panel",
