@@ -1,43 +1,19 @@
 import React from 'react';
 import { FusionEnergyBackgroundImage } from '@/lib/components/commonComponents';
 import { TopBar } from '@/lib/components/layoutComponents';
-
+import { testimonials, staticHeading, homeArray } from '@/utils/mock';
+import { HomeItem } from '@/lib/ts/interface';
+import FusionEnergyCarousel from '../../commonComponents/FusionEnergyCarousel';
 import FinedOut from './FinedOut';
 
 interface PROPS {}
-const homeArray = [
-    {
-        title: 'Solar Panel',
-        button1Text: 'Explore Your Home',
-        button1Link: '',
-        button2Text: 'Learn More',
-        button2Link: '',
-        backgroundImage: '/FusionEnergySolarPanelBG.svg',
-    },
-    {
-        title: 'Home Batteries',
-        button1Text: 'Store Your Power',
-        button1Link: '',
-        button2Text: 'Learn More',
-        button2Link: '',
-        backgroundImage: '/FusionEnergyHomeBatteryBG.svg',
-    },
-    {
-        title: 'Artificial Turf',
-        button1Text: 'Explore Turf',
-        button1Link: '',
-        button2Text: 'Learn More',
-        button2Link: '',
-        backgroundImage: '/FusionEnergyArtificalTurfBG.svg',
-    },
-];
 const Home: React.FC<PROPS> = () => {
     return (
         <main>
             <TopBar />
             <FinedOut />
             <section>
-                {homeArray.map((item: any) => {
+                {homeArray.map((item: HomeItem) => {
                     return (
                         <FusionEnergyBackgroundImage
                             key={item.title}
@@ -50,6 +26,12 @@ const Home: React.FC<PROPS> = () => {
                         />
                     );
                 })}
+            </section>
+            <section>
+                <FusionEnergyCarousel
+                    items={testimonials}
+                    label={staticHeading}
+                />
             </section>
         </main>
     );

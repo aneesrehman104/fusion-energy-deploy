@@ -25,7 +25,7 @@ export default function MenuItem({ items, mode }: Props) {
                 },
             }}
         >
-            <Menu mode={mode}>
+            <Menu mode={mode} style={{ borderBottom: 'none' }}>
                 {items?.map((item: any, index) => (
                     <Menu.Item key={item.key}>
                         {Array.isArray(item.children) ? (
