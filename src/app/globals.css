@@ -111,3 +111,7 @@ a {
     color-scheme: dark;
   }
 }
+
+.ant-wave {
+  display: none !important;
+}
