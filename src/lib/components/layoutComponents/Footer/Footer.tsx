@@ -56,7 +56,7 @@ const Footer: React.FC<PROPS> = () => {
     };
     return (
         <>
-            <main>
+            <footer>
                 <section className="fusionEnergyFooterCenterStyle">
                     <div className="fusionEnergyFooterGreenWidth">
                         <div className="fusionEnergyFooterGreenBackgroundImage">
@@ -138,7 +138,7 @@ const Footer: React.FC<PROPS> = () => {
                         </div>
                     </section>
                 </section>
-            </main>
+            </footer>
         </>
     );
 };

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
 import { Navbar } from '@/lib/components/layoutComponents';
 import './fusionEnergyFindOut.css';
@@ -6,12 +6,7 @@ import './fusionEnergyFindOut.css';
 interface PROPS {}
 const FinedOut: React.FC<PROPS> = () => {
     return (
-        <article
-            style={{
-                backgroundImage: `url(/FusionEnergyEfficiencyBG.svg)`,
-            }}
-            className="fusionEnergyFindOutBackgroundImage"
-        >
+        <section className="fusionEnergyFindOutBackgroundImage">
             <Navbar />
             <div className="fusionEnergSpaceBetween">
                 <section>
@@ -26,7 +21,7 @@ const FinedOut: React.FC<PROPS> = () => {
                     <FusionEnergyButton label="Find Out How" />
                 </section>
             </div>
-        </article>
+        </section>
     );
 };
 
