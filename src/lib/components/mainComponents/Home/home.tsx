@@ -31,6 +31,7 @@ const Home: React.FC<PROPS> = () => {
                 <FusionEnergyCarousel
                     items={testimonials}
                     label={staticHeading}
+                    showCarousel={false}
                 />
             </section>
         </main>

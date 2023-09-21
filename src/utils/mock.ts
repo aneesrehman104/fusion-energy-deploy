@@ -68,12 +68,6 @@ export const testimonials = [
         rating: generateRandomNumber(),
         description: dummypara,
     },
-    {
-        image: Images.ProfileImage,
-        name: 'Test User',
-        rating: generateRandomNumber(),
-        description: dummypara,
-    },
 ];
 
 export const homeArray = [

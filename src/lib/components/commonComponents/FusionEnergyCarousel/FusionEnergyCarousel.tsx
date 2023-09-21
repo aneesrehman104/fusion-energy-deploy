@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { Carousel, Col, Row, Grid } from 'antd';
 import { CarouselRef } from 'antd/es/carousel';
@@ -13,9 +13,10 @@ const { useBreakpoint } = Grid;
 const FusionEnergyCarousel: React.FC<FusionEnergyCarouselProps> = ({
     items,
     label,
+    showCarousel,
 }) => {
     const screens = useBreakpoint();
-    const carouselRef = useRef<CarouselRef>(null);
+    const carouselRef = React.useRef<CarouselRef>(null);
 
     const handleNext = () => {
         if (carouselRef.current) {
@@ -54,35 +55,53 @@ const FusionEnergyCarousel: React.FC<FusionEnergyCarouselProps> = ({
                         </h3>
                     </Col>
                     <Col span={24}>
-                        <Carousel
-                            ref={carouselRef}
-                            slidesToShow={screens.md ? 3 : 1}
-                            dotPosition="bottom"
-                            dots
-                            waitForAnimate
-                            adaptiveHeight
-                            autoplay
-                            className={styles.customCarousel}
-                        >
-                            {items.map((_item, index) => (
-                                <FusionEnergyCard key={index} item={_item} />
-                            ))}
-                        </Carousel>
+                        {showCarousel ? (
+                            <Carousel
+                                ref={carouselRef}
+                                slidesToShow={screens.md ? 3 : 1}
+                                slidesToScroll={screens.md ? 3 : 1}
+                                dotPosition="bottom"
+                                dots={false}
+                                waitForAnimate
+                                adaptiveHeight
+                                autoplay
+                            >
+                                {items.map((_item, index) => (
+                                    <FusionEnergyCard
+                                        key={index}
+                                        item={_item}
+                                    />
+                                ))}
+                            </Carousel>
+                        ) : (
+                            <Row gutter={[0, 32]}>
+                                {items.map((_item, index) => (
+                                    <Col xs={24} md={8}>
+                                        <FusionEnergyCard
+                                            key={index}
+                                            item={_item}
+                                        />
+                                    </Col>
+                                ))}
+                            </Row>
+                        )}
                     </Col>
-                    <Col span={24}>
-                        <div className={styles.fusionEnergyButtonWrapper}>
-                            <Image
-                                src={Images.LeftArrow}
-                                alt="LeftArrow"
-                                onClick={handlePrev}
-                            />
-                            <Image
-                                src={Images.RightArrow}
-                                alt="RightArrow"
-                                onClick={handleNext}
-                            />
-                        </div>
-                    </Col>
+                    {showCarousel && (
+                        <Col span={24}>
+                            <div className={styles.fusionEnergyButtonWrapper}>
+                                <Image
+                                    src={Images.LeftArrow}
+                                    alt="LeftArrow"
+                                    onClick={handlePrev}
+                                />
+                                <Image
+                                    src={Images.RightArrow}
+                                    alt="RightArrow"
+                                    onClick={handleNext}
+                                />
+                            </div>
+                        </Col>
+                    )}
                 </Row>
             </div>
         </AntdStyledComponentsRegistry>

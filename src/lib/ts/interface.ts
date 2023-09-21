@@ -37,6 +37,7 @@ export interface FusionEnergyCardProps {
 export interface FusionEnergyCarouselProps {
     items: FusionEnergyCardProps[];
     label: string;
+    showCarousel: boolean;
 }
 
 export interface HomeItem {

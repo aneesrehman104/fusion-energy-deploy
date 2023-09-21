@@ -1,11 +1,14 @@
-import { Card, Rate } from 'antd';
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
+import { Card, Rate } from 'antd';
 import { FusionEnergyCardProps } from '@/lib/ts/interface';
 import styles from './FusionEnergyCard.module.css';
 
 type Props = { item: FusionEnergyCardProps };
 const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
+    const [show, setShow] = React.useState<boolean>(false);
+    const showHandle = () => setShow(!show);
+
     return (
         <Card className={styles.fusionEnergyCard}>
             <div className={styles.fusionEnergyCardWrapper}>
@@ -21,11 +24,21 @@ const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
                     <Rate value={item.rating} disabled allowHalf />
                 </div>
                 <div className={styles.fusionEnergyCardItemCenter}>
-                    <p className={styles.fusionEnergyCardDescription}>
+                    <p
+                        className={
+                            show
+                                ? styles.fusionEnergyCardDescriptionShow
+                                : styles.fusionEnergyCardDescriptionHide
+                        }
+                    >
                         {item.description}
                     </p>
                 </div>
-                <p className={styles.readMore}>Read More</p>
+                {!show && (
+                    <p className={styles.readMore} onClick={showHandle}>
+                        Read More
+                    </p>
+                )}
             </div>
         </Card>
     );
