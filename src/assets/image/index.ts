@@ -1,7 +1,11 @@
 import AppLogo from './fusion-energy-logo.svg';
-// import MainPageImage from './main-page-image.png';
+import ProfileImage from './profileImage.jpg';
+import LeftArrow from './left.svg';
+import RightArrow from './right.svg';
 
 export const Images = {
     AppLogo,
-    // MainPageImage,
+    ProfileImage,
+    LeftArrow,
+    RightArrow,
 };

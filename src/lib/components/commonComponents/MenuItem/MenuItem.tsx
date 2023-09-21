@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, ConfigProvider, Dropdown, Menu } from 'antd';
 import type { MenuProps } from 'antd';
 import DropdownBtn from '../Dropdown/Dropdown';
-
+import './menuItem.css';
 type Props = {
     items: MenuProps['items'];
     mode: MenuProps['mode'];
@@ -25,7 +25,7 @@ export default function MenuItem({ items, mode }: Props) {
                 },
             }}
         >
-            <Menu mode={mode}>
+            <Menu mode={mode} className="bottomNone">
                 {items?.map((item: any, index) => (
                     <Menu.Item key={item.key}>
                         {Array.isArray(item.children) ? (

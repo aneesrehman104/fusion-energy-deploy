@@ -32,6 +32,7 @@
     background-position: center;
     height: 100vh;
     width: 100%;
+    background-image: url('/FusionEnergyEfficiencyBG.svg');
 }
 .fusionEnergSpaceBetween {
     display: flex;
