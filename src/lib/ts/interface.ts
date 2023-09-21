@@ -28,16 +28,21 @@ export interface FusionEnergyButtonProps {
 }
 
 export interface FusionEnergyCardProps {
-    image: StaticImageData;
+    image: StaticImageData | string;
     name: string;
-    rating: number;
-    description: string;
+    rating?: number;
+    description?: string;
 }
 
 export interface FusionEnergyCarouselProps {
     items: FusionEnergyCardProps[];
     label: string;
     showCarousel: boolean;
+}
+export interface FusionEnergyGalleryProps {
+    items: FusionEnergyCardProps[];
+    label: string;
+    onClick?: (event: MouseEvent<HTMLElement>) => void;
 }
 
 export interface HomeItem {

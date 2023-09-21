@@ -1,0 +1,36 @@
+.fusionEnergyCarouselItemCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.fusionEnergyCarouselItemInnerWidth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.fusionEnergyCarouselHeaderLg {
+    color: rgba(29, 51, 118, 1);
+    font-family: DM Sans;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.fusionEnergyCarouselCenter {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.fusionEnergyButtonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.fusionEnergyButtonWrapper > img {
+    cursor: pointer;
+}
