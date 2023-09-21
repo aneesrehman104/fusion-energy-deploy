@@ -1,5 +1,7 @@
 import React from 'react';
 import { TopBar, Footer } from '@/lib/components/layoutComponents';
+import { testimonials, staticHeading } from '@/utils/mock';
+import FusionEnergyCarousel from '../../commonComponents/FusionEnergyCarousel';
 import FinedOut from './FinedOut';
 import LowCost from './LowCostComponets';
 import WhoWeAre from './WhoWeAre';
@@ -12,6 +14,11 @@ const Home: React.FC<PROPS> = () => {
             <FinedOut />
             <LowCost />
             <WhoWeAre />
+            <FusionEnergyCarousel
+                items={testimonials}
+                label={staticHeading}
+                showCarousel
+            />
             <Footer />
         </main>
     );
