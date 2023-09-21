@@ -1,7 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
 import { Card, Rate } from 'antd';
 import { FusionEnergyCardProps } from '@/lib/ts/interface';
+import Image from 'next/image';
 import styles from './FusionEnergyCard.module.css';
 
 type Props = { item: FusionEnergyCardProps };
