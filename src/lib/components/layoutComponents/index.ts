@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
 import NavbarItem from './NavbarItem';
 import TopBar from './Topbar';
-
-export { Navbar, NavbarItem, TopBar };
+import Footer from './Footer';
+export { Navbar, NavbarItem, TopBar, Footer };

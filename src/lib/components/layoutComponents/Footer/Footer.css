@@ -1,0 +1,126 @@
+.fusionEnergyFooterGreenBackgroundImage {
+    background-size: cover;
+    background-position: center;
+    height: 261px;
+    width: 100%;
+    background-image: url('/FusionEnergyFooterGreenBG.svg');
+    border-radius: 5px;
+}
+.fusionEnergyFooterBackgroundImage {
+    background-size: cover;
+    background-position: center;
+    /* height: 610px; */
+    min-height: 90vh;
+    width: 100%;
+    background-image: url('/FusionEnergyFooterBG.svg');
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.fusionEnergyFooterGreenTitle {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: normal;
+    color: #ffffff;
+    width: 100%;
+    text-transform: capitalize;
+}
+.fusionEnergyFooterCenterStyle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+.fusionEnergyFooterGreenWidth {
+    width: 85%;
+}
+
+.fusionEnergyFooterCardStyle {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 261px;
+    padding-left: 10%;
+}
+.fusionEnergyPoweredClass {
+    background: #1d3376;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    color: #ffffff;
+}
+.fusionEnergyFooterTitles {
+    color: #ffffff;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: normal;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.fusionEnergyFooterText {
+    color: #ffffff;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.fusionEnergyFooterPaddingTop {
+    padding-top: 230px;
+}
+.fusionEnergyFooterContainerStyle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .fusionEnergyFooterGreenWidth {
+        width: 100%;
+    }
+    .fusionEnergyFooterCardStyle {
+        width: 100%;
+        padding-left: 0%;
+        align-items: center;
+    }
+    .fusionEnergyFooterGreenTitle {
+        text-align: center;
+    }
+    .fusionEnergyFooterCenterStyle {
+        top: 0px;
+    }
+    .fusionEnergyFooterPaddingTop {
+        padding-top: 10px;
+    }
+    .fusionEnergyFooterContainerStyle {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fusionEnergyFooterTitles {
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    .fusionEnergyFooterInnerContainerStyle {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid #617aa4;
+        padding-bottom: 20px;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FusionEnergyBackgroundImage } from '@/lib/components/commonComponents';
-import { TopBar } from '@/lib/components/layoutComponents';
+import { TopBar, Footer } from '@/lib/components/layoutComponents';
 
 import FinedOut from './FinedOut';
 
@@ -51,6 +51,7 @@ const Home: React.FC<PROPS> = () => {
                     );
                 })}
             </section>
+            <Footer />
         </main>
     );
 };
