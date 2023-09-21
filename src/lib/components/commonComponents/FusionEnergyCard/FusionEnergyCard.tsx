@@ -34,9 +34,13 @@ const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
                         {item.description}
                     </p>
                 </div>
-                {!show && (
+                {!show ? (
                     <p className={styles.readMore} onClick={showHandle}>
                         Read More
+                    </p>
+                ) : (
+                    <p className={styles.readMore} onClick={showHandle}>
+                        Show Less
                     </p>
                 )}
             </div>
