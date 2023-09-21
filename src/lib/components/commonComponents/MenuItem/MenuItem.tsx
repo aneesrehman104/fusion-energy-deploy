@@ -1,14 +1,22 @@
 import React from 'react';
-import { Button, ConfigProvider, Dropdown, Menu } from 'antd';
+import { ConfigProvider, Menu } from 'antd';
 import type { MenuProps } from 'antd';
-import DropdownBtn from '../Dropdown/Dropdown';
-
 type Props = {
     items: MenuProps['items'];
     mode: MenuProps['mode'];
+    callback: (param: boolean) => void;
 };
 
-export default function MenuItem({ items, mode }: Props) {
+export default function MenuItem({ items, mode, callback }: Props) {
+    const onMouseEnterHandle = (item: any) => {
+        if (typeof item?.onMouseEnter !== 'function') return;
+        callback(item?.onMouseEnter());
+    };
+    const onMouseLeaveHandle = (item: any) => {
+        if (typeof item?.onMouseLeave !== 'function') return;
+        callback(item?.onMouseLeave());
+    };
+
     return (
         <ConfigProvider
             theme={{
@@ -20,39 +28,19 @@ export default function MenuItem({ items, mode }: Props) {
                         horizontalItemSelectedColor: '#fff',
                         horizontalItemHoverColor: '#fff',
                         horizontalLineHeight: 2,
-                        dropdownWidth: 780,
                     },
                 },
             }}
         >
             <Menu mode={mode} style={{ borderBottom: 'none' }}>
-                {items?.map((item: any, index) => (
-                    <Menu.Item key={item.key}>
-                        {Array.isArray(item.children) ? (
-                            <DropdownBtn
-                                trigger={['hover']}
-                                items={item.children}
-                            >
-                                <ConfigProvider
-                                    theme={{
-                                        components: {
-                                            Button: {
-                                                borderColorDisabled: '',
-                                                defaultBg: '',
-                                                defaultBorderColor: '',
-                                                defaultColor: '#fff',
-                                                colorPrimaryHover: '',
-                                                colorPrimaryActive: '',
-                                            },
-                                        },
-                                    }}
-                                >
-                                    <Button>{item.label}</Button>
-                                </ConfigProvider>
-                            </DropdownBtn>
-                        ) : (
-                            item.label
-                        )}
+                {items?.map((item: any) => (
+                    <Menu.Item
+                        key={item.key}
+                        onMouseEnter={() => onMouseEnterHandle(item)}
+                        onMouseLeave={() => onMouseLeaveHandle(item)}
+                        className={item.className}
+                    >
+                        {item.label}
                     </Menu.Item>
                 ))}
             </Menu>

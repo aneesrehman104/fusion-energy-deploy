@@ -4,8 +4,9 @@ import MenuItem from '../../commonComponents/MenuItem/MenuItem';
 type Props = {
     items: MenuProps['items'];
     mode: MenuProps['mode'];
+    callback: (param: boolean) => void;
 };
 
-export default function NavbarItem({ items, mode }: Props) {
-    return <MenuItem items={items} mode={mode} />;
+export default function NavbarItem({ items, mode, callback }: Props) {
+    return <MenuItem items={items} mode={mode} callback={callback} />;
 }
