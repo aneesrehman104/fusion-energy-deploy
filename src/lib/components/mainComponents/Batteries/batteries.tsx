@@ -53,7 +53,6 @@ const Batteries: React.FC<PROPS> = () => {
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
-            {/* <BatteriesMain /> */}
             <BakerFields />
             <Gallery />
             <div ref={contactRef}>

@@ -1,10 +1,10 @@
 .expandContainer {
-    position: relative;
+    position: absolute;
     width: 90%;
     height: 40%;
     border: none;
     border-radius: 5px;
-    top: -30px;
+    top: 140px;
     left: 75px;
     background-color: red;
 }

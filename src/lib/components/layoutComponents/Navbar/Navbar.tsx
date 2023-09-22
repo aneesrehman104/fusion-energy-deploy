@@ -131,7 +131,7 @@ export default function Navbar() {
             </Drawer>
 
             <ExpandMenu
-                isDesktop
+                isDesktop={screens.lg!}
                 isExpand={isExpanded}
                 onClose={setIsExpanded}
             />
