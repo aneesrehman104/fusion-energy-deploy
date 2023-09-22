@@ -4,4 +4,5 @@ import TopBar from './Topbar';
 import Footer from './Footer';
 import ExpandMenu from './ExpandMenu';
 import ContactForm from './ContactForm';
-export { Navbar, NavbarItem, TopBar, Footer, ExpandMenu, ContactForm };
+import Banner from './Banner';
+export { Navbar, NavbarItem, TopBar, Footer, ExpandMenu, ContactForm, Banner };

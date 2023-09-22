@@ -1,18 +1,18 @@
-.fusionEnergyBatteriesMainCenter {
+.fusionEnergyBannerCenter {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.fusionEnergyBatteriesMainBackgroundImage {
+.fusionEnergyBannerBackgroundImage {
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
-    background-image: url('/FusionEnergyBatteriesBG.svg');
+    /* background-image: url('/FusionEnergyBannerBG.svg'); */
 }
-.fusionEnergBatteriesMainSpaceBetween {
+.fusionEnergBannerSpaceBetween {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,7 +35,7 @@
     margin-top: 15px;
 }
 
-.fusionEnergyBatteriesTitle {
+.fusionEnergyBannerTitle {
     font-family: DM Sans;
     font-weight: 700;
     font-size: 48px;
@@ -47,7 +47,7 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.fusionEnergyBatteriesDescription {
+.fusionEnergyBannerDescription {
     font-family: DM Sans;
     font-weight: 400;
     font-size: 16px;

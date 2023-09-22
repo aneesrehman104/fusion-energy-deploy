@@ -9,7 +9,7 @@ interface PROPS {}
 
 const Home: React.FC<PROPS> = () => {
     return (
-        <main>
+        <main id="HomePage">
             <TopBar />
             <FinedOut />
             <LowCost />

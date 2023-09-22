@@ -61,3 +61,20 @@ export interface FusionEnergyInputProps {
     value: string | number;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
+
+export interface IconsType {
+    icon: string;
+    iconWidth: number;
+    iconHeight: number;
+    title: string;
+}
+
+export interface BannerProps {
+    iconsArray?: IconsType[];
+    backgroundImage: string;
+    title: string;
+    description: string;
+    showButton?: boolean;
+    labelBtn?: string;
+    onClick?: (event: React.MouseEvent<HTMLElement>) => void;
+}
