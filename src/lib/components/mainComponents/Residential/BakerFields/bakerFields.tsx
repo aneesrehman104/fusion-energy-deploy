@@ -17,7 +17,7 @@ const BakerFields: React.FC<PROPS> = () => {
                 </p>
                 <hr className="fusionEnergyBakerFieldHrStyle" />
                 <h2 className="fusionEnergyBakerFieldTitle">
-                    BAKERSFIELD'S MOST AFFORDABLE SOLAR PANELS
+                    BAKERSFIELDS MOST AFFORDABLE SOLAR PANELS
                 </h2>
             </section>
             <section>
@@ -69,7 +69,7 @@ const BakerFields: React.FC<PROPS> = () => {
                         <p className="fusionEnergyBakerFieldDescription">
                             Fuzion Home Services holds three important licenses:
                             a C-10 Electrician license, a C-20 HVAC license, and
-                            a General "B" Contractor License. These let us take
+                            a General B Contractor License. These let us take
                             care of many home projects for you, such as solar
                             power, heating, and air conditioning, patios, new
                             roofs, pools, turf, and many more. And you can pay
