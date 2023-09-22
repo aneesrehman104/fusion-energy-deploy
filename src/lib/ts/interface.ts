@@ -53,3 +53,11 @@ export interface HomeItem {
     button2Link: string;
     backgroundImage: string;
 }
+
+export interface FusionEnergyInputProps {
+    placeholder: string;
+    type: string;
+    name: string;
+    value: string | number;
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+};

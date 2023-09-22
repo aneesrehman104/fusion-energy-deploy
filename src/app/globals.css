@@ -105,3 +105,16 @@ a {
 .ant-wave {
     display: none !important;
 }
+
+.subMenuItem {
+    color: #000 !important;
+}
+
+.ant-menu-submenu-selected > *{
+    color: #fff !important;
+}
+
+.ant-divider-vertical {
+    height: 15em;
+    width: 2em;
+}
