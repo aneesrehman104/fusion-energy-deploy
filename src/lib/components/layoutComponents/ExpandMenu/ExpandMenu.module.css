@@ -1,0 +1,63 @@
+.expandContainer {
+    position: relative;
+    width: 90%;
+    height: 40%;
+    border: none;
+    border-radius: 5px;
+    top: -30px;
+    left: 75px;
+    background-color: red;
+}
+
+.expandWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+.sideMenuWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 95%;
+    padding-left: 3rem;
+}
+
+.sideMenuUnselected {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(17, 27, 41, 1);
+    cursor: pointer;
+}
+
+.dividerWrapper {
+    margin: 1.5rem auto;
+}
+
+.menuCardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.menuImage {
+    padding: 1em;
+    border: 1px solid rgba(95, 123, 151, 1);
+    border-radius: 12.65px;
+}
+
+.menuCardHeading {
+    text-align:center;
+    line-height: 0;
+}
+
+.menuCardSubHeading {
+    color: #677489;
+    font-size:0.875rem;
+    font-weight: 500;
+}
