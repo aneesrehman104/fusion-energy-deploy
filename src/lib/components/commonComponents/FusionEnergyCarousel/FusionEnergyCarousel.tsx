@@ -76,7 +76,7 @@ const FusionEnergyCarousel: React.FC<FusionEnergyCarouselProps> = ({
                         ) : (
                             <Row gutter={[0, 32]}>
                                 {items.map((_item, index) => (
-                                    <Col xs={24} md={8}>
+                                    <Col xs={24} md={8} key={index}>
                                         <FusionEnergyCard
                                             key={index}
                                             item={_item}
