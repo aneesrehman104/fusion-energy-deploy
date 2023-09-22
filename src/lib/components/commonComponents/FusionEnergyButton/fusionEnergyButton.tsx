@@ -11,7 +11,7 @@ const FusionEnergyButton: FC<FusionEnergyButtonProps> = ({
     disabled,
     className,
     htmlType,
-    color,
+    color = '#fff',
     backgroundColor,
     label,
     height,

@@ -1,17 +1,21 @@
 'use client';
 import React from 'react';
-import Link from 'next/link';
+import styles from './ContactForm.module.css';
 import { Col, Row } from 'antd';
+import Link from 'next/link';
 import {
     FusionEnergyButton,
     FusionEnergyInput,
     FusionEnergySelect,
     FusionEnergyTextatea,
-} from '@/lib/components/commonComponents';
-import styles from './ContactForm.module.css';
-type PROPS = {};
+} from '../../commonComponents';
 
-const ContactForm: React.FC<PROPS> = () => {
+type PROPS = {
+    title: string;
+    subHeading?: string;
+};
+
+const ContactForm: React.FC<PROPS> = ({ title, subHeading }) => {
     const [form, setForm] = React.useState({
         name: '',
         email: '',
@@ -30,14 +34,14 @@ const ContactForm: React.FC<PROPS> = () => {
             <section className={styles.contactFormWrapper}>
                 <Row>
                     <Col span={24}>
-                        <h1 className={styles.contactFormHeading}>
-                            Efficiency Is The Future
-                        </h1>
-                        <Link href="#">
-                            <h3 className={styles.contactFormSubHeading}>
-                                CLICK HERE FOR OFFER DETAILS.
-                            </h3>
-                        </Link>
+                        <h1 className={styles.contactFormHeading}>{title}</h1>
+                        {subHeading && (
+                            <Link href="#">
+                                <h3 className={styles.contactFormSubHeading}>
+                                    {subHeading}
+                                </h3>
+                            </Link>
+                        )}
                     </Col>
                     <Col span={24}>
                         <form

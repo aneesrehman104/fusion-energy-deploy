@@ -1,5 +1,5 @@
 .contactFormContainer {
-    background-image: url('../../../../../assets/image/contactForm.svg');
+    background-image: url('/contactForm.svg');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;

@@ -45,7 +45,7 @@ const FusionEnergyGallery: React.FC<FusionEnergyGalleryProps> = ({
                     >
                         {items.map((_item: any, index) => {
                             return (
-                                <div key={_item.name}>
+                                <div key={index}>
                                     <Image src={_item.image} alt={_item.name} />
                                 </div>
                             );

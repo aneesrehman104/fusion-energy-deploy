@@ -53,7 +53,13 @@
 
 .menuCardHeading {
     text-align:center;
+    font-size: 20px;
     line-height: 0;
+    color: #000
+}
+
+.menuCardHeading:hover {
+    color: #000
 }
 
 .menuCardSubHeading {

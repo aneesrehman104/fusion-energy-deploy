@@ -4,6 +4,7 @@ import { Col, Row, Grid } from 'antd';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
 import Image from 'next/image';
 import './fusionEnergySurplus.css';
+import { Images } from '@/assets/image';
 const { useBreakpoint } = Grid;
 interface PROPS {}
 const Surplus: React.FC<PROPS> = () => {
@@ -25,10 +26,10 @@ const Surplus: React.FC<PROPS> = () => {
                     <Col span={24} md={{ span: 10, order: 1 }}>
                         <div>
                             <div className="fusionEnergySurplusSmallTitle">
-                                Enphase IQ Battery when the sun sets, it shines
+                                Enphase IQ Battery When The Sun sets, it Shines
                             </div>
                             <p className="fusionEnergyBakerFieldDescription">
-                                the price of electricity remains steady for
+                                The price of electricity remains steady for
                                 standard electricity plans, utility companies
                                 are increasingly offering time-of-use plans,
                                 which charge more for electricity during peak
@@ -37,7 +38,22 @@ const Surplus: React.FC<PROPS> = () => {
                                 by running appliances like your dishwasher or
                                 washing machine during off hours.
                             </p>
-                            <FusionEnergyButton label="Schedule Consultation" />
+                            {/* <FusionEnergyButton label="Schedule Consultation" /> */}
+                            <div
+                                style={{
+                                    display: 'flex',
+                                    gap: '1rem',
+                                }}
+                            >
+                                <Image
+                                    src={Images.FuzionColorLogo}
+                                    alt="Fuzion Energy"
+                                />
+                                <Image
+                                    src={Images.EnphaseImage}
+                                    alt="Enphase"
+                                />
+                            </div>
                         </div>
                     </Col>
                     <Col span={24} md={{ span: 11, order: 2 }}>

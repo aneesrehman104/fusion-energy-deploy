@@ -6,15 +6,15 @@ interface PROPS {}
 const Gallery: React.FC<PROPS> = () => {
     const iconsArray = [
         {
-            image: Images.ProfileImage,
+            image: Images.FuzionBatteries,
             name: 'Dollar',
         },
         {
-            image: Images.ProfileImage,
+            image: Images.FuzionBatteries,
             name: 'Dollar',
         },
         {
-            image: Images.ProfileImage,
+            image: Images.FuzionBatteries,
             name: 'Dollar',
         },
     ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Col, Divider, Row } from 'antd';
+import Link from 'next/link';
 import { Images } from '@/assets/image';
 import { navbarJson, menus } from '@/utils/mock';
 import { FusionEnergyButton } from '../../commonComponents';
@@ -68,13 +69,14 @@ const ExpandMenu: React.FC<Props> = ({ isDesktop, isExpand, onClose }) => {
                                                     alt="ResidentialImage"
                                                     className={styles.menuImage}
                                                 />
-                                                <p
+                                                <Link
+                                                    href={item.path}
                                                     className={
                                                         styles.menuCardHeading
                                                     }
                                                 >
                                                     {item.heading}
-                                                </p>
+                                                </Link>
                                                 {item.subHeading !== '' ? (
                                                     <u
                                                         className={
