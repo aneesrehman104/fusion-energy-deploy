@@ -78,3 +78,7 @@ export interface BannerProps {
     labelBtn?: string;
     onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
+
+export interface RootLayoutProps {
+    children: React.ReactNode;
+}

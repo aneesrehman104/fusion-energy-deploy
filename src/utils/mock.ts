@@ -162,3 +162,39 @@ export const menus = [
     { heading: 'HVAC- Beat the Heat', key: 'hvac' },
     { heading: 'Generators- Keep the Power On', key: 'generator' },
 ];
+
+export const iconsArray = [
+    {
+        icon: '/Dollar.svg',
+        iconWidth: 12,
+        iconHeight: 23,
+        title: 'Guaranteed Lowest Price in America',
+    },
+    {
+        icon: '/Ecosystem.svg',
+        iconWidth: 50,
+        iconHeight: 36,
+        title: ' Integrated Product Ecosystem',
+    },
+    {
+        icon: '/Monitoring.svg',
+        iconWidth: 44,
+        iconHeight: 44,
+        title: ' System Performance Monitoring',
+    },
+];
+
+export const galleryArray = [
+    {
+        image: Images.FuzionBatteries,
+        name: 'Dollar',
+    },
+    {
+        image: Images.FuzionBatteries,
+        name: 'Dollar',
+    },
+    {
+        image: Images.FuzionBatteries,
+        name: 'Dollar',
+    },
+];

@@ -8,28 +8,8 @@ import {
 } from '@/lib/components/layoutComponents';
 import BakerFields from './Surplus';
 import Gallery from './Gallery';
+import { iconsArray } from '@/utils/mock';
 interface PROPS {}
-
-const iconsArray = [
-    {
-        icon: '/Dollar.svg',
-        iconWidth: 12,
-        iconHeight: 23,
-        title: 'Guaranteed Lowest Price in America',
-    },
-    {
-        icon: '/Ecosystem.svg',
-        iconWidth: 50,
-        iconHeight: 36,
-        title: ' Integrated Product Ecosystem',
-    },
-    {
-        icon: '/Monitoring.svg',
-        iconWidth: 44,
-        iconHeight: 44,
-        title: ' System Performance Monitoring',
-    },
-];
 
 const Batteries: React.FC<PROPS> = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
