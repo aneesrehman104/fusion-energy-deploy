@@ -3,6 +3,7 @@ import React from 'react';
 import { Banner, ContactForm } from '@/lib/components/layoutComponents';
 import { galleryArray, iconsArray } from '@/utils/mock';
 import { FusionEnergyGallery } from '@/lib/components/commonComponents';
+import BakerFields from './BakerFields';
 
 const Turf = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
@@ -15,7 +16,7 @@ const Turf = () => {
         }
     };
     return (
-        <section id="TurfPage">
+        <main id="TurfPage">
             <Banner
                 backgroundImage={'/FuzionEnergyTurf.svg'}
                 title={'Turf- Landscape the Efficiency'}
@@ -25,6 +26,7 @@ const Turf = () => {
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
+            <BakerFields />
             <section>
                 <FusionEnergyGallery
                     items={galleryArray}
@@ -37,7 +39,7 @@ const Turf = () => {
                     subHeading=" CLICK HERE FOR OFFER DETAILS."
                 />
             </div>
-        </section>
+        </main>
     );
 };
 

@@ -8,9 +8,10 @@ const Feature: React.FC = () => {
         <section id="feature" className={styles.featureSection}>
             <div className={styles.featureHeadingContainer}>
                 <p className={styles.featureSubheading}>
-                    Adding Solar To Your Commercial <u>Property Is Now More</u>{' '}
+                    Adding Solar To Your Commercial Property Is Now More
                     Affordable & Profitable Than Ever
                 </p>
+                <hr className={styles.bakerFieldsLine} />
                 <h1 className={styles.featureHeading}>
                     YOUR PROPERTY, YOUR POWER
                 </h1>

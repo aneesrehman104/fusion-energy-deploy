@@ -3,6 +3,7 @@ import React from 'react';
 import { Banner, ContactForm } from '@/lib/components/layoutComponents';
 import { iconsArray, galleryArray } from '@/utils/mock';
 import { FusionEnergyGallery } from '@/lib/components/commonComponents';
+import BakerFields from './BakerFields';
 
 const Generator = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
@@ -25,6 +26,7 @@ const Generator = () => {
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
+            <BakerFields />
             <section>
                 <FusionEnergyGallery
                     items={galleryArray}
