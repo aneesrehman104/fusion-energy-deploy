@@ -1,2 +1,2 @@
-import NavbarItem from './NavbarItem';
+import NavbarItem from './NavbarItem.component';
 export default NavbarItem;

@@ -5,7 +5,7 @@ import { Row, Col, Grid, Drawer, MenuProps } from 'antd';
 import { FusionEnergyButton } from '../../commonComponents';
 import { Images } from '@/assets/image';
 import { MenuOutlined } from '@ant-design/icons';
-import NavbarItem from '../NavbarItem/NavbarItem';
+import NavbarItem from '../NavbarItem/NavbarItem.component';
 import styles from './Navbar.module.css';
 import ExpandMenu from '../ExpandMenu';
 import Link from 'next/link';

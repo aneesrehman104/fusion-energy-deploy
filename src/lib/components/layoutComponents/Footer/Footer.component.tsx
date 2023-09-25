@@ -1,13 +1,11 @@
 'use client';
 import React, { FC, useState } from 'react';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
-import { Navbar } from '@/lib/components/layoutComponents';
 import { Images } from '@/assets/image';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import './Footer.css';
 import { Grid } from 'antd';
-import Link from 'next/link';
 
 const footerSections = [
     {
@@ -99,15 +97,13 @@ const Footer: React.FC<PROPS> = () => {
                                                   <div
                                                       key={itemIndex}
                                                       className="fusionEnergyFooterText"
-                                                      //   onClick={() =>
-                                                      //       router.push(
-                                                      //           item?.url || '/',
-                                                      //       )
-                                                      //   }
+                                                      onClick={() =>
+                                                          router.push(
+                                                              item?.url || '/',
+                                                          )
+                                                      }
                                                   >
-                                                      <Link href="/">
-                                                          {item.text}
-                                                      </Link>
+                                                      {item.text}
                                                   </div>
                                               ),
                                           )
@@ -116,15 +112,13 @@ const Footer: React.FC<PROPS> = () => {
                                                   <div
                                                       key={itemIndex}
                                                       className="fusionEnergyFooterText"
-                                                      //   onClick={() =>
-                                                      //       router.push(
-                                                      //           item?.url || '/',
-                                                      //       )
-                                                      //   }
+                                                      onClick={() =>
+                                                          router.push(
+                                                              item?.url || '/',
+                                                          )
+                                                      }
                                                   >
-                                                      <Link href="/">
-                                                          {item.text}
-                                                      </Link>
+                                                      {item.text}
                                                   </div>
                                               ),
                                           )}
