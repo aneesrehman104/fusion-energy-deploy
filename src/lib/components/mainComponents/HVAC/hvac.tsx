@@ -8,6 +8,7 @@ import {
 } from '@/lib/components/layoutComponents';
 import { iconsArray } from '@/utils/mock';
 import Gallery from './Gallery';
+import BakerFields from './BakerFields';
 
 const HVAC = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
@@ -31,6 +32,7 @@ const HVAC = () => {
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
+            <BakerFields />
             <Gallery />
             <div ref={contactRef}>
                 <ContactForm

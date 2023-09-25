@@ -4,19 +4,9 @@ import type { MenuProps } from 'antd';
 type Props = {
     items: MenuProps['items'];
     mode: MenuProps['mode'];
-    callback: (param: boolean) => void;
 };
 
-export default function MenuItem({ items, mode, callback }: Props) {
-    const onMouseEnterHandle = (item: any) => {
-        if (typeof item?.onMouseEnter !== 'function') return;
-        callback(item?.onMouseEnter());
-    };
-    const onMouseLeaveHandle = (item: any) => {
-        if (typeof item?.onMouseLeave !== 'function') return;
-        callback(item?.onMouseLeave());
-    };
-
+export default function MenuItem({ items, mode }: Props) {
     return (
         <ConfigProvider
             theme={{
@@ -32,18 +22,7 @@ export default function MenuItem({ items, mode, callback }: Props) {
                 },
             }}
         >
-            <Menu mode={mode} style={{ borderBottom: 'none' }}>
-                {items?.map((item: any) => (
-                    <Menu.Item
-                        key={item.key}
-                        onMouseEnter={() => onMouseEnterHandle(item)}
-                        onMouseLeave={() => onMouseLeaveHandle(item)}
-                        className={item.className}
-                    >
-                        {item.label}
-                    </Menu.Item>
-                ))}
-            </Menu>
+            <Menu mode={mode} style={{ borderBottom: 'none' }} items={items} />
         </ConfigProvider>
     );
 }

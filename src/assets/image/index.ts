@@ -16,6 +16,7 @@ import TaxIncentives from './TaxIncentives.svg';
 import EnhancedBrandImage from './EnhancedBrandImage.svg';
 import HedgeAgainstRisingEnergyCosts from './HedgeAgainstRisingEnergyCosts.svg';
 import EducationalAndCommunityEngagement from './EducationalAndCommunityEngagement.svg';
+import HvacContentImage from './HvacContect.svg';
 export const Images = {
     AppLogo,
     ProfileImage,
@@ -35,5 +36,6 @@ export const Images = {
     EnhancedBrandImage,
     HedgeAgainstRisingEnergyCosts,
     EducationalAndCommunityEngagement,
+    HvacContentImage,
 };
 

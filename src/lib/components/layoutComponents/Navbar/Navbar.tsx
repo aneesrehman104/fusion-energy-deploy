@@ -8,67 +8,63 @@ import { MenuOutlined } from '@ant-design/icons';
 import NavbarItem from '../NavbarItem/NavbarItem';
 import styles from './Navbar.module.css';
 import ExpandMenu from '../ExpandMenu';
+import Link from 'next/link';
 
 const { useBreakpoint } = Grid;
-
-const items: MenuProps['items'] = [
-    {
-        label: 'Services',
-        key: 'services',
-        onMouseEnter: function () {
-            return true;
-        },
-    },
-    {
-        label: 'Why Fuzion',
-        key: 'why_fuzion',
-        onMouseEnter: function () {
-            return false;
-        },
-    },
-    {
-        label: 'Giving Back',
-        key: 'giving_back',
-        onMouseEnter: function () {
-            return false;
-        },
-    },
-    {
-        label: 'Careers',
-        key: 'careers',
-        onMouseEnter: function () {
-            return false;
-        },
-    },
-    {
-        label: 'Referrals',
-        key: 'referrals',
-        onMouseEnter: function () {
-            return false;
-        },
-    },
-    {
-        label: 'Contact',
-        key: 'contact',
-        onMouseEnter: function () {
-            return false;
-        },
-    },
-];
 
 export default function Navbar() {
     const screens = useBreakpoint();
 
     const [isOpenDrawer, setIsOpenDrawer] = useState<boolean>(false);
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
-    const [navbar, setNavbar] = useState<string>('solar');
+
+    const items: MenuProps['items'] = [
+        {
+            label: 'Services',
+            key: 'services',
+            onMouseEnter: function () {
+                setIsExpanded(true);
+            },
+        },
+        {
+            label: 'Why Fuzion',
+            key: 'why_fuzion',
+            onMouseEnter: function () {
+                setIsExpanded(false);
+            },
+        },
+        {
+            label: 'Giving Back',
+            key: 'giving_back',
+            onMouseEnter: function () {
+                setIsExpanded(false);
+            },
+        },
+        {
+            label: 'Careers',
+            key: 'careers',
+            onMouseEnter: function () {
+                setIsExpanded(false);
+            },
+        },
+        {
+            label: 'Referrals',
+            key: 'referrals',
+            onMouseEnter: function () {
+                setIsExpanded(false);
+            },
+        },
+        {
+            label: 'Contact',
+            key: 'contact',
+            onMouseEnter: function () {
+                setIsExpanded(false);
+            },
+        },
+    ];
 
     const drawerHandle = (): void => {
         setIsOpenDrawer(!isOpenDrawer);
-    };
-
-    const onItemSelect = (path: string): void => {
-        setNavbar(path);
     };
 
     return (
@@ -94,19 +90,15 @@ export default function Navbar() {
                 <header className={styles.navbarContainer}>
                     <Row align="middle" justify="space-between">
                         <Col md={5}>
-                            <Image
-                                src={Images.AppLogo}
-                                alt="fusion-energy-logo"
-                            />
+                            <Link href="/">
+                                <Image
+                                    src={Images.AppLogo}
+                                    alt="fusion-energy-logo"
+                                />
+                            </Link>
                         </Col>
                         <Col md={14}>
-                            <NavbarItem
-                                items={items}
-                                mode="horizontal"
-                                callback={(param: boolean) => {
-                                    setIsExpanded(param);
-                                }}
-                            />
+                            <NavbarItem items={items} mode="horizontal" />
                         </Col>
                         <Col md={5}>
                             <FusionEnergyButton
@@ -123,11 +115,7 @@ export default function Navbar() {
                 onClose={drawerHandle}
                 title="Fusion Energy"
             >
-                <NavbarItem
-                    items={items}
-                    mode="vertical"
-                    callback={(param) => {}}
-                />
+                <NavbarItem items={items} mode="vertical" />
             </Drawer>
 
             <ExpandMenu
