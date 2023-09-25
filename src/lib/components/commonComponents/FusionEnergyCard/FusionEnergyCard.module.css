@@ -1,11 +1,21 @@
 .fusionEnergyCard {
-    background: linear-gradient(0deg, #ededed, #ededed),
-        linear-gradient(0deg, #ffffff, #ffffff);
     border-radius: 5px;
     box-shadow: 0px 35px 133px 0px rgba(113, 144, 190, 0.08);
     border: 1px solid rgba(237, 237, 237, 1);
-    margin: auto 1em !important;
+    min-height: 17rem;
+    display: flex;
+    align-items: center;
+}
+
+.fusionEnergyCardWithHeight {
+    border-radius: 5px;
+    box-shadow: 0px 35px 133px 0px rgba(113, 144, 190, 0.08);
+    border: 1px solid rgba(237, 237, 237, 1);
     height: 350px;
+    margin: auto .5rem !important;
+    min-height: 17rem;
+    display: flex;
+    align-items: center;
 }
 
 .fusionEnergyCardWrapper {
@@ -52,7 +62,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 .fusionEnergyCardDescriptionShow {
