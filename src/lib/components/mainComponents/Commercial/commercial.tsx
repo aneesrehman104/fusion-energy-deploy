@@ -8,6 +8,7 @@ import {
 } from '@/lib/components/layoutComponents';
 import { iconsArray } from '@/utils/mock';
 import Gallery from './Gallery';
+import Feature from './Feature';
 
 const Commercial = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
@@ -32,6 +33,7 @@ const Commercial = () => {
                 onClick={onClickHandle}
                 labelBtn="Buy Now"
             />
+            <Feature />
             <Gallery />
             <div ref={contactRef}>
                 <ContactForm

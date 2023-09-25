@@ -10,7 +10,13 @@ const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
     const showHandle = () => setShow(!show);
 
     return (
-        <Card className={styles.fusionEnergyCard}>
+        <Card
+            className={
+                item.rating
+                    ? styles.fusionEnergyCardWithHeight
+                    : styles.fusionEnergyCard
+            }
+        >
             <div className={styles.fusionEnergyCardWrapper}>
                 <Image
                     src={item.image}
@@ -20,9 +26,11 @@ const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
                 <h1 className={styles.fusionEnergyCardProfileName}>
                     {item.name}
                 </h1>
-                <div className={styles.ratingWrapper}>
-                    <Rate value={item.rating} disabled allowHalf />
-                </div>
+                {item.rating && (
+                    <div className={styles.ratingWrapper}>
+                        <Rate value={item.rating} disabled allowHalf />
+                    </div>
+                )}
                 <div className={styles.fusionEnergyCardItemCenter}>
                     <p
                         className={
@@ -34,15 +42,16 @@ const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
                         {item.description}
                     </p>
                 </div>
-                {!show ? (
-                    <p className={styles.readMore} onClick={showHandle}>
-                        Read More
-                    </p>
-                ) : (
-                    <p className={styles.readMore} onClick={showHandle}>
-                        Show Less
-                    </p>
-                )}
+                {item.rating &&
+                    (!show ? (
+                        <p className={styles.readMore} onClick={showHandle}>
+                            Read More
+                        </p>
+                    ) : (
+                        <p className={styles.readMore} onClick={showHandle}>
+                            Show Less
+                        </p>
+                    ))}
             </div>
         </Card>
     );
