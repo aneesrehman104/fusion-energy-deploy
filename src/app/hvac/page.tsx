@@ -1,12 +1,12 @@
 import React from 'react';
-import RootLayout from './layout';
 import HVAC from '@/lib/components/mainComponents/HVAC';
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+    title: 'HVAC',
+    description: 'HVAC',
+};
 const HvacPage = () => {
-    return (
-        <RootLayout>
-            <HVAC />
-        </RootLayout>
-    );
+    return <HVAC />;
 };
 
 export default HvacPage;

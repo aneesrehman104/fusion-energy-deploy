@@ -1,8 +1,8 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
 import { Carousel, Col, Row, Grid } from 'antd';
 import { CarouselRef } from 'antd/es/carousel';
+import Image from 'next/image';
 import { Images } from '@/assets/image';
 import { FusionEnergyCarouselProps } from '@/lib/ts/interface';
 import AntdStyledComponentsRegistry from '@/utils/AntdStyledComponentsRegistry';
@@ -109,5 +109,3 @@ const FusionEnergyCarousel: React.FC<FusionEnergyCarouselProps> = ({
 };
 
 export default FusionEnergyCarousel;
-{
-}

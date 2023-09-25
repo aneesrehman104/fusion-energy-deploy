@@ -1,11 +1,6 @@
 'use client';
 import React from 'react';
-import {
-    Banner,
-    ContactForm,
-    Footer,
-    TopBar,
-} from '@/lib/components/layoutComponents';
+import { Banner, ContactForm } from '@/lib/components/layoutComponents';
 import { iconsArray } from '@/utils/mock';
 import Gallery from './Gallery';
 
@@ -22,7 +17,6 @@ const Commercial = () => {
 
     return (
         <main id="CommercialPage">
-            <TopBar />
             <Banner
                 backgroundImage="/FuzionEnergyCommercailBG.svg"
                 title="Commercial"
@@ -39,7 +33,6 @@ const Commercial = () => {
                     subHeading=" CLICK HERE FOR OFFER DETAILS."
                 />
             </div>
-            <Footer />
         </main>
     );
 };

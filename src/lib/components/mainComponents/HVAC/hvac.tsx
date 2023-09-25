@@ -1,11 +1,6 @@
 'use client';
 import React from 'react';
-import {
-    Banner,
-    ContactForm,
-    Footer,
-    TopBar,
-} from '@/lib/components/layoutComponents';
+import { Banner, ContactForm } from '@/lib/components/layoutComponents';
 import { iconsArray } from '@/utils/mock';
 import Gallery from './Gallery';
 
@@ -21,7 +16,6 @@ const HVAC = () => {
     };
     return (
         <main id="HVAC">
-            <TopBar />
             <Banner
                 backgroundImage={'/FuzionEnergyHvacBG.svg'}
                 title={'HVAC- Beat the Heat'}
@@ -38,7 +32,6 @@ const HVAC = () => {
                     subHeading=" CLICK HERE FOR OFFER DETAILS."
                 />
             </div>
-            <Footer />
         </main>
     );
 };

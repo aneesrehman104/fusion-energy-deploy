@@ -1,12 +1,12 @@
 import React from 'react';
-import RootLayout from './layout';
 import Turf from '@/lib/components/mainComponents/Turf';
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+    title: 'Turf',
+    description: 'Turf',
+};
 const TurfPage = () => {
-    return (
-        <RootLayout>
-            <Turf />
-        </RootLayout>
-    );
+    return <Turf />;
 };
 
 export default TurfPage;

@@ -1,11 +1,6 @@
 'use client';
 import React from 'react';
-import {
-    TopBar,
-    Footer,
-    ContactForm,
-    Banner,
-} from '@/lib/components/layoutComponents';
+import { ContactForm, Banner } from '@/lib/components/layoutComponents';
 import BakerFields from './BakerFields';
 import Gallery from './Gallery';
 interface PROPS {}
@@ -42,8 +37,7 @@ const Residential: React.FC<PROPS> = () => {
         }
     };
     return (
-        <main>
-            <TopBar />
+        <>
             <Banner
                 backgroundImage="/FusionEnergyResidentialBG.svg"
                 iconsArray={iconsArray}
@@ -61,8 +55,7 @@ const Residential: React.FC<PROPS> = () => {
                     subHeading=" CLICK HERE FOR OFFER DETAILS."
                 />
             </div>
-            <Footer />
-        </main>
+        </>
     );
 };
 

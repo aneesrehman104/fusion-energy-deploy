@@ -1,5 +1,11 @@
 import React, { FC } from 'react';
-import { FusionEnergyBackgroundImage } from '@/lib/components/commonComponents';
+import dynamic from 'next/dynamic';
+
+// Lazy-loaded components
+const FusionEnergyBackgroundImage = dynamic(
+    () =>
+        import('@/lib/components/commonComponents/FusionEnergyBackgroundImage'),
+);
 
 interface PROPS {}
 const homeArray = [

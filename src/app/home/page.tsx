@@ -1,12 +1,12 @@
-import React from 'react';
-import RootLayout from './layout';
-import Home from '@/lib/components/mainComponents/Home';
+import dynamic from 'next/dynamic';
+import { Metadata } from 'next';
+const Home = dynamic(() => import('@/lib/components/mainComponents/Home'));
+export const metadata: Metadata = {
+    title: 'Home',
+    description: 'Home',
+};
 const HomePage = () => {
-    return (
-        <RootLayout>
-            <Home />
-        </RootLayout>
-    );
+    return <Home />;
 };
 
 export default HomePage;

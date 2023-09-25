@@ -1,11 +1,6 @@
 'use client';
 import React from 'react';
-import {
-    Banner,
-    ContactForm,
-    Footer,
-    TopBar,
-} from '@/lib/components/layoutComponents';
+import { Banner, ContactForm } from '@/lib/components/layoutComponents';
 import { galleryArray, iconsArray } from '@/utils/mock';
 import { FusionEnergyGallery } from '@/lib/components/commonComponents';
 
@@ -21,7 +16,6 @@ const Turf = () => {
     };
     return (
         <section id="TurfPage">
-            <TopBar />
             <Banner
                 backgroundImage={'/FuzionEnergyTurf.svg'}
                 title={'Turf- Landscape the Efficiency'}
@@ -43,7 +37,6 @@ const Turf = () => {
                     subHeading=" CLICK HERE FOR OFFER DETAILS."
                 />
             </div>
-            <Footer />
         </section>
     );
 };

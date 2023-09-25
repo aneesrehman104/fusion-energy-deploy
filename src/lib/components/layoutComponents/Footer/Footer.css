@@ -9,7 +9,6 @@
 .fusionEnergyFooterBackgroundImage {
     background-size: cover;
     background-position: center;
-    /* height: 610px; */
     min-height: 90vh;
     width: 100%;
     background-image: url('/FusionEnergyFooterBG.svg');

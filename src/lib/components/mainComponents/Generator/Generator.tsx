@@ -1,11 +1,6 @@
 'use client';
 import React from 'react';
-import {
-    Banner,
-    ContactForm,
-    Footer,
-    TopBar,
-} from '@/lib/components/layoutComponents';
+import { Banner, ContactForm } from '@/lib/components/layoutComponents';
 import { iconsArray, galleryArray } from '@/utils/mock';
 import { FusionEnergyGallery } from '@/lib/components/commonComponents';
 
@@ -21,7 +16,6 @@ const Generator = () => {
     };
     return (
         <section id="GeneratorPage">
-            <TopBar />
             <Banner
                 backgroundImage={'/FuzionEnergyGeneratorBG.svg'}
                 title={'Generators'}
@@ -43,7 +37,6 @@ const Generator = () => {
                     subHeading=" CLICK HERE FOR OFFER DETAILS."
                 />
             </div>
-            <Footer />
         </section>
     );
 };

@@ -1,16 +1,21 @@
 import React from 'react';
-import { TopBar, Footer } from '@/lib/components/layoutComponents';
+import dynamic from 'next/dynamic';
+
+// Lazy-loaded components
+const FinedOut = dynamic(() => import('./FinedOut'));
+const LowCost = dynamic(() => import('./LowCostComponets'));
+const WhoWeAre = dynamic(() => import('./WhoWeAre'));
+const FusionEnergyCarousel = dynamic(
+    () => import('@/lib/components/commonComponents/FusionEnergyCarousel'),
+);
+
 import { testimonials, staticHeading } from '@/utils/mock';
-import { FusionEnergyCarousel } from '@/lib/components/commonComponents';
-import FinedOut from './FinedOut';
-import LowCost from './LowCostComponets';
-import WhoWeAre from './WhoWeAre';
+
 interface PROPS {}
 
 const Home: React.FC<PROPS> = () => {
     return (
-        <main id="HomePage">
-            <TopBar />
+        <>
             <FinedOut />
             <LowCost />
             <WhoWeAre />
@@ -19,8 +24,7 @@ const Home: React.FC<PROPS> = () => {
                 label={staticHeading}
                 showCarousel
             />
-            <Footer />
-        </main>
+        </>
     );
 };
 

@@ -1,6 +1,11 @@
 import React from 'react';
-import { FusionEnergyButton } from '@/lib/components/commonComponents';
-import { Navbar } from '@/lib/components/layoutComponents';
+import dynamic from 'next/dynamic';
+
+// Lazy-loaded components
+const FusionEnergyButton = dynamic(
+    () => import('@/lib/components/commonComponents/FusionEnergyButton'),
+);
+
 import './whoWeAre.css';
 
 interface PROPS {}

@@ -1,12 +1,12 @@
 import React from 'react';
-import RootLayout from './layout';
 import Residential from '@/lib/components/mainComponents/Residential';
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+    title: 'Residential',
+    description: 'Residential',
+};
 const ResidentialPage = () => {
-    return (
-        <RootLayout>
-            <Residential />
-        </RootLayout>
-    );
+    return <Residential />;
 };
 
 export default ResidentialPage;

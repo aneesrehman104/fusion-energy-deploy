@@ -1,11 +1,6 @@
 'use client';
 import React from 'react';
-import {
-    TopBar,
-    Footer,
-    ContactForm,
-    Banner,
-} from '@/lib/components/layoutComponents';
+import { ContactForm, Banner } from '@/lib/components/layoutComponents';
 import BakerFields from './Surplus';
 import Gallery from './Gallery';
 import { iconsArray } from '@/utils/mock';
@@ -23,7 +18,6 @@ const Batteries: React.FC<PROPS> = () => {
     };
     return (
         <main id="BatteriesPage">
-            <TopBar />
             <Banner
                 backgroundImage={'/FusionEnergyBatteriesBG.svg'}
                 title={'Home Batteries'}
@@ -41,7 +35,6 @@ const Batteries: React.FC<PROPS> = () => {
                     subHeading=" CLICK HERE FOR OFFER DETAILS."
                 />
             </div>
-            <Footer />
         </main>
     );
 };

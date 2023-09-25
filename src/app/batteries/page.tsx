@@ -1,12 +1,12 @@
 import React from 'react';
-import RootLayout from './layout';
 import Batteries from '@/lib/components/mainComponents/Batteries';
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+    title: 'Batteries',
+    description: 'Batteries',
+};
 const BatteriesPage = () => {
-    return (
-        <RootLayout>
-            <Batteries />
-        </RootLayout>
-    );
+    return <Batteries />;
 };
 
 export default BatteriesPage;
