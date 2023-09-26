@@ -1,6 +1,6 @@
 import type { MenuProps } from 'antd';
 import React from 'react';
-import MenuItem from '../../commonComponents/MenuItem/MenuItem';
+import MenuItem from '../../commonComponents/MenuItem/MenuItem.component';
 type Props = {
     items: MenuProps['items'];
     mode: MenuProps['mode'];

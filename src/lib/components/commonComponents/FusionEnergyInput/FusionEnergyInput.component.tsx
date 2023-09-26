@@ -1,8 +1,8 @@
 import React from 'react';
 import { ConfigProvider, Input } from 'antd';
 import AntdStyledComponentsRegistry from '@/utils/AntdStyledComponentsRegistry';
-import styles from './FusionEnergyInput.module.css';
 import { FusionEnergyInputProps } from '@/lib/ts/interface';
+import styles from './FusionEnergyInput.module.css';
 
 const FusionEnergyInput: React.FC<FusionEnergyInputProps> = ({
     placeholder,

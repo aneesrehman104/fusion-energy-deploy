@@ -1,2 +1,2 @@
-import FusionEnergyButton from './fusionEnergyButton';
+import FusionEnergyButton from './fusionEnergyButton.component';
 export default FusionEnergyButton;

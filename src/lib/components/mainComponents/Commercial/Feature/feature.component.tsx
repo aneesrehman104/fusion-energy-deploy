@@ -18,12 +18,10 @@ const Feature: React.FC = () => {
             </div>
             <section className={styles.featureSection}>
                 <Row gutter={[25, 32]}>
-                    {commercialCards.map((item, index: number) => {
+                    {commercialCards.map((item) => {
                         return (
-                            <Col xs={24} lg={12}>
-                                <FusionEnergyCard
-                                    item={item}
-                                ></FusionEnergyCard>
+                            <Col xs={24} lg={12} key={item.id}>
+                                <FusionEnergyCard item={item} />
                             </Col>
                         );
                     })}

@@ -63,7 +63,6 @@ const FusionEnergyCarousel: React.FC<FusionEnergyCarouselProps> = ({
                                 dotPosition="bottom"
                                 dots={false}
                                 waitForAnimate
-                                // adaptiveHeight
                                 autoplay
                             >
                                 {items.map((_item, index) => (

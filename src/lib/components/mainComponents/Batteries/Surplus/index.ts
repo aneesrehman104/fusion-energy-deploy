@@ -1,2 +1,2 @@
-import Surplus from './surplus';
+import Surplus from './fusionEnergySurplus.component';
 export default Surplus;

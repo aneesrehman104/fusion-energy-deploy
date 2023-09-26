@@ -3,21 +3,20 @@ import React from 'react';
 import { Col, Row, Grid } from 'antd';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
 import Image from 'next/image';
-import './fusionEnergySurplus.css';
 import { Images } from '@/assets/image';
+import styles from './fusionEnergySurplus.module.css';
 const { useBreakpoint } = Grid;
 interface PROPS {}
 const Surplus: React.FC<PROPS> = () => {
     const screens = useBreakpoint();
-
     return (
-        <main className="fusionEnergyBakerFieldMain">
-            <section className="fusionEnergyBakerFieldMaainSection">
-                <p className="fusionEnergyBakerFieldTextStyle">
+        <main className={styles.fusionEnergyBakerFieldMain}>
+            <section className={styles.fusionEnergyBakerFieldMaainSection}>
+                <p className={styles.fusionEnergyBakerFieldTextStyle}>
                     PROCESS AND THE SOLUTIONS WE CAN PROVIDE
                 </p>
-                <hr className="fusionEnergyBakerFieldHrStyle" />
-                <h2 className="fusionEnergyBakerFieldTitle">
+                <hr className={styles.fusionEnergyBakerFieldHrStyle} />
+                <h2 className={styles.fusionEnergyBakerFieldTitle}>
                     STORE SURPLUS ENERGY WITH A
                 </h2>
             </section>
@@ -25,10 +24,16 @@ const Surplus: React.FC<PROPS> = () => {
                 <Row justify="space-around" align="middle">
                     <Col span={24} md={{ span: 10, order: 1 }}>
                         <div>
-                            <div className="fusionEnergySurplusSmallTitle">
+                            <div
+                                className={styles.fusionEnergySurplusSmallTitle}
+                            >
                                 Enphase IQ Battery When The Sun sets, it Shines
                             </div>
-                            <p className="fusionEnergyBakerFieldDescription">
+                            <p
+                                className={
+                                    styles.fusionEnergyBakerFieldDescription
+                                }
+                            >
                                 The price of electricity remains steady for
                                 standard electricity plans, utility companies
                                 are increasingly offering time-of-use plans,
@@ -78,10 +83,10 @@ const Surplus: React.FC<PROPS> = () => {
                         />
                     </Col>
                     <Col span={24} order={1} md={{ span: 10, order: 2 }}>
-                        <div className="fusionEnergySurplusSmallTitle">
+                        <div className={styles.fusionEnergySurplusSmallTitle}>
                             HOME Batteries
                         </div>
-                        <p className="fusionEnergyBakerFieldDescription">
+                        <p className={styles.fusionEnergyBakerFieldDescription}>
                             A home battery can store surplus energy generated
                             from rooftop photovoltaic panels for use when
                             needed. When the sun has set, energy demand is high,

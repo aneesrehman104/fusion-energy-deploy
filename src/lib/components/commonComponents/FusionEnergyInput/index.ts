@@ -1,2 +1,2 @@
-import FusionEnergyInput from './FusionEnergyInput';
+import FusionEnergyInput from './FusionEnergyInput.component';
 export default FusionEnergyInput;

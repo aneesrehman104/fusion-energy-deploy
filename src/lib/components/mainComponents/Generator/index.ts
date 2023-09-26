@@ -1,2 +1,2 @@
-import Generator from './Generator';
+import Generator from './Generator.component';
 export default Generator;

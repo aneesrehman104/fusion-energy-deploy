@@ -1,2 +1,2 @@
-import Commercial from './commercial';
+import Commercial from './commercial.component';
 export default Commercial;

@@ -1,2 +1,2 @@
-import FusionEnergyTextatea from './FusionEnergyTextatea';
+import FusionEnergyTextatea from './FusionEnergyTextatea.component';
 export default FusionEnergyTextatea;

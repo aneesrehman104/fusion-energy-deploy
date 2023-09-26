@@ -1,2 +1,2 @@
-import FusionEnergySelect from './FusionEnergySelect';
+import FusionEnergySelect from './FusionEnergySelect.component';
 export default FusionEnergySelect;

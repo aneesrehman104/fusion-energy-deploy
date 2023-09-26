@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Carousel, Col, Row } from 'antd';
+import { Carousel } from 'antd';
 import { CarouselRef } from 'antd/es/carousel';
 import { Images } from '@/assets/image';
 import { FusionEnergyGalleryProps } from '@/lib/ts/interface';
@@ -71,5 +71,3 @@ const FusionEnergyGallery: React.FC<FusionEnergyGalleryProps> = ({
 };
 
 export default FusionEnergyGallery;
-{
-}

@@ -1,49 +1,15 @@
 'use client';
-import React, { FC, useState } from 'react';
-import { FusionEnergyButton } from '@/lib/components/commonComponents';
-import { Images } from '@/assets/image';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import './Footer.css';
 import { Grid } from 'antd';
-
-const footerSections = [
-    {
-        title: 'Services',
-        items: [
-            { text: 'Solar', url: '/solar' },
-            { text: 'Artificial Turf', url: '/artificial-turf' },
-            { text: 'Home Batteries', url: '/home-batteries' },
-            { text: 'Generators', url: '/generators' },
-            { text: 'HVAC', url: '/hvac' },
-        ],
-    },
-    {
-        title: 'Links',
-        items: [
-            { text: 'About Us', url: '/about-us' },
-            { text: 'Testimonials', url: '/testimonials' },
-            { text: 'Gallery', url: '/gallery' },
-            { text: 'Career', url: '/career' },
-            { text: 'Contact Us', url: '/contact-us' },
-        ],
-    },
-    {
-        title: 'Address',
-        items: [
-            {
-                text: `Fuzion Energy 4003 Terracotta Ct Bakersfield, CA, 93314`,
-                url: '',
-            },
-            { text: 'Phone: 661-243-9934', url: '' },
-
-            { text: 'CSLB# 1025073, 1034083', url: '' },
-        ],
-    },
-];
+import { useRouter } from 'next/navigation';
+import { FusionEnergyButton } from '@/lib/components/commonComponents';
+import { footerSections } from '@/utils/mock';
+import { Images } from '@/assets/image';
+import styles from './Footer.module.css';
+interface PROPS {}
 const { useBreakpoint } = Grid;
 
-interface PROPS {}
 const Footer: React.FC<PROPS> = () => {
     const router = useRouter();
     const screens = useBreakpoint();
@@ -55,11 +21,17 @@ const Footer: React.FC<PROPS> = () => {
     };
     return (
         <div>
-            <section className="fusionEnergyFooterCenterStyle">
-                <div className="fusionEnergyFooterGreenWidth">
-                    <div className="fusionEnergyFooterGreenBackgroundImage">
-                        <div className="fusionEnergyFooterCardStyle">
-                            <div className="fusionEnergyFooterGreenTitle">
+            <section className={styles.fusionEnergyFooterCenterStyle}>
+                <div className={styles.fusionEnergyFooterGreenWidth}>
+                    <div
+                        className={
+                            styles.fusionEnergyFooterGreenBackgroundImage
+                        }
+                    >
+                        <div className={styles.fusionEnergyFooterCardStyle}>
+                            <div
+                                className={styles.fusionEnergyFooterGreenTitle}
+                            >
                                 Fastest & secure way to get clean, safe and
                                 renewable energy
                             </div>
@@ -68,10 +40,14 @@ const Footer: React.FC<PROPS> = () => {
                     </div>
                 </div>
             </section>
-            <section className="fusionEnergyFooterBackgroundImage">
+            <section className={styles.fusionEnergyFooterBackgroundImage}>
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <div className="fusionEnergyFooterGreenWidth fusionEnergyFooterPaddingTop">
-                        <div className="fusionEnergyFooterContainerStyle">
+                    <div
+                        className={`${styles.fusionEnergyFooterGreenWidth} ${styles.fusionEnergyFooterPaddingTop}`}
+                    >
+                        <div
+                            className={styles.fusionEnergyFooterContainerStyle}
+                        >
                             <Image
                                 src={Images.AppLogo}
                                 alt="fusion-energy-logo"
@@ -80,10 +56,14 @@ const Footer: React.FC<PROPS> = () => {
                             {footerSections.map((section, index) => (
                                 <div
                                     key={index}
-                                    className="fusionEnergyFooterInnerContainerStyle"
+                                    className={
+                                        styles.fusionEnergyFooterInnerContainerStyle
+                                    }
                                 >
                                     <div
-                                        className="fusionEnergyFooterTitles"
+                                        className={
+                                            styles.fusionEnergyFooterTitles
+                                        }
                                         onClick={() =>
                                             handleSectionClick(index)
                                         }
@@ -96,7 +76,9 @@ const Footer: React.FC<PROPS> = () => {
                                               (item, itemIndex) => (
                                                   <div
                                                       key={itemIndex}
-                                                      className="fusionEnergyFooterText"
+                                                      className={
+                                                          styles.fusionEnergyFooterText
+                                                      }
                                                       onClick={() =>
                                                           router.push(
                                                               item?.url || '/',
@@ -111,7 +93,9 @@ const Footer: React.FC<PROPS> = () => {
                                               (item, itemIndex) => (
                                                   <div
                                                       key={itemIndex}
-                                                      className="fusionEnergyFooterText"
+                                                      className={
+                                                          styles.fusionEnergyFooterText
+                                                      }
                                                       onClick={() =>
                                                           router.push(
                                                               item?.url || '/',
@@ -128,7 +112,7 @@ const Footer: React.FC<PROPS> = () => {
                     </div>
                 </div>
                 <section>
-                    <div className="fusionEnergyPoweredClass">
+                    <div className={styles.fusionEnergyPoweredClass}>
                         © 2023 Fuzion Energy | CSLB# 1025073, 1034083 | Powered
                         by Barton Marketing
                     </div>

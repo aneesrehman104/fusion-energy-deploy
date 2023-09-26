@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import FusionEnergyButton from '../FusionEnergyButton';
-import './fusionEnergyBackgroundImage.css';
+import styles from './fusionEnergyBackgroundImage.module.css';
 interface ImageCardProps {
     backgroundImage: any;
     title: string;
@@ -25,19 +25,21 @@ const FusionEnergyBackgroundImage: FC<ImageCardProps> = ({
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
                 }}
-                className="fusionEnergyBackgroundImage"
+                className={styles.fusionEnergyBackgroundImage}
                 key={key}
             >
                 <section>
-                    <h2 className="fusionEnergyBackgroundMainTitle">{title}</h2>
-                    <p className="fusionEnergyBackgroundDescription">
+                    <h2 className={styles.fusionEnergyBackgroundMainTitle}>
+                        {title}
+                    </h2>
+                    <p className={styles.fusionEnergyBackgroundDescription}>
                         Low-Cost Solar Panel Installation
                     </p>
-                    <p className="fusionEnergyBackgroundDescription">
+                    <p className={styles.fusionEnergyBackgroundDescription}>
                         Without Sacrificing Efficiency.....
                     </p>
                 </section>
-                <section className="fusionEnergyBackgroundImageButton">
+                <section className={styles.fusionEnergyBackgroundImageButton}>
                     <FusionEnergyButton label={button1Text} />
                     <FusionEnergyButton
                         label={button2Text}

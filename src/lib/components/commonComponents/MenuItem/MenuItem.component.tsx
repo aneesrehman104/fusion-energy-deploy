@@ -6,7 +6,7 @@ type Props = {
     mode: MenuProps['mode'];
 };
 
-export default function MenuItem({ items, mode }: Props) {
+const MenuItem: React.FC<Props> = ({ items, mode }: Props) => {
     return (
         <ConfigProvider
             theme={{
@@ -25,4 +25,6 @@ export default function MenuItem({ items, mode }: Props) {
             <Menu mode={mode} style={{ borderBottom: 'none' }} items={items} />
         </ConfigProvider>
     );
-}
+};
+
+export default MenuItem;

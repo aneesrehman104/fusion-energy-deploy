@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { Button } from 'antd';
 import { FusionEnergyButtonProps } from '@/lib/ts/interface';
-import './fusionEnergyButton.css';
+import styles from './fusionEnergyButton.module.css';
 
 const FusionEnergyButton: FC<FusionEnergyButtonProps> = ({
     type,
@@ -26,7 +26,7 @@ const FusionEnergyButton: FC<FusionEnergyButtonProps> = ({
             loading={loading}
             onClick={onClick}
             disabled={disabled}
-            className={className ? className : 'fusionEnergyButtonStyle'}
+            className={className ? className : styles.fusionEnergyButtonStyle}
             htmlType={htmlType}
             style={{
                 color,
