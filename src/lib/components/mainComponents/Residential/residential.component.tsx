@@ -1,9 +1,16 @@
 'use client';
 import React from 'react';
-import { ContactForm, Banner } from '@/lib/components/layoutComponents';
-import BakerFields from './BakerFields';
-import Gallery from './Gallery';
+import dynamic from 'next/dynamic';
 interface PROPS {}
+
+const Gallery = dynamic(() => import('./Gallery'));
+const BakerFields = dynamic(() => import('./BakerFields'));
+const ContactForm = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
+);
+const Banner = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.Banner),
+);
 
 const iconsArray = [
     {

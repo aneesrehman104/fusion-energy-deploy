@@ -1,20 +1,24 @@
 'use client';
 import React from 'react';
 import dynamic from 'next/dynamic';
-import { iconsArray } from '@/utils/mock';
+import { galleryArray, iconsArray } from '@/utils/mock';
 
+const BakerFields = dynamic(() => import('./BakerFields'));
 const ContactForm = dynamic(() =>
     import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
 );
 const Banner = dynamic(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Banner),
 );
-const Gallery = dynamic(() => import('./Gallery'));
-const Feature = dynamic(() => import('./Gallery'));
+const FusionEnergyGallery = dynamic(() =>
+    import('@/lib/components/commonComponents').then(
+        (m) => m.FusionEnergyGallery,
+    ),
+);
 
-const Commercial = () => {
+const Turf: React.FC = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
-    const onClickHandle = () => {
+    const onClickHandle = (): void => {
         if (contactRef.current) {
             contactRef.current.scrollIntoView({
                 behavior: 'smooth',
@@ -22,20 +26,24 @@ const Commercial = () => {
             });
         }
     };
-
     return (
-        <main id="CommercialPage">
+        <main id="TurfPage">
             <Banner
-                backgroundImage="/FuzionEnergyCommercailBG.svg"
-                title="Commercial"
-                description="YOUR COMMERCIAL SOLAR PARTNERS"
+                backgroundImage={'/FuzionEnergyTurf.svg'}
+                title={'Turf- Landscape the Efficiency'}
+                description={'Looking for low-cost Turf Landscape Installation'}
                 iconsArray={iconsArray}
                 showButton
-                onClick={onClickHandle}
                 labelBtn="Buy Now"
+                onClick={onClickHandle}
             />
-            <Feature />
-            <Gallery />
+            <BakerFields />
+            <section>
+                <FusionEnergyGallery
+                    items={galleryArray}
+                    label="Turf Gallery"
+                />
+            </section>
             <div ref={contactRef}>
                 <ContactForm
                     title="Efficiency Is The Future"
@@ -46,4 +54,4 @@ const Commercial = () => {
     );
 };
 
-export default Commercial;
+export default Turf;

@@ -1,2 +1,2 @@
-import WhoWeAre from './whoWeAre';
+import WhoWeAre from './whoWeAre.component';
 export default WhoWeAre;

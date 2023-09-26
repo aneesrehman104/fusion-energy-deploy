@@ -6,21 +6,23 @@ const FusionEnergyButton = dynamic(
     () => import('@/lib/components/commonComponents/FusionEnergyButton'),
 );
 
-import './whoWeAre.css';
+import styles from './whoWeAre.module.css';
 
 interface PROPS {}
 const WhoWeAre: React.FC<PROPS> = () => {
     return (
-        <section className="fusionEnergyWhoWeAreBackgroundImage">
-            <div className="fusionEnergWhoWeAreSpaceAround">
-                <section className="fusionEnergWhoWeAreInnerWidth">
-                    <p className="fusionEnergyGreenDescription">WHO WE ARE</p>
-                    <h2 className="fusionEnergyWhoWeAreMainTitle">
+        <section className={styles.fusionEnergyWhoWeAreBackgroundImage}>
+            <div className={styles.fusionEnergWhoWeAreSpaceAround}>
+                <section className={styles.fusionEnergWhoWeAreInnerWidth}>
+                    <p className={styles.fusionEnergyGreenDescription}>
+                        WHO WE ARE
+                    </p>
+                    <h2 className={styles.fusionEnergyWhoWeAreMainTitle}>
                         YOUR ONE STOP SHOP FOR ENERGY EFFICIENT HOME
                         IMPROVEMENTS
                     </h2>
                     <p
-                        className="fusionEnergyBackgroundDescription"
+                        className={styles.fusionEnergyBackgroundDescription}
                         style={{ width: '70%' }}
                     >
                         Fuzion Energy aims to be your one-stop-shop for
@@ -28,7 +30,7 @@ const WhoWeAre: React.FC<PROPS> = () => {
                         artificial turf, solar, or heating and air.
                     </p>
                 </section>
-                <section className="fusionEnergyWhoWeAreCenter">
+                <section className={styles.fusionEnergyWhoWeAreCenter}>
                     <FusionEnergyButton label="Learn More" />
                 </section>
             </div>

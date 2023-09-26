@@ -1,14 +1,15 @@
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Row, Col, Grid, Drawer, MenuProps } from 'antd';
+import Link from 'next/link';
+import { Row, Col, Grid, Drawer } from 'antd';
+import type { MenuProps } from 'antd';
 import { FusionEnergyButton } from '../../commonComponents';
 import { Images } from '@/assets/image';
 import { MenuOutlined } from '@ant-design/icons';
 import NavbarItem from '../NavbarItem/NavbarItem.component';
-import styles from './Navbar.module.css';
 import ExpandMenu from '../ExpandMenu';
-import Link from 'next/link';
+import styles from './Navbar.module.css';
 
 const { useBreakpoint } = Grid;
 

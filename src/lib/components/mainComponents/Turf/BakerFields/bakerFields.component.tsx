@@ -1,14 +1,9 @@
 import React from 'react';
-import styles from './bakerFields.module.css';
-import { Col, Row, Grid } from 'antd';
+import { Col, Row } from 'antd';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
-import Image from 'next/image';
-import { Images } from '@/assets/image';
-
-const { useBreakpoint } = Grid;
+import styles from './bakerFields.module.css';
 
 const BakerFields = () => {
-    const screens = useBreakpoint();
     return (
         <main className={styles.bakerFieldsContainer}>
             <section className={styles.bakerFieldsHeadingWrapper}>
@@ -17,7 +12,7 @@ const BakerFields = () => {
                 </p>
                 <hr className={styles.bakerFieldsLine} />
                 <h2 className={styles.bakerFieldsTitle}>
-                    FURTHERING YOUR HOME'S ABILITY TO BE ENERGY EFFICIENT
+                    FURTHERING YOUR HOME&apos;S ABILITY TO BE ENERGY EFFICIENT
                 </h2>
             </section>
             <section>

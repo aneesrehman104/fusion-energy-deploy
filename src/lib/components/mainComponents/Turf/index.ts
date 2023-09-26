@@ -1,2 +1,2 @@
-import Turf from './Turf';
+import Turf from './Turf.component';
 export default Turf;

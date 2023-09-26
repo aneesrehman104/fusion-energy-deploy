@@ -1,9 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import { IconsType, BannerProps } from '@/lib/ts/interface';
-import Navbar from '../Navbar';
-import { FusionEnergyButton } from '../../commonComponents';
 import styles from './Banner.module.css';
+
+const Navbar = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.Navbar),
+);
+const FusionEnergyButton = dynamic(() =>
+    import('@/lib/components/commonComponents').then(
+        (m) => m.FusionEnergyButton,
+    ),
+);
 
 const Banner: React.FC<BannerProps> = ({
     iconsArray,

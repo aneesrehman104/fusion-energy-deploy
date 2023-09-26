@@ -7,15 +7,15 @@ const Gallery: React.FC<PROPS> = () => {
     const iconsArray = [
         {
             image: Images.FuzionBatteries,
-            name: 'Dollar',
+            name: 'Dollar1',
         },
         {
             image: Images.FuzionBatteries,
-            name: 'Dollar',
+            name: 'Dollar2',
         },
         {
             image: Images.FuzionBatteries,
-            name: 'Dollar',
+            name: 'Dollar3',
         },
     ];
     return (

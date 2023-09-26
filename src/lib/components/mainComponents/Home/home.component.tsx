@@ -1,15 +1,15 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import { testimonials, staticHeading } from '@/utils/mock';
 
-// Lazy-loaded components
 const FinedOut = dynamic(() => import('./FinedOut'));
 const LowCost = dynamic(() => import('./LowCostComponets'));
 const WhoWeAre = dynamic(() => import('./WhoWeAre'));
-const FusionEnergyCarousel = dynamic(
-    () => import('@/lib/components/commonComponents/FusionEnergyCarousel'),
+const FusionEnergyCarousel = dynamic(() =>
+    import('@/lib/components/commonComponents').then(
+        (m) => m.FusionEnergyCarousel,
+    ),
 );
-
-import { testimonials, staticHeading } from '@/utils/mock';
 
 interface PROPS {}
 

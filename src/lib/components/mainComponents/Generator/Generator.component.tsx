@@ -1,9 +1,20 @@
 'use client';
 import React from 'react';
-import { Banner, ContactForm } from '@/lib/components/layoutComponents';
 import { iconsArray, galleryArray } from '@/utils/mock';
-import { FusionEnergyGallery } from '@/lib/components/commonComponents';
-import BakerFields from './BakerFields';
+import dynamic from 'next/dynamic';
+const BakerFields = dynamic(() => import('./BakerFields'));
+const FusionEnergyGallery = dynamic(() =>
+    import('@/lib/components/commonComponents').then(
+        (m) => m.FusionEnergyGallery,
+    ),
+);
+const ContactForm = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
+);
+const Banner = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.Banner),
+);
+
 
 const Generator = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);

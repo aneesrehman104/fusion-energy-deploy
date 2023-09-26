@@ -1,11 +1,18 @@
 'use client';
 import React from 'react';
-import { Banner, ContactForm } from '@/lib/components/layoutComponents';
-import { galleryArray, iconsArray } from '@/utils/mock';
-import { FusionEnergyGallery } from '@/lib/components/commonComponents';
-import BakerFields from './BakerFields';
+import { iconsArray } from '@/utils/mock';
+import dynamic from 'next/dynamic';
 
-const Turf = () => {
+const BakerFields = dynamic(() => import('./BakerFields'));
+const Gallery = dynamic(() => import('./Gallery'));
+const ContactForm = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
+);
+const Banner = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.Banner),
+);
+
+const HVAC = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
     const onClickHandle = () => {
         if (contactRef.current) {
@@ -16,23 +23,18 @@ const Turf = () => {
         }
     };
     return (
-        <main id="TurfPage">
+        <main id="HVAC">
             <Banner
-                backgroundImage={'/FuzionEnergyTurf.svg'}
-                title={'Turf- Landscape the Efficiency'}
-                description={'Looking for low-cost Turf Landscape Installation'}
+                backgroundImage={'/FuzionEnergyHvacBG.svg'}
+                title={'HVAC- Beat the Heat'}
+                description={'Looking for low-cost HVAC Installation'}
                 iconsArray={iconsArray}
                 showButton
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
             <BakerFields />
-            <section>
-                <FusionEnergyGallery
-                    items={galleryArray}
-                    label="Turf Gallery"
-                />
-            </section>
+            <Gallery />
             <div ref={contactRef}>
                 <ContactForm
                     title="Efficiency Is The Future"
@@ -43,4 +45,4 @@ const Turf = () => {
     );
 };
 
-export default Turf;
+export default HVAC;

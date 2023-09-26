@@ -1,10 +1,16 @@
 'use client';
 import React from 'react';
-import { ContactForm, Banner } from '@/lib/components/layoutComponents';
-import BakerFields from './Surplus';
-import Gallery from './Gallery';
+import dynamic from 'next/dynamic';
 import { iconsArray } from '@/utils/mock';
 interface PROPS {}
+const ContactForm = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
+);
+const Banner = dynamic(() =>
+    import('@/lib/components/layoutComponents').then((m) => m.Banner),
+);
+const Gallery = dynamic(() => import('./Gallery'));
+const BakerFields = dynamic(() => import('./Surplus'));
 
 const Batteries: React.FC<PROPS> = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);

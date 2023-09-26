@@ -1,2 +1,2 @@
-import BakerFields from './bakerFields';
+import BakerFields from './bakerFields.component';
 export default BakerFields;

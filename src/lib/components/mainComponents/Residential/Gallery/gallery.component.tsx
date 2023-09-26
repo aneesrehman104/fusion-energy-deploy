@@ -7,11 +7,11 @@ const Gallery: React.FC<PROPS> = () => {
     const iconsArray = [
         {
             image: Images.FuzionBatteries,
-            name: 'FuzionBatteries',
+            name: 'Images.FuzionBatteries',
         },
         {
             image: Images.FuzionBatteries,
-            name: 'FuzionBatteries',
+            name: 'Images.FuzionBatteries',
         },
         {
             image: Images.FuzionBatteries,

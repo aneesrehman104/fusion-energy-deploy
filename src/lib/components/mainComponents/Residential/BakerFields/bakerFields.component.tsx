@@ -3,20 +3,20 @@ import React from 'react';
 import { Col, Row, Grid } from 'antd';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
 import Image from 'next/image';
-import './fusionEnergyBakerFields.css';
+import styles from './fusionEnergyBakerFields.module.css';
 const { useBreakpoint } = Grid;
 interface PROPS {}
 const BakerFields: React.FC<PROPS> = () => {
     const screens = useBreakpoint();
 
     return (
-        <main className="fusionEnergyBakerFieldMain">
-            <section className="fusionEnergyBakerFieldMaainSection">
-                <p className="fusionEnergyBakerFieldTextStyle">
+        <main className={styles.fusionEnergyBakerFieldMain}>
+            <section className={styles.fusionEnergyBakerFieldMaainSection}>
+                <p className={styles.fusionEnergyBakerFieldTextStyle}>
                     PROCESS AND THE SOLUTIONS WE CAN PROVIDE
                 </p>
-                <hr className="fusionEnergyBakerFieldHrStyle" />
-                <h2 className="fusionEnergyBakerFieldTitle">
+                <hr className={styles.fusionEnergyBakerFieldHrStyle} />
+                <h2 className={styles.fusionEnergyBakerFieldTitle}>
                     BAKERSFIELDS MOST AFFORDABLE SOLAR PANELS
                 </h2>
             </section>
@@ -24,10 +24,18 @@ const BakerFields: React.FC<PROPS> = () => {
                 <Row justify="space-around" align="middle">
                     <Col span={24} md={{ span: 10, order: 1 }}>
                         <div>
-                            <div className="fusionEnergyBakerFieldSmallTitle">
+                            <div
+                                className={
+                                    styles.fusionEnergyBakerFieldSmallTitle
+                                }
+                            >
                                 SOLAR FOR YOUR HOME
                             </div>
-                            <p className="fusionEnergyBakerFieldDescription">
+                            <p
+                                className={
+                                    styles.fusionEnergyBakerFieldDescription
+                                }
+                            >
                                 Looking for low-cost solar panel installation
                                 without sacrificing efficiency and quality? When
                                 it comes to making the choice on which panels to
@@ -63,10 +71,12 @@ const BakerFields: React.FC<PROPS> = () => {
                         />
                     </Col>
                     <Col span={24} order={1} md={{ span: 10, order: 2 }}>
-                        <div className="fusionEnergyBakerFieldSmallTitle">
+                        <div
+                            className={styles.fusionEnergyBakerFieldSmallTitle}
+                        >
                             Fuzion Home Services
                         </div>
-                        <p className="fusionEnergyBakerFieldDescription">
+                        <p className={styles.fusionEnergyBakerFieldDescription}>
                             Fuzion Home Services holds three important licenses:
                             a C-10 Electrician license, a C-20 HVAC license, and
                             a General B Contractor License. These let us take

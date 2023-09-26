@@ -1,5 +1,6 @@
-import Home from '@/lib/components/mainComponents/Home';
 import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
+const Home = dynamic(() => import('@/lib/components/mainComponents/Home'));
 export const metadata: Metadata = {
     title: 'Home',
     description: 'Home',
