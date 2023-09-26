@@ -286,8 +286,8 @@ export const footerSections = [
     {
         title: 'Links',
         items: [
-            { text: 'About Us', url: '/about-us' },
-            { text: 'Testimonials', url: '/testimonials' },
+            { text: 'About Us', url: '/about' },
+            { text: 'Testimonials', url: '/testimonial' },
             { text: 'Gallery', url: '/gallery' },
             { text: 'Career', url: '/career' },
             { text: 'Contact Us', url: '/contact-us' },

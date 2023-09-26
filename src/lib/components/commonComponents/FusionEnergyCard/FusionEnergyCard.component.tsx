@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { Card, Rate } from 'antd';
 import { FusionEnergyCardProps } from '@/lib/ts/interface';

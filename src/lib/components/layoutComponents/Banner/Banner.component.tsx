@@ -24,12 +24,14 @@ const Banner: React.FC<BannerProps> = ({
     labelBtn,
     onClick,
     showPartner = false,
+    height = null,
 }) => {
     return (
         <section
             className={styles.fusionEnergyBannerBackgroundImage}
             style={{
                 backgroundImage: `url(${backgroundImage})`,
+                height: height ?? '100vh',
             }}
         >
             <Navbar />
