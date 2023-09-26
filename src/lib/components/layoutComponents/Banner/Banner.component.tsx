@@ -2,7 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import { IconsType, BannerProps } from '@/lib/ts/interface';
+import { Images } from '@/assets/image';
 import styles from './Banner.module.css';
+import { Col, Row } from 'antd';
 
 const Navbar = dynamic(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Navbar),
@@ -21,6 +23,7 @@ const Banner: React.FC<BannerProps> = ({
     showButton = false,
     labelBtn,
     onClick,
+    showPartner = false,
 }) => {
     return (
         <section
@@ -66,6 +69,29 @@ const Banner: React.FC<BannerProps> = ({
                             label={labelBtn}
                             onClick={onClick}
                         />
+                    )}
+
+                    {showPartner && (
+                        <div className={styles.partnerWrapper}>
+                            <div className={styles.partnerWrapperInner}>
+                                <Image
+                                    src={Images.PanasonicSolarLogo}
+                                    alt="PanasonicSolarLogo"
+                                />
+
+                                <Image
+                                    src={Images.SolarEdgeLogo}
+                                    alt="SolarEdgeLogo"
+                                />
+
+                                <Image src={Images.YorkLogo} alt="YorkLogo" />
+
+                                <Image
+                                    src={Images.EnphaseImage}
+                                    alt="EnphaseImage"
+                                />
+                            </div>
+                        </div>
                     )}
                 </section>
             </div>

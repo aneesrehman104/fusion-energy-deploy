@@ -75,6 +75,7 @@ export interface BannerProps {
     title: string;
     description: string;
     showButton?: boolean;
+    showPartner?: boolean;
     labelBtn?: string;
     onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }

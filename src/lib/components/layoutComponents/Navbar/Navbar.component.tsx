@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Row, Col, Grid, Drawer } from 'antd';
 import type { MenuProps } from 'antd';
 import { FusionEnergyButton } from '../../commonComponents';
@@ -15,6 +16,7 @@ const { useBreakpoint } = Grid;
 
 export default function Navbar() {
     const screens = useBreakpoint();
+    const router = useRouter();
 
     const [isOpenDrawer, setIsOpenDrawer] = useState<boolean>(false);
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
@@ -29,9 +31,12 @@ export default function Navbar() {
         },
         {
             label: 'Why Fuzion',
-            key: 'why_fuzion',
+            key: 'about',
             onMouseEnter: function () {
                 setIsExpanded(false);
+            },
+            onClick: function (e) {
+                router.push(e.key);
             },
         },
         {
