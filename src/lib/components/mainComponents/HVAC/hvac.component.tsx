@@ -26,7 +26,7 @@ const HVAC = () => {
     return (
         <main id="HVAC">
             <Banner
-                backgroundImage={'/FuzionEnergyHvacBG.svg'}
+                backgroundImage={'/FuzionEnergyHvacBG.png'}
                 title={'HVAC- Beat the Heat'}
                 description={'Looking for low-cost HVAC Installation'}
                 iconsArray={iconsArray}

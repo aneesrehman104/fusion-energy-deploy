@@ -15,7 +15,7 @@ const About: React.FC = () => {
     return (
         <main id="AboutPage">
             <Banner
-                backgroundImage={'/FuzionEnergyAboutBg.svg'}
+                backgroundImage={'/FuzionEnergyAboutBg.png'}
                 title={'About Us'}
                 description={
                     'Fuzion Energy Helps your home become a smart energy efficient'

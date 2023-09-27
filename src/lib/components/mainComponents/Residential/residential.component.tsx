@@ -47,7 +47,7 @@ const Residential: React.FC<PROPS> = () => {
     return (
         <>
             <Banner
-                backgroundImage="/FusionEnergyResidentialBG.svg"
+                backgroundImage="/FusionEnergyResidentialBG.png"
                 iconsArray={iconsArray}
                 title={'Residential'}
                 showButton

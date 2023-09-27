@@ -29,7 +29,7 @@ const Generator = () => {
     return (
         <section id="GeneratorPage">
             <Banner
-                backgroundImage={'/FuzionEnergyGeneratorBG.svg'}
+                backgroundImage={'/FuzionEnergyGeneratorBG.png'}
                 title={'Generators'}
                 description={'Looking for low-cost Generators Installation'}
                 iconsArray={iconsArray}

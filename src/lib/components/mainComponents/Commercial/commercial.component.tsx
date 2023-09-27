@@ -26,7 +26,7 @@ const Commercial = () => {
     return (
         <main id="CommercialPage">
             <Banner
-                backgroundImage="/FuzionEnergyCommercailBG.svg"
+                backgroundImage="/FuzionEnergyCommercailBG.png"
                 title="Commercial"
                 description="YOUR COMMERCIAL SOLAR PARTNERS"
                 iconsArray={iconsArray}

@@ -25,7 +25,7 @@ const Batteries: React.FC<PROPS> = () => {
     return (
         <main id="BatteriesPage">
             <Banner
-                backgroundImage={'/FusionEnergyBatteriesBG.svg'}
+                backgroundImage={'/FusionEnergyBatteriesBG.png'}
                 title={'Home Batteries'}
                 description={'Looking for low-cost solar panel installation'}
                 iconsArray={iconsArray}
