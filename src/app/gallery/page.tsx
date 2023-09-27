@@ -7,6 +7,7 @@ const Gallery = dynamic(
 
 export const metadata: Metadata = {
     title: 'Gallery',
+    description: 'Gallery',
 };
 
 const GalleryPage: React.FC = () => {
