@@ -1,2 +1,2 @@
-import LowCostComponets from './lowCostComponets';
+import LowCostComponets from './lowCostComponets.component';
 export default LowCostComponets;

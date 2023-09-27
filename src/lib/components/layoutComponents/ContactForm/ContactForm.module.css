@@ -1,0 +1,33 @@
+.contactFormContainer {
+    background-image: url('/contactForm.svg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contactFormWrapper {
+    padding: 3rem 0rem;
+}
+
+.contactFormHeading {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contactFormSubHeading {
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.53125rem; /* 122.5% */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}

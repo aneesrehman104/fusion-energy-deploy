@@ -1,2 +1,2 @@
-import FusionEnergyCarousel from './FusionEnergyCarousel';
+import FusionEnergyCarousel from './FusionEnergyCarousel.component';
 export default FusionEnergyCarousel;

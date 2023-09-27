@@ -1,2 +1,2 @@
-import FusionEnergyCard from './FusionEnergyCard';
+import FusionEnergyCard from './FusionEnergyCard.component';
 export default FusionEnergyCard;

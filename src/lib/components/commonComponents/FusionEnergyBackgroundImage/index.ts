@@ -1,2 +1,2 @@
-import FusionEnergyBackgroundImage from './FusionEnergyBackgroundImage';
+import FusionEnergyBackgroundImage from './FusionEnergyBackgroundImage.component';
 export default FusionEnergyBackgroundImage;

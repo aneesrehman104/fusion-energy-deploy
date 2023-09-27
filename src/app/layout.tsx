@@ -1,19 +1,26 @@
-import type { Metadata } from 'next';
+import React from 'react';
+import { TopBar, Footer } from '@/lib/components/layoutComponents';
+import { DM_Sans } from 'next/font/google';
 import './globals.css';
-
-export const metadata: Metadata = {
-    title: 'Fusion Energy',
-    description: 'Fusion Energy',
-};
-
-export default function RootLayout({
-    children,
-}: {
+const DMSans = DM_Sans({ subsets: ['latin'] });
+export const RootLayout: React.FC<{
     children: React.ReactNode;
-}) {
+}> = ({ children }) => {
     return (
-        <html lang="en">
-            <body>{children}</body>
+        <html>
+            <body className={DMSans.className}>
+                <>
+                    <section>
+                        <TopBar />
+                    </section>
+                    {children}
+                    <section>
+                        <Footer />
+                    </section>
+                </>
+            </body>
         </html>
     );
-}
+};
+
+export default RootLayout;

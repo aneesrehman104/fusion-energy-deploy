@@ -1,18 +1,11 @@
-import RootLayout from './layout';
-import Navbar from '@/lib/components/layoutComponents/Navbar/Navbar';
-import TopBar from '@/lib/components/layoutComponents/Topbar/Topbar';
-
+import { Metadata } from 'next';
+import dynamic from 'next/dynamic';
+const Home = dynamic(() => import('@/lib/components/mainComponents/Home'));
+export const metadata: Metadata = {
+    title: 'Home',
+    description: 'Home',
+};
 const MainPage = () => {
-    return (
-        <RootLayout>
-            <main id="mainPage">
-                <TopBar />
-                <Navbar />
-                <section className="sectionMain">
-                    <div>Main Page </div>
-                </section>
-            </main>
-        </RootLayout>
-    );
+    return <Home />;
 };
 export default MainPage;

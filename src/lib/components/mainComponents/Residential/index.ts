@@ -1,2 +1,2 @@
-import Residential from './residential';
+import Residential from './residential.component';
 export default Residential;
