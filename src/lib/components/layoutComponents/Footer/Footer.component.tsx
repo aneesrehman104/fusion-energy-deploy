@@ -51,6 +51,7 @@ const Footer: React.FC<PROPS> = () => {
                             <Image
                                 src={Images.AppLogo}
                                 alt="fusion-energy-logo"
+                                loading="eager"
                             />
 
                             {footerSections.map((section, index) => (

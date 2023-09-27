@@ -206,6 +206,7 @@ export default function Navbar() {
                             <Image
                                 src={Images.AppLogo}
                                 alt="fusion-energy-logo"
+                                loading="eager"
                             />
                         </Col>
                         <Col>
@@ -224,6 +225,7 @@ export default function Navbar() {
                                 <Image
                                     src={Images.AppLogo}
                                     alt="fusion-energy-logo"
+                                    loading="eager"
                                 />
                             </Link>
                         </Col>

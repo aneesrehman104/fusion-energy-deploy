@@ -2,14 +2,15 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { testimonials, staticHeading } from '@/utils/mock';
+import { BannerProps, FusionEnergyCarouselProps } from '@/lib/ts/interface';
 const LowCost = dynamic(() => import('./LowCostComponets'));
 const WhoWeAre = dynamic(() => import('./WhoWeAre'));
-const FusionEnergyCarousel = dynamic(() =>
+const FusionEnergyCarousel = dynamic<FusionEnergyCarouselProps>(() =>
     import('@/lib/components/commonComponents').then(
         (m) => m.FusionEnergyCarousel,
     ),
 );
-const Banner = dynamic(() =>
+const Banner = dynamic<BannerProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Banner),
 );
 

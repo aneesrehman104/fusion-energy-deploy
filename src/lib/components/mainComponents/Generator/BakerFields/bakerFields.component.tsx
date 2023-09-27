@@ -55,6 +55,7 @@ const BakerFields = () => {
                                 alt="GeneratorContentImage"
                                 width={screens.md ? 550 : 350}
                                 height={370}
+                                loading="eager"
                             />
                         </div>
                     </Col>

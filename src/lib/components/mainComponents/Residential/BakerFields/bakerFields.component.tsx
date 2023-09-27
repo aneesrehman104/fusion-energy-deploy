@@ -55,6 +55,7 @@ const BakerFields: React.FC<PROPS> = () => {
                             alt="HomeService"
                             width={screens.md ? 550 : 350}
                             height={370}
+                            loading="eager"
                         />
                     </Col>
                 </Row>
@@ -68,6 +69,7 @@ const BakerFields: React.FC<PROPS> = () => {
                             alt="HomeService"
                             width={screens.md ? 550 : 350}
                             height={370}
+                            loading="eager"
                         />
                     </Col>
                     <Col span={24} order={1} md={{ span: 10, order: 2 }}>

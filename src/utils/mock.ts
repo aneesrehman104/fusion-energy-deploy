@@ -78,7 +78,7 @@ export const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergySolarPanelBG.svg',
+        backgroundImage: '/FusionEnergySolarPanelBG.png',
     },
     {
         title: 'Home Batteries',
@@ -86,7 +86,7 @@ export const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergyHomeBatteryBG.svg',
+        backgroundImage: '/FusionEnergyHomeBatteryBG.png',
     },
     {
         title: 'Artificial Turf',
@@ -94,7 +94,7 @@ export const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergyArtificalTurfBG.svg',
+        backgroundImage: '/FusionEnergyArtificalTurfBG.png',
     },
 ];
 

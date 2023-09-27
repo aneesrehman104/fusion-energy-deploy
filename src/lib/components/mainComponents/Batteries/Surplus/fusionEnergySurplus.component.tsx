@@ -53,10 +53,12 @@ const Surplus: React.FC<PROPS> = () => {
                                 <Image
                                     src={Images.FuzionColorLogo}
                                     alt="Fuzion Energy"
+                                    loading="eager"
                                 />
                                 <Image
                                     src={Images.EnphaseImage}
                                     alt="Enphase"
+                                    loading="eager"
                                 />
                             </div>
                         </div>
@@ -67,6 +69,7 @@ const Surplus: React.FC<PROPS> = () => {
                             alt="HomeService"
                             width={screens.md ? 550 : 350}
                             height={370}
+                            loading="eager"
                         />
                     </Col>
                 </Row>
@@ -80,6 +83,7 @@ const Surplus: React.FC<PROPS> = () => {
                             alt="HomeService"
                             width={screens.md ? 550 : 350}
                             height={370}
+                            loading="eager"
                         />
                     </Col>
                     <Col span={24} order={1} md={{ span: 10, order: 2 }}>

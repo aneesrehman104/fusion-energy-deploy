@@ -60,7 +60,7 @@ export interface FusionEnergyInputProps {
     name: string;
     value: string | number;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-};
+}
 
 export interface IconsType {
     icon: string;
@@ -83,4 +83,9 @@ export interface BannerProps {
 
 export interface RootLayoutProps {
     children: React.ReactNode;
+}
+
+export interface ContactFormProps {
+    title: string;
+    subHeading?: string;
 }

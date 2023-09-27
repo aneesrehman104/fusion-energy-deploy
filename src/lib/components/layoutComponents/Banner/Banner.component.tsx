@@ -54,6 +54,7 @@ const Banner: React.FC<BannerProps> = ({
                                             alt={item.icon}
                                             height={item.iconHeight}
                                             width={item.iconWidth}
+                                            loading="eager"
                                         />
                                         <div
                                             className={
@@ -79,18 +80,25 @@ const Banner: React.FC<BannerProps> = ({
                                 <Image
                                     src={Images.PanasonicSolarLogo}
                                     alt="PanasonicSolarLogo"
+                                    loading="eager"
                                 />
 
                                 <Image
                                     src={Images.SolarEdgeLogo}
                                     alt="SolarEdgeLogo"
+                                    loading="eager"
                                 />
 
-                                <Image src={Images.YorkLogo} alt="YorkLogo" />
+                                <Image
+                                    src={Images.YorkLogo}
+                                    alt="YorkLogo"
+                                    loading="eager"
+                                />
 
                                 <Image
                                     src={Images.EnphaseImage}
                                     alt="EnphaseImage"
+                                    loading="eager"
                                 />
                             </div>
                         </div>

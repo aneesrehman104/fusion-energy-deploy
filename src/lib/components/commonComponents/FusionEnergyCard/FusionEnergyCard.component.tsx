@@ -13,7 +13,7 @@ const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
     return (
         <Card
             className={
-                item.rating
+                item?.rating
                     ? styles.fusionEnergyCardWithHeight
                     : styles.fusionEnergyCard
             }
@@ -23,6 +23,7 @@ const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
                     src={item.image}
                     className={styles.fusionEnergyCardProfile}
                     alt={item.name}
+                    loading="eager"
                 />
                 <h1 className={styles.fusionEnergyCardProfileName}>
                     {item.name}
