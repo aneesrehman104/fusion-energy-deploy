@@ -29,12 +29,12 @@ const Home: React.FC<PROPS> = () => {
         <>
             <Banner
                 backgroundImage="/FusionEnergyEfficiencyBG.svg"
-                iconsArray={[]}
                 title={'Efficiency Is The Future'}
                 showButton
                 description={' Contact us today to take advantage'}
                 labelBtn={'Find Out How'}
                 onClick={onClickHandle}
+                height={'100vh'}
             />
             <LowCost />
             <WhoWeAre />

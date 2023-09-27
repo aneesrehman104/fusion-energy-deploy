@@ -52,8 +52,9 @@
 }
 
 .menuCardHeading {
-    text-align:center;
+    text-align: center;
     font-size: 20px;
+    font-weight: 500;
     line-height: 0;
     color: #000
 }

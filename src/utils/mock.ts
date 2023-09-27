@@ -1,5 +1,6 @@
 import { Images } from '@/assets/image';
 import { generateRandomNumber } from './helper';
+import { MenuProps } from 'antd';
 
 const dummypara = `Lorem ipsum dolor sit amet consectetur, adipisicing
 elit. Quia, labore! Laudantium consequatur sint
@@ -276,11 +277,11 @@ export const footerSections = [
     {
         title: 'Services',
         items: [
-            { text: 'Solar', url: '/solar' },
-            { text: 'Artificial Turf', url: '/artificial-turf' },
-            { text: 'Home Batteries', url: '/home-batteries' },
-            { text: 'Generators', url: '/generators' },
-            { text: 'HVAC', url: '/hvac' },
+            { text: 'Solar', url: '/service/residential' },
+            { text: 'Artificial Turf', url: '/service/turf' },
+            { text: 'Home Batteries', url: '/service/batteries' },
+            { text: 'Generators', url: '/service/generator' },
+            { text: 'HVAC', url: '/service/hvac' },
         ],
     },
     {
@@ -290,7 +291,7 @@ export const footerSections = [
             { text: 'Testimonials', url: '/testimonial' },
             { text: 'Gallery', url: '/gallery' },
             { text: 'Career', url: '/career' },
-            { text: 'Contact Us', url: '/contact-us' },
+            { text: 'Contact Us', url: '/contact_us' },
         ],
     },
     {

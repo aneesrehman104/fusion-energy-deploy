@@ -4,9 +4,10 @@ import type { MenuProps } from 'antd';
 type Props = {
     items: MenuProps['items'];
     mode: MenuProps['mode'];
+    current: string;
 };
 
-const MenuItem: React.FC<Props> = ({ items, mode }: Props) => {
+const MenuItem: React.FC<Props> = ({ current, items, mode }: Props) => {
     return (
         <ConfigProvider
             theme={{
@@ -14,15 +15,26 @@ const MenuItem: React.FC<Props> = ({ items, mode }: Props) => {
                     Menu: {
                         itemBg: '',
                         itemColor: mode === 'horizontal' ? '#fff' : '#000',
-                        itemHoverColor: '#fff',
-                        horizontalItemSelectedColor: '#fff',
-                        horizontalItemHoverColor: '#fff',
+                        itemSelectedColor:
+                            mode === 'horizontal' ? '#fff' : '#000',
+                        itemSelectedBg: '#fff',
+                        itemHoverColor: mode === 'horizontal' ? '#fff' : '#000',
+                        horizontalItemSelectedColor:
+                            mode === 'horizontal' ? '#fff' : '#000',
+                        horizontalItemHoverColor:
+                            mode === 'horizontal' ? '#fff' : '#000',
                         horizontalLineHeight: 2,
                     },
                 },
             }}
         >
-            <Menu mode={mode} style={{ borderBottom: 'none' }} items={items} />
+            <Menu
+                mode={mode}
+                selectedKeys={[current]}
+                defaultOpenKeys={['solar']}
+                style={{ borderBottom: 'none' }}
+                items={items}
+            />
         </ConfigProvider>
     );
 };

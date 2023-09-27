@@ -14,7 +14,7 @@ const Testimonial = () => {
                 backgroundImage="/TestimonialBG.svg"
                 title="Testimonials"
                 description="See what People are Saying About Fuzion Energy"
-                height={'60vh'}
+                height={'70vh'}
             />
             <TestimonialGrid />
             <ContactForm title={'EFFICIENCY IS THE FUTURE'} />
