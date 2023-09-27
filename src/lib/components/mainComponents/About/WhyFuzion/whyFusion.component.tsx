@@ -31,7 +31,7 @@ const WhyFuzion = () => {
                         }}
                     >
                         <Image
-                            loading="lazy"
+                            loading="eager"
                             src={Images.WhyFusionContent}
                             alt="WhyFusionContent"
                         />

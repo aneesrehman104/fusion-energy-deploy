@@ -1,5 +1,4 @@
 .fusionEnergyWhiteTitle {
-     
     font-weight: 700;
     font-size: 48px;
     font-style: normal;
@@ -11,7 +10,6 @@
     margin-bottom: 10px;
 }
 .fusionEnergyWhiteDescription {
-     
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -32,7 +30,7 @@
     background-position: center;
     height: 100vh;
     width: 100%;
-    background-image: url('/FusionEnergyEfficiencyBG.svg');
+    background-image: url('/FusionEnergyEfficiencyBG.png');
 }
 .fusionEnergSpaceBetween {
     display: flex;

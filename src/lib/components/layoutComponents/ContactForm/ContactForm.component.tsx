@@ -9,13 +9,9 @@ import {
     FusionEnergySelect,
     FusionEnergyTextatea,
 } from '../../commonComponents';
+import { ContactFormProps } from '@/lib/ts/interface';
 
-type PROPS = {
-    title: string;
-    subHeading?: string;
-};
-
-const ContactForm: React.FC<PROPS> = ({ title, subHeading }) => {
+const ContactForm: React.FC<ContactFormProps> = ({ title, subHeading }) => {
     const [form, setForm] = React.useState({
         name: '',
         email: '',

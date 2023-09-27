@@ -2,15 +2,20 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { galleryArray, iconsArray } from '@/utils/mock';
+import {
+    BannerProps,
+    ContactFormProps,
+    FusionEnergyGalleryProps,
+} from '@/lib/ts/interface';
 
 const BakerFields = dynamic(() => import('./BakerFields'));
-const ContactForm = dynamic(() =>
+const ContactForm = dynamic<ContactFormProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
 );
-const Banner = dynamic(() =>
+const Banner = dynamic<BannerProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Banner),
 );
-const FusionEnergyGallery = dynamic(() =>
+const FusionEnergyGallery = dynamic<FusionEnergyGalleryProps>(() =>
     import('@/lib/components/commonComponents').then(
         (m) => m.FusionEnergyGallery,
     ),
@@ -29,7 +34,7 @@ const Turf: React.FC = () => {
     return (
         <main id="TurfPage">
             <Banner
-                backgroundImage={'/FuzionEnergyTurf.svg'}
+                backgroundImage={'/FuzionEnergyTurf.png'}
                 title={'Turf- Landscape the Efficiency'}
                 description={'Looking for low-cost Turf Landscape Installation'}
                 iconsArray={iconsArray}
