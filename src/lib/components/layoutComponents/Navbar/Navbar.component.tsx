@@ -204,7 +204,9 @@ export default function Navbar() {
                     <Row align="middle" justify="space-between">
                         <Col>
                             <Image
-                                src={Images.AppLogo}
+                                src={'/AppLogo.svg'}
+                                width={174}
+                                height={44}
                                 alt="fusion-energy-logo"
                                 loading="eager"
                             />
