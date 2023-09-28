@@ -29,7 +29,7 @@ const Home: React.FC<PROPS> = () => {
     return (
         <>
             <Banner
-                backgroundImage="/FusionEnergyEfficiencyBG.png"
+                backgroundImage="/FusionEnergyEfficiencyBG.svg"
                 title={'Efficiency Is The Future'}
                 showButton
                 description={' Contact us today to take advantage'}

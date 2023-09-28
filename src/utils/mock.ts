@@ -76,7 +76,7 @@ export const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergySolarPanelBG.png',
+        backgroundImage: '/FusionEnergySolarPanelBG.svg',
     },
     {
         title: 'Home Batteries',
@@ -84,7 +84,7 @@ export const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergyHomeBatteryBG.png',
+        backgroundImage: '/FusionEnergyHomeBatteryBG.svg',
     },
     {
         title: 'Artificial Turf',
@@ -92,7 +92,7 @@ export const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergyArtificalTurfBG.png',
+        backgroundImage: '/FusionEnergyArtificalTurfBG.svg',
     },
 ];
 
@@ -273,6 +273,7 @@ export const commercialCards = [
 
 export const footerSections = [
     {
+        id: 1,
         title: 'Services',
         items: [
             { text: 'Solar', url: '/service/residential' },
@@ -283,6 +284,7 @@ export const footerSections = [
         ],
     },
     {
+        id: 2,
         title: 'Links',
         items: [
             { text: 'About Us', url: '/about' },
@@ -293,6 +295,7 @@ export const footerSections = [
         ],
     },
     {
+        id: 3,
         title: 'Address',
         items: [
             {

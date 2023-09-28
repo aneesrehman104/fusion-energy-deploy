@@ -34,7 +34,7 @@ const Turf: React.FC = () => {
     return (
         <main id="TurfPage">
             <Banner
-                backgroundImage={'/FuzionEnergyTurf.png'}
+                backgroundImage={'/FuzionEnergyTurf.svg'}
                 title={'Turf- Landscape the Efficiency'}
                 description={'Looking for low-cost Turf Landscape Installation'}
                 iconsArray={iconsArray}

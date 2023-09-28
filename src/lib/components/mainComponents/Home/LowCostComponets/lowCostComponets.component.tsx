@@ -15,7 +15,7 @@ const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergySolarPanelBG.png',
+        backgroundImage: '/FusionEnergySolarPanelBG.svg',
     },
     {
         title: 'Home Batteries',
@@ -23,7 +23,7 @@ const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergyHomeBatteryBG.png',
+        backgroundImage: '/FusionEnergyHomeBatteryBG.svg',
     },
     {
         title: 'Artificial Turf',
@@ -31,7 +31,7 @@ const homeArray = [
         button1Link: '',
         button2Text: 'Learn More',
         button2Link: '',
-        backgroundImage: '/FusionEnergyArtificalTurfBG.png',
+        backgroundImage: '/FusionEnergyArtificalTurfBG.svg',
     },
 ];
 const LowCostComponets: FC<PROPS> = () => {

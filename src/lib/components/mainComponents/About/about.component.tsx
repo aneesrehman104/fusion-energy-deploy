@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { BannerProps, ContactFormProps } from '@/lib/ts/interface';
@@ -15,9 +17,9 @@ const ContactForm = dynamic<ContactFormProps>(() =>
 
 const About: React.FC = () => {
     return (
-        <main id="AboutPage">
+        <>
             <Banner
-                backgroundImage={'/FuzionEnergyAboutBg.png'}
+                backgroundImage={'/FuzionEnergyAboutBg.svg'}
                 title={'About Us'}
                 description={
                     'Fuzion Energy Helps your home become a smart energy efficient'
@@ -28,7 +30,7 @@ const About: React.FC = () => {
             <WhyFuzion />
             <WhoWeAre />
             <ContactForm title={'EFFICIENCY IS THE FUTURE'} />
-        </main>
+        </>
     );
 };
 

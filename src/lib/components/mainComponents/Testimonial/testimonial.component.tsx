@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { BannerProps, ContactFormProps } from '@/lib/ts/interface';
@@ -12,7 +14,7 @@ const Testimonial = () => {
     return (
         <main id="Testimonial">
             <Banner
-                backgroundImage="/TestimonialBG.png"
+                backgroundImage="/TestimonialBG.svg"
                 title="Testimonials"
                 description="See what People are Saying About Fuzion Energy"
                 height={'70vh'}

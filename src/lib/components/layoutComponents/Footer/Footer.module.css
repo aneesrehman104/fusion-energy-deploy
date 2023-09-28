@@ -3,7 +3,7 @@
     background-position: center;
     height: 261px;
     width: 100%;
-    background-image: url('/FusionEnergyFooterGreenBG.png');
+    background-image: url('/FusionEnergyFooterGreenBG.svg');
     border-radius: 5px;
 }
 .fusionEnergyFooterBackgroundImage {
@@ -11,7 +11,7 @@
     background-position: center center;
     min-height: 100vh;
     width: 100%;
-    background-image: url('/FusionEnergyFooterBG.png');
+    background-image: url('/FusionEnergyFooterBG.svg');
     z-index: -1;
     display: flex;
     justify-content: space-between;

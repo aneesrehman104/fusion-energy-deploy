@@ -41,7 +41,7 @@
 }
 
 .fusionEnergyWhoWeAreBackgroundImage {
-    background-image: url('/WhoWeAreBG.png');
+    background-image: url('/WhoWeAreBG.svg');
     background-size: cover;
     background-position: center;
     height: 100vh;

@@ -50,6 +50,11 @@ const FusionEnergyGallery: React.FC<FusionEnergyGalleryProps> = ({
                                         src={_item.image}
                                         alt={_item.name}
                                         loading="eager"
+                                        style={{
+                                            borderRadius: 20,
+                                            width: '100%',
+                                            height: 515,
+                                        }}
                                     />
                                 </div>
                             );

@@ -63,7 +63,7 @@ const BakerFields: React.FC<PROPS> = () => {
                                 }}
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen
-                            ></iframe>
+                            />
                         </div>
                     </Col>
                 </Row>

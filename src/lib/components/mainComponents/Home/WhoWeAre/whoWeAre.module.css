@@ -31,7 +31,7 @@
     background-position: center;
     height: 120vh;
     width: 100%;
-    background-image: url('/WhoWeAreBG.png');
+    background-image: url('/WhoWeAreBG.svg');
 }
 .fusionEnergWhoWeAreSpaceAround {
     display: flex;
