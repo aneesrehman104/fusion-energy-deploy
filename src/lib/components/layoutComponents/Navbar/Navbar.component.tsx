@@ -205,8 +205,6 @@ export default function Navbar() {
                         <Col>
                             <Image
                                 src={'/AppLogo.svg'}
-                                width={174}
-                                height={44}
                                 alt="fusion-energy-logo"
                                 loading="eager"
                                 height={42}
