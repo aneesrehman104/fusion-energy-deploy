@@ -48,4 +48,3 @@ export const Images = {
     PanasonicSolarLogo,
     WhyFusionContent,
 };
-

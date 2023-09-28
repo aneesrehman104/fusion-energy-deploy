@@ -1,5 +1,5 @@
 .contactFormContainer {
-    background-image: url('/contactForm.png');
+    background-image: url('/contactForm.svg');
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,8 +11,8 @@
 }
 
 .contactFormHeading {
-    color: #FFF;
-     
+    color: #fff;
+
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
@@ -21,9 +21,9 @@
 }
 
 .contactFormSubHeading {
-    color: #FFF;
+    color: #fff;
     text-align: center;
-     
+
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
