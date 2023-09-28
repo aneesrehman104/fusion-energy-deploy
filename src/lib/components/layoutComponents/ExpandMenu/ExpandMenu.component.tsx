@@ -2,9 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import { Col, Divider, Row } from 'antd';
 import Link from 'next/link';
-import { Images } from '@/assets/image';
 import { navbarJson, menus } from '@/utils/mock';
-import { FusionEnergyButton } from '../../commonComponents';
+import { FusionEnergyButton } from '@/lib/components/commonComponents';
 import styles from './ExpandMenu.module.css';
 type Props = {
     isDesktop: boolean;
@@ -28,13 +27,24 @@ const ExpandMenu: React.FC<Props> = ({ isDesktop, isExpand, onClose }) => {
                 className={styles.expandWrapper}
                 onMouseLeave={() => onClose(false)}
             >
-                <Row align={'middle'}>
+                <Row
+                    align={'middle'}
+                    style={{
+                        height: '100%',
+                        paddingLeft: '3em',
+                        paddingRight: '3em',
+                    }}
+                >
                     <Col span={5}>
                         <div className={styles.sideMenuWrapper}>
                             {menus.map((menu, index) => (
                                 <a
                                     href="#"
-                                    className={styles.sideMenuUnselected}
+                                    className={
+                                        menu.key === navbar
+                                            ? styles.sideMenuActive
+                                            : styles.sideMenuUnselected
+                                    }
                                     onClick={() => onItemSelect(menu.key)}
                                     key={index}
                                 >
@@ -45,11 +55,19 @@ const ExpandMenu: React.FC<Props> = ({ isDesktop, isExpand, onClose }) => {
                     </Col>
                     <Col span={1}>
                         <div className={styles.dividerWrapper}>
-                            <Divider type="vertical" />
+                            <Divider
+                                type="vertical"
+                                style={{
+                                    borderWidth: '1px',
+                                    opacity: 0.43,
+                                    borderColor: 'rgba(95, 123, 151, 1)',
+                                    height: '285.685px',
+                                }}
+                            />
                         </div>
                     </Col>
                     <Col span={18}>
-                        <Row>
+                        <Row align={'top'}>
                             {navbarJson[
                                 navbar as keyof typeof navbarJson
                             ].items.map((item: any, index: number) => {
@@ -57,8 +75,8 @@ const ExpandMenu: React.FC<Props> = ({ isDesktop, isExpand, onClose }) => {
                                     <Col span={8} key={index}>
                                         <div className={styles.menuCardWrapper}>
                                             <Image
-                                                src={Images.ResidentialImage}
-                                                alt="ResidentialImage"
+                                                src={item.image}
+                                                alt={`Fuzion-Energy-${item.heading}`}
                                                 className={styles.menuImage}
                                                 loading="eager"
                                             />

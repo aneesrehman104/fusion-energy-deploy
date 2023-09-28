@@ -19,6 +19,11 @@ const Footer: React.FC<PROPS> = () => {
     const handleSectionClick = (index: number) => {
         setSelectedSection(index === selectedSection ? null : index);
     };
+
+    const onClickHandler = (item: any) => {
+        if (item?.phone) window.open(item?.url);
+        else router.push(item?.url || '/');
+    };
     return (
         <div>
             <section className={styles.fusionEnergyFooterCenterStyle}>
@@ -69,7 +74,25 @@ const Footer: React.FC<PROPS> = () => {
                                             handleSectionClick(index)
                                         }
                                     >
-                                        {section.title}
+                                        <span
+                                            style={{
+                                                display: !screens.md
+                                                    ? 'block'
+                                                    : 'flex',
+                                                alignItems: 'center',
+                                                gap: '.5rem',
+                                            }}
+                                        >
+                                            {section.title}{' '}
+                                            <div
+                                                style={{
+                                                    color: '#98CD3D',
+                                                    width: '30px',
+                                                    height: '3px',
+                                                    backgroundColor: '#98CD3D',
+                                                }}
+                                            />
+                                        </span>
                                     </div>
                                     {!screens.lg
                                         ? selectedSection === index &&
@@ -81,9 +104,7 @@ const Footer: React.FC<PROPS> = () => {
                                                           styles.fusionEnergyFooterText
                                                       }
                                                       onClick={() =>
-                                                          router.push(
-                                                              item?.url || '/',
-                                                          )
+                                                          onClickHandler(item)
                                                       }
                                                   >
                                                       {item.text}
@@ -98,9 +119,7 @@ const Footer: React.FC<PROPS> = () => {
                                                           styles.fusionEnergyFooterText
                                                       }
                                                       onClick={() =>
-                                                          router.push(
-                                                              item?.url || '/',
-                                                          )
+                                                          onClickHandler(item)
                                                       }
                                                   >
                                                       {item.text}
@@ -114,8 +133,18 @@ const Footer: React.FC<PROPS> = () => {
                 </div>
                 <section>
                     <div className={styles.fusionEnergyPoweredClass}>
-                        © 2023 Fuzion Energy | CSLB# 1025073, 1034083 | Powered
-                        by Barton Marketing
+                        <p>
+                            © 2023 Fuzion Energy | CSLB# 1025073, 1034083 |
+                            Powered by &nbsp;
+                            <u
+                                style={{
+                                    cursor: 'pointer',
+                                    whiteSpace: 'nowrap',
+                                }}
+                            >
+                                Barton Marketing
+                            </u>
+                        </p>
                     </div>
                 </section>
             </section>

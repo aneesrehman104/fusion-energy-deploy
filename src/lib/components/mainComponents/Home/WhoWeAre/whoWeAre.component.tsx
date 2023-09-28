@@ -1,12 +1,11 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
+import styles from './whoWeAre.module.css';
 
 // Lazy-loaded components
 const FusionEnergyButton = dynamic(
     () => import('@/lib/components/commonComponents/FusionEnergyButton'),
 );
-
-import styles from './whoWeAre.module.css';
 
 interface PROPS {}
 const WhoWeAre: React.FC<PROPS> = () => {
@@ -21,10 +20,7 @@ const WhoWeAre: React.FC<PROPS> = () => {
                         YOUR ONE STOP SHOP FOR ENERGY EFFICIENT HOME
                         IMPROVEMENTS
                     </h2>
-                    <p
-                        className={styles.fusionEnergyBackgroundDescription}
-                        style={{ width: '70%' }}
-                    >
+                    <p className={styles.fusionEnergyBackgroundDescription}>
                         Fuzion Energy aims to be your one-stop-shop for
                         energy-efficient home improvements, whether that be
                         artificial turf, solar, or heating and air.

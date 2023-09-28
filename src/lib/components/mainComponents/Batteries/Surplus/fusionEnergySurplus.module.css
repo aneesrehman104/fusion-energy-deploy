@@ -12,7 +12,7 @@
 }
 
 .fusionEnergyBakerFieldHrStyle {
-    border: 2px solid #73b86f;
+    border: 1px solid #74b870ad;
     width: 125px;
     border-radius: 20px;
     margin-top: 5px;
@@ -32,12 +32,11 @@
 }
 
 .fusionEnergyBakerFieldTitle {
-     
     font-weight: 700;
     font-size: 48px;
     font-style: normal;
     color: #1d3376;
-    width: 100%;
+    width: 65%;
     text-align: center;
     text-transform: capitalize;
     margin-top: 15px;

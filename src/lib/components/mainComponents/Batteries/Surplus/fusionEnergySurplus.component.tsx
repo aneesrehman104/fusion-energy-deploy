@@ -17,7 +17,7 @@ const Surplus: React.FC<PROPS> = () => {
                 </p>
                 <hr className={styles.fusionEnergyBakerFieldHrStyle} />
                 <h2 className={styles.fusionEnergyBakerFieldTitle}>
-                    STORE SURPLUS ENERGY WITH A
+                    Store Surplus Energy with a Home Battery
                 </h2>
             </section>
             <section>
@@ -65,7 +65,7 @@ const Surplus: React.FC<PROPS> = () => {
                     </Col>
                     <Col span={24} md={{ span: 11, order: 2 }}>
                         <Image
-                            src="/HomeService.svg"
+                            src="/HomeService.png"
                             alt="HomeService"
                             width={screens.md ? 550 : 350}
                             height={370}
@@ -79,7 +79,7 @@ const Surplus: React.FC<PROPS> = () => {
                 <Row justify="space-around" align="middle">
                     <Col span={24} order={2} md={{ span: 11, order: 1 }}>
                         <Image
-                            src="/HomeService.svg"
+                            src="/HomeService.png"
                             alt="HomeService"
                             width={screens.md ? 550 : 350}
                             height={370}

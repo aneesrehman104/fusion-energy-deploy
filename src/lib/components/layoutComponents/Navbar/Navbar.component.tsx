@@ -8,7 +8,7 @@ import { Row, Col, Grid, Drawer } from 'antd';
 import type { MenuProps } from 'antd';
 import { FusionEnergyButton } from '../../commonComponents';
 import { Images } from '@/assets/image';
-import { MenuOutlined } from '@ant-design/icons';
+import { CloseCircleOutlined } from '@ant-design/icons';
 import NavbarItem from '../NavbarItem/NavbarItem.component';
 import ExpandMenu from '../ExpandMenu';
 import styles from './Navbar.module.css';
@@ -207,10 +207,14 @@ export default function Navbar() {
                                 src={Images.AppLogo}
                                 alt="fusion-energy-logo"
                                 loading="eager"
+                                height={42}
+                                width={174}
                             />
                         </Col>
                         <Col>
-                            <MenuOutlined
+                            <Image
+                                src={Images.MenuButton}
+                                alt="MenuButton"
                                 className={styles.navMenu}
                                 onClick={drawerHandle}
                             />
@@ -248,9 +252,24 @@ export default function Navbar() {
             )}
             <Drawer
                 open={isOpenDrawer}
-                onClose={drawerHandle}
-                title="Fusion Energy"
-                // getContainer={false}
+                closable={false}
+                title={<Image src={Images.AppLogo} alt="applogo" />}
+                extra={
+                    <CloseCircleOutlined
+                        onClick={drawerHandle}
+                        style={{ fontSize: 24 }}
+                    />
+                }
+                footer={
+                    <div
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                        }}
+                    >
+                        <FusionEnergyButton label={'Get Estimates'} />
+                    </div>
+                }
             >
                 <NavbarItem current={pathname} items={nav} mode="inline" />
             </Drawer>

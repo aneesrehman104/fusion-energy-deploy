@@ -1,6 +1,7 @@
 import React from 'react';
 import { ConfigProvider, Menu } from 'antd';
 import type { MenuProps } from 'antd';
+import styles from './MenuItem.module.css';
 type Props = {
     items: MenuProps['items'];
     mode: MenuProps['mode'];
@@ -34,6 +35,7 @@ const MenuItem: React.FC<Props> = ({ current, items, mode }: Props) => {
                 defaultOpenKeys={['solar']}
                 style={{ borderBottom: 'none' }}
                 items={items}
+                className={styles.custom_menu_item}
             />
         </ConfigProvider>
     );
