@@ -11,7 +11,7 @@ const Gallery: React.FC = () => {
     return (
         <main id="GalleryPage">
             <Banner
-                backgroundImage={'/GalleryBG.svg'}
+                backgroundImage={'/GalleryBG.png'}
                 title="Gallery"
                 description="Fuzion Energy Helps your home become a smart energy efficient"
                 height={'70vh'}

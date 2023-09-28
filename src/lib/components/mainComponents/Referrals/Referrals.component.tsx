@@ -8,7 +8,7 @@ const Referrals = () => {
     return (
         <main id="ReferralsPage">
             <Banner
-                backgroundImage={'/ReferralsBG.svg'}
+                backgroundImage={'/ReferralsBG.png'}
                 title={'Referrals'}
                 description={'Join us and Search Thousands of Jobs'}
                 height={'70vh'}

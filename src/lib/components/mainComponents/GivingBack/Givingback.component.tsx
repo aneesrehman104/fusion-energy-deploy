@@ -11,7 +11,7 @@ const Givingback = () => {
     return (
         <main id="Givingback">
             <Banner
-                backgroundImage={'/GivingBackBG.svg'}
+                backgroundImage={'/GivingBackBG.png'}
                 title={'Giving Back'}
                 description={'Solar, Turf, HVAC, Utility Costs - Its All Here'}
                 height={'70vh'}

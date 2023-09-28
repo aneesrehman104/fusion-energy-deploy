@@ -7,7 +7,7 @@ const Career = () => {
     return (
         <main id="Career">
             <Banner
-                backgroundImage={'/CareerBG.svg'}
+                backgroundImage={'/CareerBG.png'}
                 title={'Join Our Team'}
                 description={'Join us and Search Thousands of Jobs'}
                 height={'70vh'}

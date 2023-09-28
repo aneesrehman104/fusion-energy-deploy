@@ -7,7 +7,7 @@ const Contact = () => {
     return (
         <main id="ContactPage">
             <Banner
-                backgroundImage={'/ContactUsBG.svg'}
+                backgroundImage={'/ContactUsBG.png'}
                 title={'Contact us'}
                 description={
                     'Have questions about one of our services? Don’t hesitate to ask us something'
