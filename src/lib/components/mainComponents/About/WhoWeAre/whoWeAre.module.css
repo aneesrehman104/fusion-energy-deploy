@@ -1,0 +1,75 @@
+.fusionEnergyWhoWeAreMainTitle {
+    font-weight: 700;
+    font-size: 48px;
+    font-style: normal;
+    color: #1d3376;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.fusionEnergyWhoWeAreMainTitleName {
+    font-weight: 700;
+    font-size: 48px;
+    font-style: normal;
+    color: #98cd3d;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.headingWrapper {
+    display: flex;
+    width: 50%;
+}
+.fusionEnergyGreenDescription {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    font-style: normal;
+    color: #98cd3d;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    text-transform: capitalize;
+}
+.fusionEnergyWhoWeAreCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.fusionEnergyWhoWeAreBackgroundImage {
+    background-image: url('/WhoWeAreBG.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: 2rem;
+}
+.fusionEnergWhoWeAreSpaceAround {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+}
+.fusionEnergWhoWeAreInnerWidth {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .fusionEnergWhoWeAreInnerWidth {
+        width: 100%;
+    }
+    .fusionEnergyWhoWeAreMainTitle {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 30px;
+    }
+}

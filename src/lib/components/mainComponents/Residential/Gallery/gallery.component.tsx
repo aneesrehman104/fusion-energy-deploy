@@ -9,14 +9,6 @@ const Gallery: React.FC<PROPS> = () => {
             image: Images.FuzionBatteries,
             name: 'Images.FuzionBatteries',
         },
-        {
-            image: Images.FuzionBatteries,
-            name: 'Images.FuzionBatteries',
-        },
-        {
-            image: Images.FuzionBatteries,
-            name: 'FuzionBatteries',
-        },
     ];
     return (
         <section>

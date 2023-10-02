@@ -20,7 +20,7 @@ export interface FusionEnergyButtonProps {
     htmlType?: 'button' | 'submit' | 'reset';
     color?: string;
     height?: string;
-    width?: string;
+    width?: number | string;
     backgroundColor?: string;
     label: ReactNode;
     marginRight?: string;
@@ -60,7 +60,7 @@ export interface FusionEnergyInputProps {
     name: string;
     value: string | number;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-};
+}
 
 export interface IconsType {
     icon: string;
@@ -75,10 +75,17 @@ export interface BannerProps {
     title: string;
     description: string;
     showButton?: boolean;
+    showPartner?: boolean;
     labelBtn?: string;
+    height?: string | number;
     onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
 export interface RootLayoutProps {
     children: React.ReactNode;
+}
+
+export interface ContactFormProps {
+    title: string;
+    subHeading?: string;
 }

@@ -18,6 +18,20 @@ import HedgeAgainstRisingEnergyCosts from './HedgeAgainstRisingEnergyCosts.svg';
 import EducationalAndCommunityEngagement from './EducationalAndCommunityEngagement.svg';
 import HvacContentImage from './HvacContect.svg';
 import GeneratorContent from './GeneratorContent.svg';
+import PanasonicSolarLogo from './PanasonicSolar.svg';
+import SolarEdgeLogo from './SolarEdge.svg';
+import YorkLogo from './York.svg';
+import WhyFusionContent from './WhyFusionContent.svg';
+import FuzionBatteriesImage from './FuzionBatteriesImage.svg';
+import FuzionCommercialImage from './FuzionCommercialmage.svg';
+import FuzionHvacImage from './FuzionHvacImage.svg';
+import FuzionTurfImage from './FuzionTurf.svg';
+import FuzionGeneratorImage from './FuzionGenerator.svg';
+import MenuButton from './MenuButton.svg';
+import FbSVG from './fb_svg.svg';
+import TwitterSVG from './twitter_svg.svg';
+import InstaSVG from './insta_svg.svg';
+
 export const Images = {
     AppLogo,
     ProfileImage,
@@ -39,5 +53,17 @@ export const Images = {
     EducationalAndCommunityEngagement,
     HvacContentImage,
     GeneratorContent,
+    YorkLogo,
+    SolarEdgeLogo,
+    PanasonicSolarLogo,
+    WhyFusionContent,
+    FuzionBatteriesImage,
+    FuzionCommercialImage,
+    FuzionHvacImage,
+    FuzionTurfImage,
+    FuzionGeneratorImage,
+    MenuButton,
+    FbSVG,
+    TwitterSVG,
+    InstaSVG,
 };
-

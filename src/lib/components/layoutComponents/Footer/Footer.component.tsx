@@ -51,11 +51,12 @@ const Footer: React.FC<PROPS> = () => {
                             <Image
                                 src={Images.AppLogo}
                                 alt="fusion-energy-logo"
+                                loading="eager"
                             />
 
                             {footerSections.map((section, index) => (
                                 <div
-                                    key={index}
+                                    key={section.id}
                                     className={
                                         styles.fusionEnergyFooterInnerContainerStyle
                                     }
@@ -68,44 +69,211 @@ const Footer: React.FC<PROPS> = () => {
                                             handleSectionClick(index)
                                         }
                                     >
-                                        {section.title}
+                                        <span
+                                            style={{
+                                                display: !screens.md
+                                                    ? 'block'
+                                                    : 'flex',
+                                                alignItems: 'center',
+                                                gap: '.5rem',
+                                            }}
+                                        >
+                                            {section.title}{' '}
+                                            <div
+                                                style={{
+                                                    color: '#98CD3D',
+                                                    width: '30px',
+                                                    height: '3px',
+                                                    backgroundColor: '#98CD3D',
+                                                }}
+                                            />
+                                        </span>
                                     </div>
-                                    {!screens.lg
-                                        ? selectedSection === index &&
-                                          section.items.map(
-                                              (item, itemIndex) => (
-                                                  <div
-                                                      key={itemIndex}
-                                                      className={
-                                                          styles.fusionEnergyFooterText
-                                                      }
-                                                      onClick={() =>
-                                                          router.push(
-                                                              item?.url || '/',
-                                                          )
-                                                      }
-                                                  >
-                                                      {item.text}
-                                                  </div>
-                                              ),
-                                          )
-                                        : section.items.map(
-                                              (item, itemIndex) => (
-                                                  <div
-                                                      key={itemIndex}
-                                                      className={
-                                                          styles.fusionEnergyFooterText
-                                                      }
-                                                      onClick={() =>
-                                                          router.push(
-                                                              item?.url || '/',
-                                                          )
-                                                      }
-                                                  >
-                                                      {item.text}
-                                                  </div>
-                                              ),
-                                          )}
+                                    {screens.lg ? (
+                                        section.id == 2 ? (
+                                            <>
+                                                <div
+                                                    className={
+                                                        styles.fusionEnergyFooterText
+                                                    }
+                                                >
+                                                    Fuzion Energy 4003
+                                                    Terracotta Ct Bakersfield,
+                                                    CA, 93314
+                                                </div>
+                                                <div
+                                                    className={
+                                                        styles.fusionEnergyFooterText
+                                                    }
+                                                >
+                                                    Phone:{' '}
+                                                    <a href="tel:661-243-9934">
+                                                        <u>661-243-9934</u>
+                                                    </a>
+                                                </div>
+                                                <div
+                                                    className={
+                                                        styles.fusionEnergyFooterText
+                                                    }
+                                                >
+                                                    CSLB# 1025073, 1034083
+                                                </div>
+                                                <div
+                                                    className={
+                                                        styles.fusionEnergyFooterText
+                                                    }
+                                                >
+                                                    <div
+                                                        style={{
+                                                            display: 'flex',
+                                                        }}
+                                                    >
+                                                        <Image
+                                                            src={'./fb_svg.svg'}
+                                                            alt="fb_svg"
+                                                            loading="eager"
+                                                            width={32}
+                                                            height={32}
+                                                            style={{
+                                                                marginRight: 10,
+                                                            }}
+                                                        />
+                                                        <Image
+                                                            src={
+                                                                './twitter_svg.svg'
+                                                            }
+                                                            alt="twitter_svg"
+                                                            loading="eager"
+                                                            width={32}
+                                                            height={32}
+                                                            style={{
+                                                                marginRight: 10,
+                                                            }}
+                                                        />
+                                                        <Image
+                                                            src={
+                                                                './insta_svg.svg'
+                                                            }
+                                                            alt="insta_svg"
+                                                            loading="eager"
+                                                            width={32}
+                                                            height={32}
+                                                            style={{
+                                                                marginRight: 10,
+                                                            }}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </>
+                                        ) : (
+                                            section.items.map(
+                                                (item, itemIndex) => (
+                                                    <div
+                                                        key={itemIndex}
+                                                        className={
+                                                            styles.fusionEnergyFooterText
+                                                        }
+                                                        onClick={() =>
+                                                            router.push(
+                                                                item?.url ||
+                                                                    '/',
+                                                            )
+                                                        }
+                                                    >
+                                                        {item.text}
+                                                    </div>
+                                                ),
+                                            )
+                                        )
+                                    ) : selectedSection === index &&
+                                      section.id == 2 ? (
+                                        <>
+                                            <div
+                                                className={
+                                                    styles.fusionEnergyFooterText
+                                                }
+                                            >
+                                                Fuzion Energy 4003 Terracotta Ct
+                                                Bakersfield, CA, 93314
+                                            </div>
+                                            <div
+                                                className={
+                                                    styles.fusionEnergyFooterText
+                                                }
+                                            >
+                                                Phone:{' '}
+                                                <a href="tel:661-243-9934">
+                                                    <u>661-243-9934</u>
+                                                </a>
+                                            </div>
+                                            <div
+                                                className={
+                                                    styles.fusionEnergyFooterText
+                                                }
+                                            >
+                                                CSLB# 1025073, 1034083
+                                            </div>
+                                            <div
+                                                className={
+                                                    styles.fusionEnergyFooterText
+                                                }
+                                            >
+                                                <div
+                                                    style={{
+                                                        display: 'flex',
+                                                    }}
+                                                >
+                                                    <Image
+                                                        src={Images.FbSVG}
+                                                        alt="fb_svg"
+                                                        loading="eager"
+                                                        width={32}
+                                                        height={32}
+                                                        style={{
+                                                            marginRight: 10,
+                                                        }}
+                                                    />
+                                                    <Image
+                                                        src={Images.TwitterSVG}
+                                                        alt="twitter_svg"
+                                                        loading="eager"
+                                                        width={32}
+                                                        height={32}
+                                                        style={{
+                                                            marginRight: 10,
+                                                        }}
+                                                    />
+                                                    <Image
+                                                        src={Images.InstaSVG}
+                                                        alt="insta_svg"
+                                                        loading="eager"
+                                                        width={32}
+                                                        height={32}
+                                                        style={{
+                                                            marginRight: 10,
+                                                        }}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </>
+                                    ) : (
+                                        selectedSection === index &&
+                                        section.items.map((item, itemIndex) => (
+                                            <div
+                                                key={itemIndex}
+                                                className={
+                                                    styles.fusionEnergyFooterText
+                                                }
+                                                onClick={() =>
+                                                    router.push(
+                                                        item?.url || '/',
+                                                    )
+                                                }
+                                            >
+                                                {item.text}
+                                            </div>
+                                        ))
+                                    )}
                                 </div>
                             ))}
                         </div>
@@ -113,8 +281,18 @@ const Footer: React.FC<PROPS> = () => {
                 </div>
                 <section>
                     <div className={styles.fusionEnergyPoweredClass}>
-                        © 2023 Fuzion Energy | CSLB# 1025073, 1034083 | Powered
-                        by Barton Marketing
+                        <p>
+                            © 2023 Fuzion Energy | CSLB# 1025073, 1034083 |
+                            Powered by &nbsp;
+                            <u
+                                style={{
+                                    cursor: 'pointer',
+                                    whiteSpace: 'nowrap',
+                                }}
+                            >
+                                Barton Marketing
+                            </u>
+                        </p>
                     </div>
                 </section>
             </section>

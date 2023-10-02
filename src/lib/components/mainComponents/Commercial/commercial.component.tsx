@@ -2,11 +2,12 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
 import { iconsArray } from '@/utils/mock';
+import { ContactFormProps, BannerProps } from '@/lib/ts/interface';
 
-const ContactForm = dynamic(() =>
+const ContactForm = dynamic<ContactFormProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
 );
-const Banner = dynamic(() =>
+const Banner = dynamic<BannerProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Banner),
 );
 const Gallery = dynamic(() => import('./Gallery'));

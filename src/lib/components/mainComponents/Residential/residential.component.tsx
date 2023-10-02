@@ -1,37 +1,18 @@
 'use client';
 import React from 'react';
 import dynamic from 'next/dynamic';
+import { ContactFormProps, BannerProps } from '@/lib/ts/interface';
+import { iconsArray } from '@/utils/mock';
 interface PROPS {}
 
 const Gallery = dynamic(() => import('./Gallery'));
 const BakerFields = dynamic(() => import('./BakerFields'));
-const ContactForm = dynamic(() =>
+const ContactForm = dynamic<ContactFormProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
 );
-const Banner = dynamic(() =>
+const Banner = dynamic<BannerProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Banner),
 );
-
-const iconsArray = [
-    {
-        icon: '/Dollar.svg',
-        iconWidth: 12,
-        iconHeight: 23,
-        title: 'Guaranteed Lowest Price in America',
-    },
-    {
-        icon: '/Ecosystem.svg',
-        iconWidth: 50,
-        iconHeight: 36,
-        title: ' Integrated Product Ecosystem',
-    },
-    {
-        icon: '/Monitoring.svg',
-        iconWidth: 44,
-        iconHeight: 44,
-        title: ' System Performance Monitoring',
-    },
-];
 
 const Residential: React.FC<PROPS> = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
@@ -51,7 +32,7 @@ const Residential: React.FC<PROPS> = () => {
                 title={'Residential'}
                 showButton
                 description={'Looking for low-cost solar panel installation'}
-                labelBtn={'Find Out How'}
+                labelBtn={'Buy Now'}
                 onClick={onClickHandle}
             />
             <BakerFields />

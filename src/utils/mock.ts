@@ -1,6 +1,5 @@
 import { Images } from '@/assets/image';
 import { generateRandomNumber } from './helper';
-
 const dummypara = `Lorem ipsum dolor sit amet consectetur, adipisicing
 elit. Quia, labore! Laudantium consequatur sint
 similique voluptates doloremque, aspernatur quae, natus,
@@ -11,7 +10,7 @@ vero quaerat quas modi harum excepturi praesentium ab
 architecto delectus! Consectetur, libero ipsa incidunt
 esse a nobis quis. Nam, est illum!`;
 
-export const staticHeading = 'What Our Customers Says';
+export const staticHeading = 'What Our Customers Say';
 
 export const testimonials = [
     {
@@ -102,19 +101,19 @@ export const navbarJson = {
         path: '',
         items: [
             {
-                image: '',
+                image: Images.ResidentialImage,
                 heading: 'Residentials',
                 subHeading: 'Energize Your Home',
                 path: '/service/residential',
             },
             {
-                image: '',
+                image: Images.FuzionCommercialImage,
                 heading: 'Commercials',
                 subHeading: 'Energize Your Home',
                 path: '/service/commercial',
             },
             {
-                image: '',
+                image: Images.FuzionBatteriesImage,
                 heading: 'Batteries',
                 subHeading: '',
                 path: '/service/batteries',
@@ -125,7 +124,7 @@ export const navbarJson = {
         path: '',
         items: [
             {
-                image: '',
+                image: Images.FuzionTurfImage,
                 heading: 'Turf',
                 subHeading: 'Explore Turf',
                 path: '/service/turf',
@@ -136,7 +135,7 @@ export const navbarJson = {
         path: '',
         items: [
             {
-                image: '',
+                image: Images.FuzionHvacImage,
                 heading: 'HVAC',
                 subHeading: "Explore HVAC's",
                 path: '/service/hvac',
@@ -147,7 +146,7 @@ export const navbarJson = {
         path: '',
         items: [
             {
-                image: '',
+                image: Images.FuzionGeneratorImage,
                 heading: 'Generators',
                 subHeading: 'Empower Yourself',
                 path: '/service/generator',
@@ -167,13 +166,13 @@ export const iconsArray = [
     {
         icon: '/Dollar.svg',
         iconWidth: 12,
-        iconHeight: 23,
+        iconHeight: 44,
         title: 'Guaranteed Lowest Price in America',
     },
     {
         icon: '/Ecosystem.svg',
         iconWidth: 50,
-        iconHeight: 36,
+        iconHeight: 44,
         title: ' Integrated Product Ecosystem',
     },
     {
@@ -274,35 +273,49 @@ export const commercialCards = [
 
 export const footerSections = [
     {
+        id: 0,
         title: 'Services',
         items: [
-            { text: 'Solar', url: '/solar' },
-            { text: 'Artificial Turf', url: '/artificial-turf' },
-            { text: 'Home Batteries', url: '/home-batteries' },
-            { text: 'Generators', url: '/generators' },
-            { text: 'HVAC', url: '/hvac' },
+            { text: 'Solar', url: '/service/residential' },
+            { text: 'Artificial Turf', url: '/service/turf' },
+            { text: 'Home Batteries', url: '/service/batteries' },
+            { text: 'Generators', url: '/service/generator' },
+            { text: 'HVAC', url: '/service/hvac' },
         ],
     },
     {
+        id: 1,
         title: 'Links',
         items: [
-            { text: 'About Us', url: '/about-us' },
-            { text: 'Testimonials', url: '/testimonials' },
+            { text: 'About Us', url: '/about' },
+            { text: 'Testimonials', url: '/testimonial' },
             { text: 'Gallery', url: '/gallery' },
             { text: 'Career', url: '/career' },
-            { text: 'Contact Us', url: '/contact-us' },
+            { text: 'Contact Us', url: '/contact_us' },
         ],
     },
     {
+        id: 2,
         title: 'Address',
         items: [
             {
                 text: `Fuzion Energy 4003 Terracotta Ct Bakersfield, CA, 93314`,
                 url: '',
             },
-            { text: 'Phone: 661-243-9934', url: '' },
+            {
+                text: 'Phone: 661-243-9934',
+                url: 'tel:+6612439934',
+                phone: true,
+            },
 
             { text: 'CSLB# 1025073, 1034083', url: '' },
         ],
     },
+];
+
+export const partnerLogo = [
+    { image: Images.PanasonicSolarLogo, alt: 'PanasonicSolarLogo' },
+    { image: Images.SolarEdgeLogo, alt: 'SolarEdgeLogo' },
+    { image: Images.YorkLogo, alt: 'YorkLogo' },
+    { image: Images.EnphaseImage, alt: 'EnphaseImage' },
 ];

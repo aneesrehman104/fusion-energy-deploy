@@ -2,19 +2,23 @@
 import React from 'react';
 import { iconsArray, galleryArray } from '@/utils/mock';
 import dynamic from 'next/dynamic';
+import {
+    FusionEnergyGalleryProps,
+    ContactFormProps,
+    BannerProps,
+} from '@/lib/ts/interface';
 const BakerFields = dynamic(() => import('./BakerFields'));
-const FusionEnergyGallery = dynamic(() =>
+const FusionEnergyGallery = dynamic<FusionEnergyGalleryProps>(() =>
     import('@/lib/components/commonComponents').then(
         (m) => m.FusionEnergyGallery,
     ),
 );
-const ContactForm = dynamic(() =>
+const ContactForm = dynamic<ContactFormProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
 );
-const Banner = dynamic(() =>
+const Banner = dynamic<BannerProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Banner),
 );
-
 
 const Generator = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);

@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import styles from './ContactForm.module.css';
-import { Col, Row } from 'antd';
+import { Col, Row, Grid } from 'antd';
 import Link from 'next/link';
 import {
     FusionEnergyButton,
@@ -9,13 +9,12 @@ import {
     FusionEnergySelect,
     FusionEnergyTextatea,
 } from '../../commonComponents';
+import { ContactFormProps } from '@/lib/ts/interface';
 
-type PROPS = {
-    title: string;
-    subHeading?: string;
-};
+const { useBreakpoint } = Grid;
 
-const ContactForm: React.FC<PROPS> = ({ title, subHeading }) => {
+const ContactForm: React.FC<ContactFormProps> = ({ title, subHeading }) => {
+    const screens = useBreakpoint();
     const [form, setForm] = React.useState({
         name: '',
         email: '',
@@ -48,13 +47,13 @@ const ContactForm: React.FC<PROPS> = ({ title, subHeading }) => {
                             style={{
                                 display: 'flex',
                                 justifyContent: 'center',
-                                margin: '3rem',
+                                margin: '3rem auto',
                             }}
                         >
                             <Row
-                                gutter={[32, 16]}
+                                gutter={[32, 25]}
                                 style={{
-                                    width: '70%',
+                                    width: screens.xs ? '100%' : '70%',
                                 }}
                             >
                                 <Col xs={24} md={12}>
@@ -89,6 +88,10 @@ const ContactForm: React.FC<PROPS> = ({ title, subHeading }) => {
                                         value={form.service}
                                         placeholder="Select"
                                         options={[
+                                            {
+                                                label: 'Select Service',
+                                                value: '',
+                                            },
                                             {
                                                 label: 'Solar',
                                                 value: 'solar',
