@@ -53,7 +53,7 @@ const FusionEnergyGallery: React.FC<FusionEnergyGalleryProps> = ({
                                         style={{
                                             borderRadius: 20,
                                             width: '100%',
-                                            height: 515,
+                                            height: '100%',
                                         }}
                                     />
                                 </div>

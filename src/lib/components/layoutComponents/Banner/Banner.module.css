@@ -86,6 +86,8 @@
     align-items: center;
 }
 
-@media (max-width: 425px) {
-    /* Your CSS styles for screens 425px or less go here */
+@media only screen and (max-width: 768px) {
+    .fusionEnergyBannerTitle {
+        font-size: 26px;
+    }
 }

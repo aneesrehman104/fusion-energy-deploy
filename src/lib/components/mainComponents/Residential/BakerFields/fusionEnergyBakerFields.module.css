@@ -18,7 +18,6 @@
     margin-top: 5px;
 }
 .fusionEnergyBakerFieldTextStyle {
-     
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -32,7 +31,6 @@
 }
 
 .fusionEnergyBakerFieldTitle {
-     
     font-weight: 700;
     font-size: 48px;
     font-style: normal;
@@ -45,7 +43,6 @@
 }
 
 .fusionEnergyBakerFieldSmallTitle {
-     
     font-weight: 700;
     font-size: 32px;
     line-height: 25px;
@@ -57,7 +54,6 @@
 }
 
 .fusionEnergyBakerFieldDescription {
-     
     font-weight: 500;
     font-size: 16px;
     line-height: 31px;
@@ -68,6 +64,13 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.fusionEnergyBakerInnerDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
 @media only screen and (max-width: 768px) {
     .fusionEnergyBakerFieldMain {
         padding: 10px;
@@ -77,5 +80,18 @@
     }
     .fusionEnergyBakerFieldSmallTitle {
         font-size: 22px;
+        text-align: center;
+    }
+    .fusionEnergyBakerFieldDescription {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+    }
+    .fusionEnergyBakerFieldTextStyle {
+        font-size: 16px;
+    }
+    .fusionEnergyBakerInnerDiv {
+        justify-content: center;
+        align-items: center;
     }
 }
