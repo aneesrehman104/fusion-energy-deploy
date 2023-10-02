@@ -4,6 +4,7 @@ import { Col, Row, Grid } from 'antd';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
 import Image from 'next/image';
 import styles from './fusionEnergyBakerFields.module.css';
+import { Images } from '@/assets/image';
 const { useBreakpoint } = Grid;
 interface PROPS {}
 const BakerFields: React.FC<PROPS> = () => {
@@ -17,7 +18,7 @@ const BakerFields: React.FC<PROPS> = () => {
                 </p>
                 <hr className={styles.fusionEnergyBakerFieldHrStyle} />
                 <h2 className={styles.fusionEnergyBakerFieldTitle}>
-                    BAKERSFIELDS MOST AFFORDABLE SOLAR PANELS
+                    Bakersfield's Most Affordable Solar Panels
                 </h2>
             </section>
             <section>
@@ -50,12 +51,20 @@ const BakerFields: React.FC<PROPS> = () => {
                         </div>
                     </Col>
                     <Col span={24} md={{ span: 11, order: 2 }}>
-                        <Image
-                            src="/HomeService.svg"
-                            alt="HomeService"
-                            width={screens.md ? 550 : 350}
-                            height={370}
-                        />
+                        <div>
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/H9fg7GFagF4?si=XqNysph-7qnBa1-P"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                style={{
+                                    borderRadius: '5px',
+                                }}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            />
+                        </div>
                     </Col>
                 </Row>
             </section>
@@ -64,10 +73,12 @@ const BakerFields: React.FC<PROPS> = () => {
                 <Row justify="space-around" align="middle">
                     <Col span={24} order={2} md={{ span: 11, order: 1 }}>
                         <Image
-                            src="/HomeService.svg"
+                            src={Images.GeneratorContent}
+                            // src="/HomeService.png"
                             alt="HomeService"
-                            width={screens.md ? 550 : 350}
-                            height={370}
+                            // width={screens.md ? 550 : 350}
+                            // height={370}
+                            loading="eager"
                         />
                     </Col>
                     <Col span={24} order={1} md={{ span: 10, order: 2 }}>

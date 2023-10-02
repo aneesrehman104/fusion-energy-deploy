@@ -1,0 +1,29 @@
+.whyFuzionWrapper {
+    width: 95%;
+}
+
+.whyFuzionContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.whyFuzionHeading {
+    color: #1D3376;
+     
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 4rem;
+}
+
+.whyFuzionDescription {
+    color: #606771;
+     
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.96875rem; /* 157.5% */
+    text-transform: capitalize;
+    margin-top: 4rem;
+}

@@ -21,6 +21,7 @@ const FusionEnergyInput: React.FC<FusionEnergyInputProps> = ({
                             colorPrimary: '',
                             colorPrimaryHover: '',
                             borderRadius: 10,
+                            fontFamily: '',
                         },
                     },
                 }}

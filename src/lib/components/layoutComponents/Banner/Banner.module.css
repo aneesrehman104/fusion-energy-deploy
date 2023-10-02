@@ -6,11 +6,10 @@
 }
 
 .fusionEnergyBannerBackgroundImage {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 100%;
-    /* background-image: url('/FusionEnergyBannerBG.svg'); */
 }
 .fusionEnergBannerSpaceBetween {
     display: flex;
@@ -18,25 +17,23 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    height: 80vh;
+    height: 75vh;
 }
 
 .fusionEnergyWhiteSmallDescription {
-    font-family: DM Sans;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     font-style: normal;
     color: #ffffff;
-    width: 112px;
+    width: 130px;
     text-align: center;
     align-self: center;
     text-transform: capitalize;
-    margin-top: 15px;
+    margin-top: 8px;
 }
 
 .fusionEnergyBannerTitle {
-    font-family: DM Sans;
     font-weight: 700;
     font-size: 48px;
     font-style: normal;
@@ -48,7 +45,7 @@
     margin-bottom: 10px;
 }
 .fusionEnergyBannerDescription {
-    font-family: DM Sans;
+     
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -66,3 +63,30 @@
     margin-bottom: 30px;
     height: 150px;
 }
+
+.partnerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+    height: auto;
+    min-height: 4rem;
+    min-width: 318px;
+    width: 50vw;
+    background-color: #ffffff;
+    border-radius: 0.375rem;
+    backdrop-filter: blur(36.5px);
+}
+
+.partnerWrapperInner {
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media (max-width: 425px) {
+    /* Your CSS styles for screens 425px or less go here */
+  }

@@ -46,7 +46,16 @@ const FusionEnergyGallery: React.FC<FusionEnergyGalleryProps> = ({
                         {items.map((_item: any, index) => {
                             return (
                                 <div key={index}>
-                                    <Image src={_item.image} alt={_item.name} />
+                                    <Image
+                                        src={_item.image}
+                                        alt={_item.name}
+                                        loading="eager"
+                                        style={{
+                                            borderRadius: 20,
+                                            width: '100%',
+                                            height: 515,
+                                        }}
+                                    />
                                 </div>
                             );
                         })}
@@ -57,11 +66,13 @@ const FusionEnergyGallery: React.FC<FusionEnergyGalleryProps> = ({
                             src={Images.LeftArrow}
                             alt="LeftArrow"
                             onClick={handlePrev}
+                            loading="eager"
                         />
                         <Image
                             src={Images.RightArrow}
                             alt="RightArrow"
                             onClick={handleNext}
+                            loading="eager"
                         />
                     </div>
                 </div>

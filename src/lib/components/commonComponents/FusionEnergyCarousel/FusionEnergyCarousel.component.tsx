@@ -92,11 +92,13 @@ const FusionEnergyCarousel: React.FC<FusionEnergyCarouselProps> = ({
                                     src={Images.LeftArrow}
                                     alt="LeftArrow"
                                     onClick={handlePrev}
+                                    loading="eager"
                                 />
                                 <Image
                                     src={Images.RightArrow}
                                     alt="RightArrow"
                                     onClick={handleNext}
+                                    loading="eager"
                                 />
                             </div>
                         </Col>

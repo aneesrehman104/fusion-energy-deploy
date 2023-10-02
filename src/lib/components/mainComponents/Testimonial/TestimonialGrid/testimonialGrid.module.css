@@ -1,0 +1,16 @@
+.testimonialGrid {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.testimonialHeading {
+    color: #1D3376;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 4rem;
+}
+
+.testimonialGridWidth {
+    width: 90%;
+    margin: auto auto;
+}

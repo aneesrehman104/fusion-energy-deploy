@@ -3,8 +3,9 @@
 }
 
 .fusionEnergyCarouselWrapperlg {
-    margin: 2rem auto;
-    padding: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    padding: 0rem 3rem;
 }
 
 .fusionEnergyCarouselItemCenter { 
@@ -18,7 +19,6 @@
 
 .fusionEnergyCarouselHeaderLg {
     color: rgba(29, 51, 118, 1);
-    font-family: DM Sans;
     font-size: 48px;
     font-weight: 700;
     text-align: center;
@@ -26,7 +26,6 @@
 
 .fusionEnergyCarouselHeader {
     color: rgba(29, 51, 118, 1);
-    font-family: DM Sans;
     font-size: 20px;
     font-weight: 700;
     text-align: center;

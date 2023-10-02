@@ -2,14 +2,13 @@
     border-radius: 0.25rem !important;
     height: 7rem !important;
     color: #737B8F !important;
-    font-family: DM Sans !important;
     font-style: normal !important;
     font-weight: 400 !important;
 }
 
 .fusionEnergyTextareaFeedback {
     color: #FFF;
-    font-family: DM Sans;
+     
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;

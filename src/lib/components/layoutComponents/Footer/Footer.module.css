@@ -7,9 +7,9 @@
     border-radius: 5px;
 }
 .fusionEnergyFooterBackgroundImage {
-    background-size: cover;
-    background-position: center;
-    min-height: 90vh;
+    background-size: 100% 100%;
+    background-position: center center;
+    min-height: 100vh;
     width: 100%;
     background-image: url('/FusionEnergyFooterBG.svg');
     z-index: -1;
@@ -19,7 +19,6 @@
 }
 
 .fusionEnergyFooterGreenTitle {
-    font-family: DM Sans;
     font-weight: 700;
     font-size: 32px;
     font-style: normal;
@@ -31,7 +30,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    top: 150px;
+    top: 120px;
 }
 .fusionEnergyFooterGreenWidth {
     width: 85%;
@@ -52,16 +51,20 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 96px;
-    font-family: DM Sans;
+    height: 95px;
+}
+
+.fusionEnergyPoweredClass > p {
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
     color: #ffffff;
+    text-align: center;
 }
+
 .fusionEnergyFooterTitles {
     color: #ffffff;
-    font-family: DM Sans;
+
     font-weight: 700;
     font-size: 24px;
     font-style: normal;
@@ -70,7 +73,7 @@
 }
 .fusionEnergyFooterText {
     color: #ffffff;
-    font-family: DM Sans;
+
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -97,6 +100,7 @@
     }
     .fusionEnergyFooterGreenTitle {
         text-align: center;
+        font-size: 16px;
     }
     .fusionEnergyFooterCenterStyle {
         top: 0px;
