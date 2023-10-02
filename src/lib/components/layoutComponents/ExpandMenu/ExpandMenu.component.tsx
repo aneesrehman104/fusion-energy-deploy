@@ -97,10 +97,7 @@ const ExpandMenu: React.FC<Props> = ({ isDesktop, isExpand, onClose }) => {
                                                     {item.subHeading}
                                                 </u>
                                             ) : (
-                                                <FusionEnergyButton
-                                                    label="Save Your Power"
-                                                    width="9rem"
-                                                />
+                                                <FusionEnergyButton label="Save Your Power" />
                                             )}
                                         </div>
                                     </Col>

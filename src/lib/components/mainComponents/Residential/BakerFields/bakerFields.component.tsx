@@ -18,7 +18,7 @@ const BakerFields: React.FC<PROPS> = () => {
                 </p>
                 <hr className={styles.fusionEnergyBakerFieldHrStyle} />
                 <h2 className={styles.fusionEnergyBakerFieldTitle}>
-                    Bakersfield's Most Affordable Solar Panels
+                    Bakersfields Most Affordable Solar Panels
                 </h2>
             </section>
             <section>
@@ -41,9 +41,9 @@ const BakerFields: React.FC<PROPS> = () => {
                                 without sacrificing efficiency and quality? When
                                 it comes to making the choice on which panels to
                                 buy and which installation company to partner
-                                with, it is important to remember that the “most
-                                affordable solar” does not necessarily mean the
-                                “cheapest.” The ultimate goal is to choose the
+                                with, it is important to remember that the most
+                                affordable solar does not necessarily mean the
+                                cheapest. The ultimate goal is to choose the
                                 right solar panels and array that match your
                                 individual needs.
                             </p>
