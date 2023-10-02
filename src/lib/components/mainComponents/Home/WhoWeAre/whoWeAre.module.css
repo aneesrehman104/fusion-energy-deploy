@@ -60,14 +60,17 @@
 
 @media only screen and (max-width: 768px) {
     .fusionEnergWhoWeAreInnerWidth {
-        width: 100%;
+        width: 90%;
     }
     .fusionEnergyWhoWeAreMainTitle {
         font-weight: 700;
         font-size: 26px;
         line-height: 30px;
     }
+    .fusionEnergyGreenDescription {
+        font-size: 22px;
+    }
     .fusionEnergyBackgroundDescription {
-        width: 100%;;
+        width: 100%;
     }
 }

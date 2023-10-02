@@ -273,7 +273,7 @@ export const commercialCards = [
 
 export const footerSections = [
     {
-        id: 1,
+        id: 0,
         title: 'Services',
         items: [
             { text: 'Solar', url: '/service/residential' },
@@ -284,7 +284,7 @@ export const footerSections = [
         ],
     },
     {
-        id: 2,
+        id: 1,
         title: 'Links',
         items: [
             { text: 'About Us', url: '/about' },
@@ -295,7 +295,7 @@ export const footerSections = [
         ],
     },
     {
-        id: 3,
+        id: 2,
         title: 'Address',
         items: [
             {

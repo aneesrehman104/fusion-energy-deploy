@@ -28,6 +28,10 @@ import FuzionHvacImage from './FuzionHvacImage.svg';
 import FuzionTurfImage from './FuzionTurf.svg';
 import FuzionGeneratorImage from './FuzionGenerator.svg';
 import MenuButton from './MenuButton.svg';
+import FbSVG from './fb_svg.svg';
+import TwitterSVG from './twitter_svg.svg';
+import InstaSVG from './insta_svg.svg';
+
 export const Images = {
     AppLogo,
     ProfileImage,
@@ -59,4 +63,7 @@ export const Images = {
     FuzionTurfImage,
     FuzionGeneratorImage,
     MenuButton,
+    FbSVG,
+    TwitterSVG,
+    InstaSVG,
 };

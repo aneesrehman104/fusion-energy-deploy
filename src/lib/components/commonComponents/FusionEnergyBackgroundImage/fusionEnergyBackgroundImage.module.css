@@ -1,14 +1,13 @@
 .fusionEnergyBackgroundImage {
-    background-size: 100% 100%;
     background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 120vh;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
     padding: 30px;
 }
 .fusionEnergyBackgroundMainTitle {
@@ -39,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 570px;
+    width: 660px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,5 +46,9 @@
         flex-direction: column;
         align-items: center;
         height: 100px;
+    }
+    .fusionEnergyBackgroundMainTitle {
+        font-size: 26px;
+        margin-top: 10px;
     }
 }

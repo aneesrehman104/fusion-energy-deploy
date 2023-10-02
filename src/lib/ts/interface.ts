@@ -20,7 +20,7 @@ export interface FusionEnergyButtonProps {
     htmlType?: 'button' | 'submit' | 'reset';
     color?: string;
     height?: string;
-    width?: string;
+    width?: number | string;
     backgroundColor?: string;
     label: ReactNode;
     marginRight?: string;

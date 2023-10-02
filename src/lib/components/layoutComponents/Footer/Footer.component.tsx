@@ -89,29 +89,8 @@ const Footer: React.FC<PROPS> = () => {
                                             />
                                         </span>
                                     </div>
-
-                                    {section.id !== 3 ? (
-                                        !screens.lg ? (
-                                            selectedSection === index &&
-                                            section.items.map(
-                                                (item, itemIndex) => (
-                                                    <div
-                                                        key={itemIndex}
-                                                        className={
-                                                            styles.fusionEnergyFooterText
-                                                        }
-                                                        onClick={() =>
-                                                            router.push(
-                                                                item?.url ||
-                                                                    '/',
-                                                            )
-                                                        }
-                                                    >
-                                                        {item.text}
-                                                    </div>
-                                                ),
-                                            )
-                                        ) : (
+                                    {screens.lg ? (
+                                        section.id == 2 ? (
                                             <>
                                                 <div
                                                     className={
@@ -186,24 +165,28 @@ const Footer: React.FC<PROPS> = () => {
                                                     </div>
                                                 </div>
                                             </>
+                                        ) : (
+                                            section.items.map(
+                                                (item, itemIndex) => (
+                                                    <div
+                                                        key={itemIndex}
+                                                        className={
+                                                            styles.fusionEnergyFooterText
+                                                        }
+                                                        onClick={() =>
+                                                            router.push(
+                                                                item?.url ||
+                                                                    '/',
+                                                            )
+                                                        }
+                                                    >
+                                                        {item.text}
+                                                    </div>
+                                                ),
+                                            )
                                         )
-                                    ) : section.id !== 3 ? (
-                                        section.items.map((item, itemIndex) => (
-                                            <div
-                                                key={itemIndex}
-                                                className={
-                                                    styles.fusionEnergyFooterText
-                                                }
-                                                onClick={() =>
-                                                    router.push(
-                                                        item?.url || '/',
-                                                    )
-                                                }
-                                            >
-                                                {item.text}
-                                            </div>
-                                        ))
-                                    ) : (
+                                    ) : selectedSection === index &&
+                                      section.id == 2 ? (
                                         <>
                                             <div
                                                 className={
@@ -236,10 +219,12 @@ const Footer: React.FC<PROPS> = () => {
                                                 }
                                             >
                                                 <div
-                                                    style={{ display: 'flex' }}
+                                                    style={{
+                                                        display: 'flex',
+                                                    }}
                                                 >
                                                     <Image
-                                                        src={'./fb_svg.svg'}
+                                                        src={Images.FbSVG}
                                                         alt="fb_svg"
                                                         loading="eager"
                                                         width={32}
@@ -249,9 +234,7 @@ const Footer: React.FC<PROPS> = () => {
                                                         }}
                                                     />
                                                     <Image
-                                                        src={
-                                                            './twitter_svg.svg'
-                                                        }
+                                                        src={Images.TwitterSVG}
                                                         alt="twitter_svg"
                                                         loading="eager"
                                                         width={32}
@@ -261,7 +244,7 @@ const Footer: React.FC<PROPS> = () => {
                                                         }}
                                                     />
                                                     <Image
-                                                        src={'./insta_svg.svg'}
+                                                        src={Images.InstaSVG}
                                                         alt="insta_svg"
                                                         loading="eager"
                                                         width={32}
@@ -273,6 +256,23 @@ const Footer: React.FC<PROPS> = () => {
                                                 </div>
                                             </div>
                                         </>
+                                    ) : (
+                                        selectedSection === index &&
+                                        section.items.map((item, itemIndex) => (
+                                            <div
+                                                key={itemIndex}
+                                                className={
+                                                    styles.fusionEnergyFooterText
+                                                }
+                                                onClick={() =>
+                                                    router.push(
+                                                        item?.url || '/',
+                                                    )
+                                                }
+                                            >
+                                                {item.text}
+                                            </div>
+                                        ))
                                     )}
                                 </div>
                             ))}

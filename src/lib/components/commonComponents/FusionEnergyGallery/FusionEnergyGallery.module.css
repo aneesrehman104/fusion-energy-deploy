@@ -35,3 +35,8 @@
 .fusionEnergyButtonWrapper > img {
     cursor: pointer;
 }
+@media only screen and (max-width: 768px) {
+    .fusionEnergyCarouselHeaderLg {
+        font-size: 26px;
+    }
+}
