@@ -4,7 +4,6 @@
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    
 }
 .storyHeadingWrapper {
     display: flex;
@@ -14,9 +13,8 @@
 }
 
 .storyHeading {
-    color: #1D3376;
-     
-    font-size: 3rem;
+    color: #1d3376;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
     text-align: center;
@@ -27,10 +25,17 @@
 .storyDescription {
     color: #606771;
     text-align: center;
-     
-    font-size: 1.25rem;
+    font-size: 20px;
     width: 40%;
-
     font-style: normal;
     font-weight: 500;
+}
+@media only screen and (max-width: 768px) {
+    .storyHeading {
+        font-size: 26px;
+    }
+    .storyDescription {
+        font-size: 16px;
+        width: 60%;
+    }
 }
