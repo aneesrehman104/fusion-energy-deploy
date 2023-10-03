@@ -27,23 +27,59 @@ export default function Navbar() {
         {
             label: 'Services',
             key: '/services',
+            className: styles.menuItemDesktop,
             onMouseEnter: function () {
                 setIsExpanded(true);
             },
         },
         {
             label: 'Why Fuzion',
-            key: '/about',
+            key: '/why_fuzion',
             onMouseEnter: function () {
                 setIsExpanded(false);
             },
             onClick: function (e) {
                 router.push(e.key);
             },
+            children: [
+                {
+                    label: 'About us',
+                    key: '/about',
+                    className: styles.subMenuChildDesktop,
+                    onClick: function (e) {
+                        router.push(e.key);
+                    },
+                },
+                {
+                    label: 'Testimonial',
+                    key: '/testimonial',
+                    className: styles.subMenuChildDesktop,
+                    onClick: function (e) {
+                        router.push(e.key);
+                    },
+                },
+                {
+                    label: 'Gallery',
+                    key: '/gallery',
+                    className: styles.subMenuChildDesktop,
+                    onClick: function (e) {
+                        router.push(e.key);
+                    },
+                },
+                {
+                    label: 'Get to Know Efficiency – Helpful Articles',
+                    key: '/article',
+                    className: styles.subMenuChildDesktop,
+                    onClick: function (e) {
+                        router.push(e.key);
+                    },
+                },
+            ],
         },
         {
             label: 'Giving Back',
             key: '/giving_back',
+            className: styles.menuItemDesktop,
             onMouseEnter: function () {
                 setIsExpanded(false);
             },
@@ -54,6 +90,7 @@ export default function Navbar() {
         {
             label: 'Careers',
             key: '/careers',
+            className: styles.menuItemDesktop,
             onMouseEnter: function () {
                 setIsExpanded(false);
             },
@@ -64,6 +101,7 @@ export default function Navbar() {
         {
             label: 'Referrals',
             key: '/referrals',
+            className: styles.menuItemDesktop,
             onMouseEnter: function () {
                 setIsExpanded(false);
             },
@@ -74,6 +112,7 @@ export default function Navbar() {
         {
             label: 'Contact',
             key: '/contact_us',
+            className: styles.menuItemDesktop,
             onMouseEnter: function () {
                 setIsExpanded(false);
             },
@@ -158,10 +197,37 @@ export default function Navbar() {
         },
         {
             label: 'Why Fuzion',
-            key: '/about',
-            onClick: function (e) {
-                router.push(e.key);
-            },
+            key: '/why_fuzion',
+            children: [
+                {
+                    label: 'About us',
+                    key: '/about',
+                    onClick: function (e) {
+                        router.push(e.key);
+                    },
+                },
+                {
+                    label: 'Testimonial',
+                    key: '/testimonial',
+                    onClick: function (e) {
+                        router.push(e.key);
+                    },
+                },
+                {
+                    label: 'Gallery',
+                    key: '/gallery',
+                    onClick: function (e) {
+                        router.push(e.key);
+                    },
+                },
+                {
+                    label: 'Get to Know Efficiency – Helpful Articles',
+                    key: '/article',
+                    onClick: function (e) {
+                        router.push(e.key);
+                    },
+                },
+            ],
         },
         {
             label: 'Giving Back',
@@ -250,29 +316,31 @@ export default function Navbar() {
                     </Row>
                 </header>
             )}
-            <Drawer
-                open={isOpenDrawer}
-                closable={false}
-                title={<Image src={Images.AppLogo} alt="applogo" />}
-                extra={
-                    <CloseCircleOutlined
-                        onClick={drawerHandle}
-                        style={{ fontSize: 24 }}
-                    />
-                }
-                footer={
-                    <div
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                        }}
-                    >
-                        <FusionEnergyButton label={'Get Estimates'} />
-                    </div>
-                }
-            >
-                <NavbarItem current={pathname} items={nav} mode="inline" />
-            </Drawer>
+            {!screens.lg && (
+                <Drawer
+                    open={isOpenDrawer}
+                    closable={false}
+                    title={<Image src={Images.AppLogo} alt="applogo" />}
+                    extra={
+                        <CloseCircleOutlined
+                            onClick={drawerHandle}
+                            style={{ fontSize: 24 }}
+                        />
+                    }
+                    footer={
+                        <div
+                            style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                            }}
+                        >
+                            <FusionEnergyButton label={'Get Estimates'} />
+                        </div>
+                    }
+                >
+                    <NavbarItem current={pathname} items={nav} mode="inline" />
+                </Drawer>
+            )}
 
             <ExpandMenu
                 isDesktop={screens.lg!}

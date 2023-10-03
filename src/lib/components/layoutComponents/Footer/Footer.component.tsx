@@ -132,7 +132,7 @@ const Footer: React.FC<PROPS> = () => {
                                                         }}
                                                     >
                                                         <Image
-                                                            src={'./fb_svg.svg'}
+                                                            src={'/fb_svg.svg'}
                                                             alt="fb_svg"
                                                             loading="eager"
                                                             width={32}
@@ -143,7 +143,7 @@ const Footer: React.FC<PROPS> = () => {
                                                         />
                                                         <Image
                                                             src={
-                                                                './twitter_svg.svg'
+                                                                '/twitter_svg.svg'
                                                             }
                                                             alt="twitter_svg"
                                                             loading="eager"
@@ -155,7 +155,7 @@ const Footer: React.FC<PROPS> = () => {
                                                         />
                                                         <Image
                                                             src={
-                                                                './insta_svg.svg'
+                                                                '/insta_svg.svg'
                                                             }
                                                             alt="insta_svg"
                                                             loading="eager"
