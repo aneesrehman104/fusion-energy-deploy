@@ -1,26 +1,22 @@
 import React from 'react';
-import { FusionEnergyGallery } from '@/lib/components/commonComponents';
-import { Images } from '@/assets/image';
+import dynamic from 'next/dynamic';
+import { FusionEnergyGalleryProps } from '@/lib/ts/interface';
+import { galleryArray } from '@/utils/mock';
+
+const FusionEnergyGallery = dynamic<FusionEnergyGalleryProps>(() =>
+    import('@/lib/components/commonComponents').then(
+        (m) => m.FusionEnergyGallery,
+    ),
+);
 
 interface PROPS {}
 const Gallery: React.FC<PROPS> = () => {
-    const iconsArray = [
-        {
-            image: Images.FuzionBatteries,
-            name: 'Dollar1',
-        },
-        {
-            image: Images.FuzionBatteries,
-            name: 'Dollar2',
-        },
-        {
-            image: Images.FuzionBatteries,
-            name: 'Dollar3',
-        },
-    ];
     return (
         <section>
-            <FusionEnergyGallery items={iconsArray} label="Batteries Gallery" />
+            <FusionEnergyGallery
+                items={galleryArray}
+                label="Batteries Gallery"
+            />
         </section>
     );
 };

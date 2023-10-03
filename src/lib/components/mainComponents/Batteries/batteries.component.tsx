@@ -3,7 +3,6 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import { iconsArray } from '@/utils/mock';
 import { BannerProps, ContactFormProps } from '@/lib/ts/interface';
-interface PROPS {}
 const ContactForm = dynamic<ContactFormProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
 );
@@ -13,6 +12,7 @@ const Banner = dynamic<BannerProps>(() =>
 const Gallery = dynamic(() => import('./Gallery'));
 const Surplus = dynamic(() => import('./Surplus'));
 
+interface PROPS {}
 const Batteries: React.FC<PROPS> = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
     const onClickHandle = () => {

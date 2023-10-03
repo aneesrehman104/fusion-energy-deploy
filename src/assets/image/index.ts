@@ -31,6 +31,11 @@ import MenuButton from './MenuButton.svg';
 import FbSVG from './fb_svg.svg';
 import TwitterSVG from './twitter_svg.svg';
 import InstaSVG from './insta_svg.svg';
+import FuzionEnergyResidentialGallery from './FuzionEnergyResidentialGallery.svg';
+import FuzionEnergyCommercialGallery from './FuzionEnergyCommercialGallery.svg';
+import FuzionEnergyHVACGallery from './FuzionEnergyHVACGallery.svg';
+import FuzionEnergyGeneratorGallery from './FuzionEnergyGeneratorGallery.svg';
+import FuzionEnergyTurfGallery from './FuzionEnergyTurfGallery.svg';
 
 export const Images = {
     AppLogo,
@@ -66,4 +71,9 @@ export const Images = {
     FbSVG,
     TwitterSVG,
     InstaSVG,
+    FuzionEnergyResidentialGallery,
+    FuzionEnergyCommercialGallery,
+    FuzionEnergyHVACGallery,
+    FuzionEnergyGeneratorGallery,
+    FuzionEnergyTurfGallery,
 };

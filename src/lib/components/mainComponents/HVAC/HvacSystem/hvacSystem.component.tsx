@@ -52,7 +52,9 @@ const HvacSystem: React.FC<PROPS> = () => {
                     </Col>
                     <Col span={24} md={{ span: 11, order: 2 }}>
                         <Image
-                            src={Images.GeneratorContent}
+                            src={'/FuzionEnergyHvacSystem.svg'}
+                            width={370}
+                            height={370}
                             alt="HomeService"
                             loading="eager"
                             style={{

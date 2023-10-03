@@ -1,19 +1,13 @@
 import React from 'react';
 import { FusionEnergyGallery } from '@/lib/components/commonComponents';
-import { Images } from '@/assets/image';
+import { galleryArray } from '@/utils/mock';
 
 interface PROPS {}
 const Gallery: React.FC<PROPS> = () => {
-    const iconsArray = [
-        {
-            image: Images.FuzionBatteries,
-            name: 'Images.FuzionBatteries',
-        },
-    ];
     return (
         <section>
             <FusionEnergyGallery
-                items={iconsArray}
+                items={galleryArray}
                 label="Residentials Gallery"
             />
         </section>

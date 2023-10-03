@@ -1,15 +1,11 @@
 'use client';
 import React from 'react';
-import { Col, Row, Grid } from 'antd';
+import { Col, Row } from 'antd';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
-import Image from 'next/image';
 import styles from './fusionEnergyTrufHome.module.css';
-import { Images } from '@/assets/image';
-const { useBreakpoint } = Grid;
+
 interface PROPS {}
 const TrufHome: React.FC<PROPS> = () => {
-    const screens = useBreakpoint();
-
     return (
         <main className={styles.fusionEnergyTrufHomeMain}>
             <section className={styles.fusionEnergyTrufHomeMaainSection}>

@@ -1,14 +1,11 @@
-'use client';
 import React from 'react';
-import { Col, Row, Grid } from 'antd';
+import { Col, Row } from 'antd';
 import { FusionEnergyButton } from '@/lib/components/commonComponents';
 import Image from 'next/image';
 import { Images } from '@/assets/image';
 import styles from './fusionEnergySurplus.module.css';
-const { useBreakpoint } = Grid;
 interface PROPS {}
 const Surplus: React.FC<PROPS> = () => {
-    const screens = useBreakpoint();
     return (
         <main className={styles.fusionEnergySurplusMain}>
             <section className={styles.fusionEnergySurplusMaainSection}>
@@ -20,7 +17,7 @@ const Surplus: React.FC<PROPS> = () => {
                     Store Surplus Energy with a Home Battery
                 </h2>
             </section>
-            <section>
+            <section className={styles.fusionEnergyBakerSectionGap}>
                 <Row justify="space-around" align="middle">
                     <Col span={24} md={{ span: 10, order: 1 }}>
                         <div className={styles.fusionEnergyBakerInnerDiv}>
@@ -64,8 +61,10 @@ const Surplus: React.FC<PROPS> = () => {
                     </Col>
                     <Col span={24} md={{ span: 11, order: 2 }}>
                         <Image
-                            src={Images.GeneratorContent}
+                            src={'/FuzionEnergyBatterisIQ.svg'}
                             alt="HomeService"
+                            height={270}
+                            width={270}
                             style={{
                                 width: '100%',
                                 height: '100%',
@@ -80,8 +79,10 @@ const Surplus: React.FC<PROPS> = () => {
                 <Row justify="space-around" align="middle">
                     <Col span={24} order={2} md={{ span: 11, order: 1 }}>
                         <Image
-                            src={Images.GeneratorContent}
+                            src={'/FuzionEnergyHomeBatteries.svg'}
                             alt="HomeService"
+                            height={270}
+                            width={270}
                             style={{
                                 width: '100%',
                                 height: '100%',

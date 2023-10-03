@@ -1,15 +1,11 @@
-'use client';
 import React from 'react';
-import { Col, Row, Grid } from 'antd';
-import { FusionEnergyButton } from '@/lib/components/commonComponents';
+import { Col, Row } from 'antd';
 import Image from 'next/image';
-import styles from './fusionEnergyBakerFields.module.css';
+import { FusionEnergyButton } from '@/lib/components/commonComponents';
 import { Images } from '@/assets/image';
-const { useBreakpoint } = Grid;
+import styles from './fusionEnergyBakerFields.module.css';
 interface PROPS {}
 const BakerFields: React.FC<PROPS> = () => {
-    const screens = useBreakpoint();
-
     return (
         <main className={styles.fusionEnergyBakerFieldMain}>
             <section className={styles.fusionEnergyBakerFieldMaainSection}>
@@ -21,7 +17,7 @@ const BakerFields: React.FC<PROPS> = () => {
                     Bakersfields Most Affordable Solar Panels
                 </h2>
             </section>
-            <section>
+            <section className={styles.fusionEnergyBakerSectionGap}>
                 <Row justify="space-around" align="middle">
                     <Col span={24} md={{ span: 10, order: 1 }}>
                         <div className={styles.fusionEnergyBakerInnerDiv}>
@@ -68,20 +64,18 @@ const BakerFields: React.FC<PROPS> = () => {
                     </Col>
                 </Row>
             </section>
-
             <section>
                 <Row justify="space-around" align="middle">
                     <Col span={24} order={2} md={{ span: 11, order: 1 }}>
                         <Image
-                            src={Images.GeneratorContent}
-                            // src="/HomeService.png"
+                            src="/FuzionEnergyResidentialHomeServices.svg"
                             alt="HomeService"
-                            // width={screens.md ? 600 : 360}
-                            // height={370}
+                            width={370}
+                            height={370}
                             loading="eager"
                             style={{
                                 width: '100%',
-                                height: '100%',
+                                height: 'auto',
                             }}
                         />
                     </Col>

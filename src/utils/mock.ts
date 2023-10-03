@@ -183,20 +183,20 @@ export const iconsArray = [
     },
 ];
 
-export const galleryArray = [
-    {
-        image: Images.FuzionBatteries,
-        name: 'Dollar',
-    },
-    {
-        image: Images.FuzionBatteries,
-        name: 'Dollar',
-    },
-    {
-        image: Images.FuzionBatteries,
-        name: 'Dollar',
-    },
-];
+// export const galleryArray = [
+//     {
+//         image: Images.FuzionBatteries,
+//         name: 'Dollar',
+//     },
+//     {
+//         image: Images.FuzionBatteries,
+//         name: 'Dollar',
+//     },
+//     {
+//         image: Images.FuzionBatteries,
+//         name: 'Dollar',
+//     },
+// ];
 
 export const commercialCards = [
     {
@@ -264,7 +264,7 @@ export const commercialCards = [
     },
     {
         id: 8,
-        image: Images.EnhancedBrandImage,
+        image: Images.HedgeAgainstRisingEnergyCosts,
         imageWidth: 56,
         imageHeight: 56,
         name: 'Hedge Against Rising Energy Costs',
@@ -273,7 +273,7 @@ export const commercialCards = [
     },
     {
         id: 9,
-        image: Images.HedgeAgainstRisingEnergyCosts,
+        image: Images.EnhancedBrandImage,
         imageWidth: 56,
         imageHeight: 56,
         name: 'Enhanced Brand Image',
@@ -338,4 +338,31 @@ export const partnerLogo = [
     { image: Images.SolarEdgeLogo, alt: 'SolarEdgeLogo' },
     { image: Images.YorkLogo, alt: 'YorkLogo' },
     { image: Images.EnphaseImage, alt: 'EnphaseImage' },
+];
+
+export const galleryArray = [
+    {
+        image: Images.FuzionBatteries,
+        name: 'FuzionBatteries',
+    },
+    {
+        image: Images.FuzionEnergyResidentialGallery,
+        name: 'FuzionEnergyResidentialGallery',
+    },
+    {
+        image: Images.FuzionEnergyCommercialGallery,
+        name: 'FuzionEnergyCommercialGallery',
+    },
+    {
+        image: Images.FuzionEnergyHVACGallery,
+        name: 'FuzionEnergyHVACGallery',
+    },
+    {
+        image: Images.FuzionEnergyGeneratorGallery,
+        name: 'FuzionEnergyGeneratorGallery',
+    },
+    {
+        image: Images.FuzionEnergyTurfGallery,
+        name: 'FuzionEnergyTurfGallery',
+    },
 ];

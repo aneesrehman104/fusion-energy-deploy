@@ -29,7 +29,9 @@
     text-transform: capitalize;
     margin-top: 15px;
 }
-
+.fusionEnergyBakerSectionGap{
+    margin-bottom: 3rem;
+}
 .fusionEnergySurplusTitle {
     font-weight: 700;
     font-size: 48px;
@@ -45,7 +47,6 @@
 .fusionEnergySurplusSmallTitle {
     font-weight: 700;
     font-size: 32px;
-    line-height: 25px;
     font-style: normal;
     color: #1d3376;
     width: 100%;
