@@ -9,20 +9,23 @@ type Props = {
 };
 
 const MenuItem: React.FC<Props> = ({ current, items, mode }: Props) => {
+    const selectedKeys = current.includes('/service') ? '/services' : current;
     return (
         <ConfigProvider
             theme={{
                 components: {
                     Menu: {
                         itemBg: '',
-                        itemColor: mode === 'horizontal' ? '#fff' : '#000',
-                        itemSelectedColor:
-                            mode === 'horizontal' ? '#fff' : '#000',
-                        itemSelectedBg: '#fff',
-                        itemHoverColor: mode === 'horizontal' ? '#fff' : '#000',
+                        itemColor: mode === 'inline' ? '#000' : '#fff',
+                        itemSelectedColor: mode === 'inline' ? '#000' : '#fff',
+                        // itemHoverColor:
+                        //     mode === 'inline'
+                        //         ? '#fff'
+                        //         : mode === 'horizontal'
+                        //         ? '#fff'
+                        //         : '',
+
                         horizontalItemSelectedColor:
-                            mode === 'horizontal' ? '#fff' : '#000',
-                        horizontalItemHoverColor:
                             mode === 'horizontal' ? '#fff' : '#000',
                         horizontalLineHeight: 2,
                     },
@@ -31,7 +34,7 @@ const MenuItem: React.FC<Props> = ({ current, items, mode }: Props) => {
         >
             <Menu
                 mode={mode}
-                selectedKeys={[current]}
+                selectedKeys={[selectedKeys]}
                 defaultOpenKeys={['solar']}
                 style={{ borderBottom: 'none' }}
                 items={items}

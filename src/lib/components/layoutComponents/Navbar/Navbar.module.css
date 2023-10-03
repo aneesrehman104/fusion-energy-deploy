@@ -10,3 +10,11 @@
     font-size: 30px;
     cursor: pointer;
 }
+
+.subMenuChildDesktop {
+    color: #000;
+}
+
+.menuItemDesktop:hover {
+    color: #fff !important;
+}
