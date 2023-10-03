@@ -12,8 +12,7 @@
 
 .contactFormHeading {
     color: #fff;
-
-    font-size: 3rem;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
     text-transform: capitalize;
@@ -23,11 +22,19 @@
 .contactFormSubHeading {
     color: #fff;
     text-align: center;
-
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.53125rem; /* 122.5% */
     text-decoration-line: underline;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactFormHeading {
+        font-size: 26px;
+    }
+    .contactFormSubHeading {
+        margin-top: 10px;
+    }
 }

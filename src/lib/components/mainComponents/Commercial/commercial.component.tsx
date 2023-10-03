@@ -11,7 +11,7 @@ const Banner = dynamic<BannerProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Banner),
 );
 const Gallery = dynamic(() => import('./Gallery'));
-const Feature = dynamic(() => import('./Gallery'));
+const Feature = dynamic(() => import('./Feature'));
 
 const Commercial = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);

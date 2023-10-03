@@ -1,9 +1,9 @@
-.fusionEnergyBakerFieldMain {
+.fusionEnergySurplusMain {
     min-height: 100vh;
     width: 100%;
     padding: 30px;
 }
-.fusionEnergyBakerFieldMaainSection {
+.fusionEnergySurplusMaainSection {
     width: 100%;
     padding: 30px;
     display: flex;
@@ -11,13 +11,13 @@
     flex-direction: column;
 }
 
-.fusionEnergyBakerFieldHrStyle {
+.fusionEnergySurplusHrStyle {
     border: 1px solid #74b870ad;
     width: 125px;
     border-radius: 20px;
     margin-top: 5px;
 }
-.fusionEnergyBakerFieldTextStyle {
+.fusionEnergySurplusTextStyle {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -30,22 +30,22 @@
     margin-top: 15px;
 }
 
-.fusionEnergyBakerFieldTitle {
+.fusionEnergySurplusTitle {
     font-weight: 700;
     font-size: 48px;
     font-style: normal;
     color: #1d3376;
-    width: 65%;
+    width: 100%;
     text-align: center;
     text-transform: capitalize;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .fusionEnergySurplusSmallTitle {
     font-weight: 700;
     font-size: 32px;
-    line-height: 32px;
+    line-height: 25px;
     font-style: normal;
     color: #1d3376;
     width: 100%;
@@ -53,10 +53,10 @@
     margin-top: 15px;
 }
 
-.fusionEnergyBakerFieldDescription {
+.fusionEnergySurplusDescription {
     font-weight: 500;
     font-size: 16px;
-    line-height: 35px;
+    line-height: 31px;
     font-style: normal;
     color: #606771;
     width: 100%;
@@ -64,17 +64,40 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.fusionEnergyBakerInnerDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
 @media only screen and (max-width: 768px) {
-    .fusionEnergyBakerFieldMain {
+    .fusionEnergySurplusMain {
         padding: 10px;
+        margin-bottom: 20px;
     }
-    .fusionEnergyBakerFieldTitle {
+    .fusionEnergySurplusTitle {
         font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
     .fusionEnergySurplusSmallTitle {
         font-size: 22px;
+        text-align: center;
     }
-    .fusionEnergyBakerFieldTextStyle {
-        font-size: 20px;
+    .fusionEnergySurplusDescription {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+    }
+    .fusionEnergySurplusTextStyle {
+        font-size: 16px;
+    }
+    .fusionEnergyBakerInnerDiv {
+        justify-content: center;
+        align-items: center;
+    }
+    .fusionEnergySurplusMaainSection {
+        padding: 15px;
     }
 }

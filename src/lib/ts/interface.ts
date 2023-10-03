@@ -32,6 +32,8 @@ export interface FusionEnergyCardProps {
     name: string;
     rating?: number;
     description?: string;
+    imageWidth?: number;
+    imageHeight?: number;
 }
 
 export interface FusionEnergyCarouselProps {

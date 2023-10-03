@@ -11,7 +11,7 @@ const Banner = dynamic<BannerProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.Banner),
 );
 const Gallery = dynamic(() => import('./Gallery'));
-const BakerFields = dynamic(() => import('./Surplus'));
+const Surplus = dynamic(() => import('./Surplus'));
 
 const Batteries: React.FC<PROPS> = () => {
     const contactRef = React.useRef<HTMLDivElement>(null);
@@ -34,7 +34,7 @@ const Batteries: React.FC<PROPS> = () => {
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
-            <BakerFields />
+            <Surplus />
             <Gallery />
             <div ref={contactRef}>
                 <ContactForm

@@ -40,7 +40,10 @@ const Footer: React.FC<PROPS> = () => {
                     </div>
                 </div>
             </section>
-            <section className={styles.fusionEnergyFooterBackgroundImage}>
+            <section
+                className={styles.fusionEnergyFooterBackgroundImage}
+                style={{ height: screens.lg ? '100vh' : 'auto' }}
+            >
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <div
                         className={`${styles.fusionEnergyFooterGreenWidth} ${styles.fusionEnergyFooterPaddingTop}`}

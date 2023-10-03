@@ -21,6 +21,7 @@ const FusionEnergyCard: React.FC<Props> = ({ item }: Props) => {
             <div className={styles.fusionEnergyCardWrapper}>
                 <Image
                     src={item.image}
+                    style={{ width: item.imageWidth, height: item.imageHeight }}
                     className={styles.fusionEnergyCardProfile}
                     alt={item.name}
                     loading="eager"
