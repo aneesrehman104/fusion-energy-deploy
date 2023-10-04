@@ -1,26 +1,18 @@
 import React from 'react';
-import { FusionEnergyGallery } from '@/lib/components/commonComponents';
-import { Images } from '@/assets/image';
+import dynamic from 'next/dynamic';
+import { galleryArray } from '@/utils/mock';
+// dynamic imports
+const FusionEnergyGallery = dynamic(() =>
+    import('@/lib/components/commonComponents').then(
+        (m) => m.FusionEnergyGallery,
+    ),
+);
 
 const Gallery = () => {
-    const iconsArray = [
-        {
-            image: Images.FuzionBatteries,
-            name: 'Dollar',
-        },
-        {
-            image: Images.FuzionBatteries,
-            name: 'Dollar',
-        },
-        {
-            image: Images.FuzionBatteries,
-            name: 'Dollar',
-        },
-    ];
     return (
         <section id="Gallery">
             <FusionEnergyGallery
-                items={iconsArray}
+                items={galleryArray}
                 label="Commercial Gallery"
             />
         </section>

@@ -39,7 +39,6 @@ const ExpandMenu: React.FC<Props> = ({ isDesktop, isExpand, onClose }) => {
                         <div className={styles.sideMenuWrapper}>
                             {menus.map((menu, index) => (
                                 <a
-                                    href="#"
                                     className={
                                         menu.key === navbar
                                             ? styles.sideMenuActive

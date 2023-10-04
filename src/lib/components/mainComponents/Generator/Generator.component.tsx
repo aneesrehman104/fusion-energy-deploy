@@ -7,7 +7,7 @@ import {
     ContactFormProps,
     BannerProps,
 } from '@/lib/ts/interface';
-const BakerFields = dynamic(() => import('./BakerFields'));
+const GeneratorHome = dynamic(() => import('./GeneratorHome'));
 const FusionEnergyGallery = dynamic<FusionEnergyGalleryProps>(() =>
     import('@/lib/components/commonComponents').then(
         (m) => m.FusionEnergyGallery,
@@ -41,7 +41,7 @@ const Generator = () => {
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
-            <BakerFields />
+            <GeneratorHome />
             <section>
                 <FusionEnergyGallery
                     items={galleryArray}

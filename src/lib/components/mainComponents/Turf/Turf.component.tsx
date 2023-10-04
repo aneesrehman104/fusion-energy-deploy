@@ -8,7 +8,7 @@ import {
     FusionEnergyGalleryProps,
 } from '@/lib/ts/interface';
 
-const BakerFields = dynamic(() => import('./BakerFields'));
+const TrufHome = dynamic(() => import('./TrufHome'));
 const ContactForm = dynamic<ContactFormProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
 );
@@ -42,7 +42,7 @@ const Turf: React.FC = () => {
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
-            <BakerFields />
+            <TrufHome />
             <section>
                 <FusionEnergyGallery
                     items={galleryArray}

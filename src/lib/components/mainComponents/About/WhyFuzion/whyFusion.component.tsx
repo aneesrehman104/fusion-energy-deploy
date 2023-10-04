@@ -6,7 +6,12 @@ import { Images } from '@/assets/image';
 const WhyFuzion = () => {
     return (
         <section id="WhyFuzion" className={styles.whyFuzionContainer}>
-            <Row gutter={[16, 16]} className={styles.whyFuzionWrapper}>
+            <Row
+                justify={'center'}
+                align={'middle'}
+                gutter={[16, 16]}
+                className={styles.whyFuzionWrapper}
+            >
                 <Col xs={24} md={8}>
                     <h2 className={styles.whyFuzionHeading}>
                         why at Fuzion Energy

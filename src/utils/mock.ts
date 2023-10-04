@@ -183,25 +183,27 @@ export const iconsArray = [
     },
 ];
 
-export const galleryArray = [
-    {
-        image: Images.FuzionBatteries,
-        name: 'Dollar',
-    },
-    {
-        image: Images.FuzionBatteries,
-        name: 'Dollar',
-    },
-    {
-        image: Images.FuzionBatteries,
-        name: 'Dollar',
-    },
-];
+// export const galleryArray = [
+//     {
+//         image: Images.FuzionBatteries,
+//         name: 'Dollar',
+//     },
+//     {
+//         image: Images.FuzionBatteries,
+//         name: 'Dollar',
+//     },
+//     {
+//         image: Images.FuzionBatteries,
+//         name: 'Dollar',
+//     },
+// ];
 
 export const commercialCards = [
     {
         id: 1,
         image: Images.CostSaving,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Cost Savings',
         description:
             "By generating electricity from the sun, solar panels can significantly reduce a commercial building's reliance on grid electricity. This leads to lower energy bills over time, helping businesses save money on their operational expenses.",
@@ -209,6 +211,8 @@ export const commercialCards = [
     {
         id: 2,
         image: Images.LongTermInvestment,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Long-Term Investment',
         description:
             'Solar panels have a long lifespan, typically lasting 25-30 years or more. The initial investment pays off over time, making solar a long-term and reliable energy solution.',
@@ -216,6 +220,8 @@ export const commercialCards = [
     {
         id: 3,
         image: Images.RenewableEnergySource,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Renewable Energy Source',
         description:
             'Solar power is a clean and renewable energy source, which means it does not deplete natural resources or produce harmful emissions. Using solar panels helps businesses reduce their carbon footprint and contribute to sustainability goals.',
@@ -223,6 +229,8 @@ export const commercialCards = [
     {
         id: 4,
         image: Images.IncreasedPropertyValue,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Increased Property Value',
         description:
             'Commercial properties equipped with solar panels often have higher resale values and can attract environmentally conscious buyers or tenants.',
@@ -230,6 +238,8 @@ export const commercialCards = [
     {
         id: 5,
         image: Images.EnergyIndependence,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Energy Independence',
         description:
             'By installing solar panels, businesses can partially or completely meet their energy needs on-site, reducing their dependence on the grid and any potential energy price fluctuations.',
@@ -237,6 +247,8 @@ export const commercialCards = [
     {
         id: 6,
         image: Images.LEEDCertification,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'LEED Certification and Green Building Compliance',
         description:
             'Installing solar panels can contribute to earning certifications like LEED (Leadership in Energy and Environmental Design), which signifies a commitment to sustainable building practices.',
@@ -244,20 +256,26 @@ export const commercialCards = [
     {
         id: 7,
         image: Images.TaxIncentives,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Tax Incentives and Rebates',
         description:
             'Many governments offer tax incentives, rebates, or grants for businesses that invest in solar energy. These financial incentives can significantly offset the upfront installation costs, making solar more financially viable.',
     },
     {
         id: 8,
-        image: Images.EnhancedBrandImage,
+        image: Images.HedgeAgainstRisingEnergyCosts,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Hedge Against Rising Energy Costs',
         description:
             'Solar panels provide protection against rising energy costs, as businesses can lock in lower energy prices by producing their electricity.',
     },
     {
         id: 9,
-        image: Images.HedgeAgainstRisingEnergyCosts,
+        image: Images.EnhancedBrandImage,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Enhanced Brand Image',
         description:
             "Demonstrating a commitment to environmental responsibility and sustainability can enhance a commercial building's brand image. Customers and stakeholders may view the business more favorably, leading to potential competitive advantages.",
@@ -265,6 +283,8 @@ export const commercialCards = [
     {
         id: 10,
         image: Images.EducationalAndCommunityEngagement,
+        imageWidth: 56,
+        imageHeight: 56,
         name: 'Educational and Community Engagement',
         description:
             'Adopting solar energy can inspire employees, customers, and the community to embrace renewable energy and support sustainable practices.',
@@ -318,4 +338,31 @@ export const partnerLogo = [
     { image: Images.SolarEdgeLogo, alt: 'SolarEdgeLogo' },
     { image: Images.YorkLogo, alt: 'YorkLogo' },
     { image: Images.EnphaseImage, alt: 'EnphaseImage' },
+];
+
+export const galleryArray = [
+    {
+        image: Images.FuzionBatteries,
+        name: 'FuzionBatteries',
+    },
+    {
+        image: Images.FuzionEnergyResidentialGallery,
+        name: 'FuzionEnergyResidentialGallery',
+    },
+    {
+        image: Images.FuzionEnergyCommercialGallery,
+        name: 'FuzionEnergyCommercialGallery',
+    },
+    {
+        image: Images.FuzionEnergyHVACGallery,
+        name: 'FuzionEnergyHVACGallery',
+    },
+    {
+        image: Images.FuzionEnergyGeneratorGallery,
+        name: 'FuzionEnergyGeneratorGallery',
+    },
+    {
+        image: Images.FuzionEnergyTurfGallery,
+        name: 'FuzionEnergyTurfGallery',
+    },
 ];

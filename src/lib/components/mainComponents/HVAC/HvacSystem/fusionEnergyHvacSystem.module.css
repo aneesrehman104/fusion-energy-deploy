@@ -1,0 +1,103 @@
+.fusionEnergyHvacSystemMain {
+    min-height: 100vh;
+    width: 100%;
+    padding: 30px;
+}
+.fusionEnergyHvacSystemMaainSection {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fusionEnergyHvacSystemHrStyle {
+    border: 1px solid #74b870ad;
+    width: 125px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.fusionEnergyHvacSystemTextStyle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: normal;
+    color: #73b86f;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+.fusionEnergyHvacSystemTitle {
+    font-weight: 700;
+    font-size: 48px;
+    font-style: normal;
+    color: #1d3376;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fusionEnergyHvacSystemSmallTitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25px;
+    font-style: normal;
+    color: #1d3376;
+    width: 100%;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+.fusionEnergyHvacSystemDescription {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 31px;
+    font-style: normal;
+    color: #606771;
+    width: 100%;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fusionEnergyBakerInnerDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+@media only screen and (max-width: 768px) {
+    .fusionEnergyHvacSystemMain {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .fusionEnergyHvacSystemTitle {
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .fusionEnergyHvacSystemSmallTitle {
+        font-size: 22px;
+        text-align: center;
+    }
+    .fusionEnergyHvacSystemDescription {
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+    }
+    .fusionEnergyHvacSystemTextStyle {
+        font-size: 16px;
+    }
+    .fusionEnergyBakerInnerDiv {
+        justify-content: center;
+        align-items: center;
+    }
+    .fusionEnergyHvacSystemMaainSection {
+        padding: 15px;
+    }
+}

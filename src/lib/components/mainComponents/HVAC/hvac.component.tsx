@@ -4,7 +4,7 @@ import { iconsArray } from '@/utils/mock';
 import dynamic from 'next/dynamic';
 import { BannerProps, ContactFormProps } from '@/lib/ts/interface';
 
-const BakerFields = dynamic(() => import('./BakerFields'));
+const HvacSystem = dynamic(() => import('./HvacSystem'));
 const Gallery = dynamic(() => import('./Gallery'));
 const ContactForm = dynamic<ContactFormProps>(() =>
     import('@/lib/components/layoutComponents').then((m) => m.ContactForm),
@@ -34,7 +34,7 @@ const HVAC = () => {
                 labelBtn="Buy Now"
                 onClick={onClickHandle}
             />
-            <BakerFields />
+            <HvacSystem />
             <Gallery />
             <div ref={contactRef}>
                 <ContactForm

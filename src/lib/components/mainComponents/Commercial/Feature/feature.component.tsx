@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './feature.module.css';
+import { Col, Row } from 'antd';
 import { commercialCards } from '@/utils/mock';
 import { FusionEnergyCard } from '@/lib/components/commonComponents';
-import { Col, Row } from 'antd';
+import styles from './feature.module.css';
 const Feature: React.FC = () => {
     return (
         <section id="feature" className={styles.featureSection}>
