@@ -18,7 +18,10 @@ const Gallery: React.FC = () => {
                 description="Fuzion Energy Helps your home become a smart energy efficient"
                 height={'70vh'}
             />
-            <ContactForm title={''} />
+            <ContactForm
+                bottomWord="Zero"
+                title={' Money Down On All Products With Minimum Purchase'}
+            />
         </main>
     );
 };

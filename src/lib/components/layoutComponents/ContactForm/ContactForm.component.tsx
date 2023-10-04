@@ -13,7 +13,11 @@ import { ContactFormProps } from '@/lib/ts/interface';
 
 const { useBreakpoint } = Grid;
 
-const ContactForm: React.FC<ContactFormProps> = ({ title, subHeading }) => {
+const ContactForm: React.FC<ContactFormProps> = ({
+    title,
+    subHeading,
+    bottomWord,
+}) => {
     const screens = useBreakpoint();
     const [form, setForm] = React.useState({
         name: '',
@@ -33,7 +37,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ title, subHeading }) => {
             <section className={styles.contactFormWrapper}>
                 <Row>
                     <Col span={24}>
-                        <h1 className={styles.contactFormHeading}>{title}</h1>
+                        <h1 className={styles.contactFormHeading}>
+                            <span style={{ borderBottom: '2px solid white ' }}>
+                                {bottomWord}
+                            </span>{' '}
+                            {title}
+                        </h1>
                         {subHeading && (
                             <Link href="#">
                                 <h3 className={styles.contactFormSubHeading}>
