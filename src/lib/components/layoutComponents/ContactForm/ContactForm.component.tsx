@@ -36,7 +36,15 @@ const ContactForm: React.FC<ContactFormProps> = ({
         <main id="ContactForm" className={styles.contactFormContainer}>
             <section className={styles.contactFormWrapper}>
                 <Row>
-                    <Col span={24}>
+                    <Col
+                        span={24}
+                        style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'column',
+                        }}
+                    >
                         <h1 className={styles.contactFormHeading}>
                             <span style={{ borderBottom: '2px solid white ' }}>
                                 {bottomWord}
